@@ -1,0 +1,305 @@
+/*--------------------------------------------------
+		Button Variant		
+-------------------------------------------------- */ 
+	    
+@mixin button-variant($color, $background, $border) {
+  color: $color;
+  background-color: $background;
+  border-color: $tertiary;
+  padding: 10px;
+  border: 1px solid;
+  margin-bottom: 8px;
+  outline: white;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: $color;
+    background-color: darken($background, 15%);
+    border-color: darken($border, 15%);
+    border: 1px solid;
+    outline-color: white;
+    transition: 0.5s ease;
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      background-color: $background;
+          border-color: $tertiary;
+    }
+  }
+
+  .badge {
+    color: $background;
+    background-color: $color;
+  }
+}
+
+@mixin button-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius) {
+  padding: $padding-vertical $padding-horizontal;
+  font-size: $font-size;
+  line-height: $line-height;
+  border-radius: $border-radius;
+}
+
+
+.input-sm, .input-group-sm > .form-control, .input-group-sm > .input-group-addon, .input-group-sm > .input-group-btn > .btn {
+    border-radius: 0px
+}
+
+
+button {
+
+	&.btn {
+		border-radius: 0px;
+	}
+
+	&.default {
+		@include button-variant($text, #fff, $text);
+		
+		&-lg {
+			@include button-size(15px, 20px, 15px, 20px, 1px)
+		}
+
+		&-md {
+			@include button-size(9px, 5px, 14px, 20px, 0px);
+			font-weight: normal;
+		}
+
+		&-sm {
+			@include button-size(5px, 5px, 14px, 20px, 0px);
+			font-weight: normal;
+		}
+
+		&-hover-state {
+			background-color: #7F7E7E;
+			color: $white;
+		}
+
+		&-full-width {
+			width: 100%;
+		}
+
+		&:hover {
+			background-color: #7F7E7E;
+			color: $white;
+		}
+	}
+
+	&.action {
+		@include button-variant($white, $orange, $orange);
+		
+		&-lg {
+			@include button-size(15px, 20px, 15px, 20px, 1px)
+		}
+
+		&-sm {
+			@include button-size(5px, 5px, 14px, 20px, 0px);
+			font-weight: normal;
+		}
+
+		&-md {
+			@include button-size(9px, 5px, 14px, 20px, 0px);
+			font-weight: normal;
+		}
+
+		&-full-width {
+			width: 100%;
+		}
+	}
+
+	&.selection {
+		@include button-variant($orange, $white, $orange);
+		
+		&-lg {
+			@include button-size(15px, 20px, 15px, 20px, 1px)
+		}
+
+		&-full-width {
+			width: 100%;
+		}
+
+		&-sm {
+			@include button-size(5px, 5px, 14px, 20px, 0px);
+			font-weight: normal;
+		}
+
+		&-md {
+			@include button-size(9px, 5px, 14px, 20px, 0px);
+			font-weight: normal;
+		}
+
+		&:focus {
+			background-color: $white;
+			color: $orange;
+		}
+
+		&:hover {
+			color: $white;
+			background-color: darken($orange, 15%);
+		}
+	}
+
+	&.selection-no-hover {
+	
+		&:hover {
+			color: $orange;
+			background-color: $white;
+		}
+	}
+
+	&.cancel {
+		@include button-variant($white, #C50909, #C50909);
+		
+		&-lg {
+			@include button-size(15px, 20px, 15px, 20px, 1px)
+		}
+
+		&-md {
+			@include button-size(9px, 5px, 14px, 20px, 0px);
+			font-weight: normal;
+		}
+
+		&-full-width {
+			width: 100%;
+		}
+	}
+
+	&.out-of-stock {
+		@include button-variant($white, $blue, $blue);
+		
+		&-lg {
+			@include button-size(15px, 20px, 15px, 20px, 1px)
+		}
+
+		&-md {
+			@include button-size(9px, 5px, 14px, 20px, 0px);
+			font-weight: normal;
+		}
+
+		&-full-width {
+			width: 100%;
+		}
+	}
+
+	&.disabled {
+		@include button-variant($white, #989796, #989796);
+		
+		
+		&-lg {
+			@include button-size(15px, 20px, 15px, 20px, 1px)
+		}
+
+		&-md {
+			@include button-size(9px, 5px, 14px, 20px, 0px);
+			font-weight: normal;
+		}
+
+		&-full-width {
+			width: 100%;
+		}
+
+		&:hover {
+			cursor: not-allowed;
+		}
+	}
+
+	&.text {
+		@include button-variant($orange, $white, $white);
+	    border: none;
+	    padding-left: 0px !important;
+	    	&:hover,
+		  &:focus,
+		  &:active,
+		  &.active,
+		  .open > &.dropdown-toggle {
+		    color: darken($orange, 15%);
+		    background-color: $white;
+		    border:none;
+		    outline-color: white;
+		    transition: 0.5s ease;
+		  }
+		
+		&-lg {
+			@include button-size(15px, 20px, 15px, 20px, 1px)
+		}
+
+		&-md {
+			@include button-size(9px, 5px, 14px, 20px, 0px);
+			font-weight: normal;
+		}
+
+		&-full-width {
+			width: 100%;
+		}
+	}
+
+	&.no-bottom {
+		margin-bottom: 0px;
+	}
+}	    
+
+/* Unique Buttons */
+.quantity-selector {	
+	float: left;
+	// margin-right: 8px;
+	margin-bottom: 8px;
+
+	input[type="button"] {
+		height: 35px;
+		width: 35px;
+		padding: 0px;
+		background-color: $white;
+		border: 1px solid $text;
+		font-size: 16px;
+		color: $text;
+		float: left;
+
+		&:hover {
+			border: 1px solid $primary;
+			color: #6d6d6d;
+		}
+
+		&:focus {
+			outline: white;
+		}
+	}
+
+	input[type="text"] {
+		height: 35px;
+		width: 35px;
+		background-color: $white;
+		text-align: center;
+		padding: 0px;
+		float: left;
+		margin: 0 4px 0 4px;
+		border: 1px solid $text;
+		font-size: 14px;
+		color: $text;
+	}
+}
+
+/* Override Save for Later on Product Display */
+.quantity-selector.pd input[type="button"], .quantity-selector.pd input[type="text"] {
+	height: 40px;
+	width: 40px;
+}
+
+/* Product Lister - Filters - Show More */
+.list-filter-show-more-less {
+	padding: 8px 10px 8px 10px;
+    overflow: hidden;
+    margin: 4px 0 5px 0;
+}

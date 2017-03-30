@@ -1,0 +1,119 @@
+/* Colour Mixins */
+$red: #C50909;
+$orange: #F57A39;
+$orange-hover: #F57A39;
+$green: #3c7f53;
+$blue: #337ab7;
+$white: #ffffff;
+
+
+$text: #323232;
+$primary: #7F7E7E;
+$secondary: #e2e4e1;
+$tertiary: #fcfefb;
+
+.text_colour {
+  color: $text;
+}
+
+.primary_colour {
+  color: $primary;
+}
+
+.secondary_colour {
+  color: $secondary;
+}
+
+.tertiary_colour {
+  color: $tertiary;
+}
+
+.white_colour {
+  color: $white !important;
+}
+
+.red {
+  color: $red;
+}
+
+.green {
+  color: $green;
+}
+
+.orange {
+	color: $orange;
+}
+
+/*  Background Colours */
+.orange_background {
+	background-color: $orange;	
+}
+
+.primary_background {
+	background-color: $primary;	
+}
+
+.secondary_background {
+	background-color: $secondary;	
+}
+
+.tertiary_background {
+	background-color: $tertiary;	
+}
+
+/* Department Colours */
+.clothing_hex {
+	background-color: #45748e !important;
+}
+
+.storage_hex {
+	background-color: #74c7e7 !important;
+}
+
+.pets_hex {
+	background-color: #9e5729 !important;
+}
+
+.lighting_hex {
+	background-color: #fcb040 !important;
+} 
+
+.leisure_hex {
+	background-color: #45748e !important;
+}
+
+.homewares_hex {
+	background-color: #74c7e7 !important;
+}
+
+.hobbies_hex {
+	background-color: #9e5729 !important;
+}
+
+.garden_hex {
+	background-color: #4aab42 !important;
+} 
+
+.furniture_hex {
+	background-color: #015289 !important;
+} 
+
+.furnishings_hex {
+	background-color: #009f93 !important;
+} 
+
+.diy_hex {
+	background-color: #a0a1a5 !important;
+} 
+
+.decorating_hex {
+	background-color: #3a8892 !important;
+} 
+
+.crafts_hex {
+	background-color: #d41246 !important;
+} 
+
+.cooking_hex {
+	background-color: #ad4627 !important;
+}

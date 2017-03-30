@@ -1,0 +1,363 @@
+
+
+// #fixit - Replace with new header title block
+.sign-up-header {
+	text-align: center;
+	margin-bottom: 15px;
+	font-family: $titlefont;
+	font-size: 16px;
+	
+	.title {
+		font-size: 24px;
+		border-bottom: 1px solid $secondary;
+		margin-bottom: 12px;
+		padding-bottom: 12px;
+		font-weight: bold;
+		margin-top: 12px;
+		
+		&.sub {
+			text-align: left;
+			font-size: 16px;
+			margin-top: 20px;
+		}
+	}
+
+	.sub-title {
+		font-size: 16px;
+		
+		a {
+			color: $orange;
+		}
+	}
+}
+
+
+/* Title Validation */
+.header-validation {
+	// #fixit - remove extends
+	@extend .col-sm-offset-3;
+	@extend .col-sm-8;
+}
+
+/* Has Error - child of .header-validation */
+.error-feedback {
+	// #fixit - remove extends
+	@extend .bg-danger;
+	@extend .text-danger;
+	padding: 10px;
+	border: solid 1px #a94442;
+	border-radius: 2px;
+	text-align: center;
+	margin-bottom: 16px;
+	margin-top: 16px;
+	clear: both;
+	font-size: 14px;
+	
+	.error-heading {
+	    text-align: left;
+	    padding-bottom: 0px;
+    }
+	
+	ul {
+		padding-left: 5px;
+		margin-bottom: 0;
+		
+		li {
+			padding-left: 5px;
+			text-align: left;
+			margin-left: 15px;
+			list-style: none;
+			
+			&:first-child {
+				margin-top: 8px !important;
+			}
+		}
+	}
+
+	&.indicator {
+		@extend .text-danger;
+		background: #FFF;
+		border: 1px solid $orange-hover;
+		color: $orange-hover;	
+	}
+}
+
+.tooltip-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.tooltip.bottom .tooltip-arrow {
+    top: 0;
+    left: 50%;
+    margin-left: -5px;
+    border-bottom-color: #000;
+    border-width: 0 5px 5px;
+}
+
+/*	--------------------------------------------------
+		My Account Navigation
+-------------------------------------------------- */
+
+/* Avatar */
+
+.avatar-wrap {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid $secondary;
+	background-color: #faf9f6;
+}
+
+img.image-profile {
+	border-radius: 42px;
+	height: 42px;
+	width: 42px;
+	float: left;
+	
+	&.edit {
+		margin: 0 auto;
+		overflow: hidden;
+		float: none;
+		display: block;
+		border-radius: 82px;
+		height: 120px;
+		width: 120px;
+		margin-bottom: 10px;
+		
+		img {
+			
+		}
+	}
+}
+
+.profile-wrap {
+	text-align: center;
+	width: 120px;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+	margin-top: 18px;
+	background-color: #d2cdc8;
+	border-radius: 120px;
+	
+	h4 {
+		position: absolute;
+		top: 36px;
+		left: 30px;
+		color: #FFF;
+		z-index: 9;
+	}
+}
+
+.profile-overaly {
+	background: #000;
+    opacity: .5;
+    border-radius: 120px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.account-welcome {
+	float: left;
+	width: auto;
+	margin-top: 10px;
+    margin-left: 10px;
+}
+
+		
+
+.list-filter-options ul.account {
+	height: auto;
+}		
+
+/*	--------------------------------------------------
+		Main Content Area
+-------------------------------------------------- */ 
+
+/* #fixit - remove extends */
+.my-account-menu {
+
+	.list-filter-options {
+		clear: both;
+	    display: block;
+	    overflow: hidden;
+	    position: relative;
+	    border: none;
+
+	    ul li {
+    		border-top: none;
+
+    		a {
+				// border-top: none;
+    		}
+	    }
+	}
+}
+
+/*	--------------------------------------------------
+		Form
+-------------------------------------------------- */ 
+	    
+/* Helper Text */
+.my-account {
+	span#selectmenu-button {
+		float: left;
+		margin-bottom: 15px;
+		max-width: 180px;
+	}
+}
+/*
+span#helpBlock {
+	font-family: $titlefont;
+}*/
+
+/* Validation */
+
+/* Form Submit -   */
+.submit-subtext {
+	@extend .help-block;
+	text-align: center !important;
+	float: none !important;
+	font-family: $titlefont;
+	font-size: 16px;
+	margin-top: 18px;
+	
+
+	span {
+		color: $orange-hover;
+		text-decoration: underline;
+	}
+
+	&.contained {
+		  margin-top: 0;
+	}
+}
+
+
+/*	--------------------------------------------------
+		Product Grid Header / Footer
+-------------------------------------------------- */ 
+
+/* Header */
+
+#order-container {
+	// margin-bottom: 15px;
+	// border: 1px solid $secondary;
+	// padding: 10px;
+	
+	li.parted-summary {
+		border-top: none;
+	}
+}
+
+/* Date Select Range */
+.view-order-header {
+	/* #fixit - remove extends */
+	@extend .title;
+}
+
+.my-account {
+	#selectmenu {
+		/* #fixit - replace with dom markup */
+		float: left;
+	}
+}
+
+select#date-select-order {
+	margin-bottom: 25px;
+}
+
+
+.product-grid.order {
+	border: solid 1px $tertiary;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.button-row {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+.ma_myorder_return_info_cancelled {
+	color: red;
+}
+
+.product-container-single-order .product {
+		
+	&:first-of-type {
+		border-top: none;
+	}
+}
+
+/*	--------------------------------------------------
+		Address Book
+-------------------------------------------------- */ 
+
+address {
+	font-family: $titlefont;
+
+	/* #fixit - remove extend and add DOM */
+	.name {
+		@extend .title;
+	}
+}
+
+.address-container {
+	/* #fixit - remove extend */
+	@extend .col-xs-12; 
+	@extend .col-sm-6;
+	margin-bottom: 30px;
+}
+
+
+
+/*	--------------------------------------------------
+		Media Queries
+-------------------------------------------------- */ 
+@media	(min-width: 600px) {
+	/* Title Validation */
+	.header-validation {
+		float: left;		
+	}
+
+	/* Helper Text */
+	.my-account {
+		.help-block {
+			float: right;
+		}
+	}
+}
+
+
+@media (min-width: 600px) {
+	/* Increase gap between individual orders */
+	.product-grid.order {
+		border: solid 1px $tertiary;
+		padding: 10px;
+		margin-bottom: 20px;
+	}
+
+	.rwd-break {
+		display: none;
+	}
+}
+
+
+@media (min-width: 1200px) {
+	.avatar-wrap {
+		margin-bottom: 0px;
+	}
+}

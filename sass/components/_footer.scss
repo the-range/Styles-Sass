@@ -1,0 +1,161 @@
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  clear: both;
+  background-color: $tertiary;
+  margin-top: 20px;
+}
+
+
+footer a {
+	color: $text;  
+}
+
+footer ul {
+	padding-left: 0px;
+	
+	li {
+		list-style: none;
+	}
+}
+
+footer .level_1 {
+	margin-bottom: 0px;
+	margin-top: 0px;
+	clear: both;
+	display: block;
+}
+
+footer ul.level_2 {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	
+	li a {
+		border: 1px solid $secondary;
+		margin-bottom: 8px;
+		padding: 12px;	
+		width: 100%;
+		clear: both;
+		display: block;
+		
+		&:hover {
+			background-color: #e2e4e1;
+			color: $primary;
+		}
+	}
+}
+
+@media (min-width: 600px) {
+	footer .level_1 {
+		border: none;
+		padding: 0px;
+		margin-bottom: 6px;
+		margin-top: 20px;
+	}
+
+	footer ul.level_2 {
+		display: block;
+		border: none;
+		
+		li a {
+			border: none;
+			margin-bottom: 0px;
+			padding: 0px;
+			
+			&:hover {
+				background-color: transparent;
+			}
+		}
+	}    
+}
+
+.footer-nav {
+	border-top: solid 1px $secondary;
+}
+
+.footer-nav-deco {
+	background: url(/img/footer_background.png);
+	background-size: auto 70%;
+	background-repeat: repeat-x;
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.footer-nav-section {
+	margin: 40px 0px 20px 0px;
+	text-align: center;
+}
+
+.footer-nav-section ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.footer-nav-section ul li:first-child {
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+.footer-nav-section li {
+	margin-bottom: 1px;
+}
+
+.footer-pay-methods {
+	margin: 20px 0px 20px 0px;
+	display: block;
+	overflow: hidden;
+	max-width: 270px;
+	margin: 0 auto;
+	
+	&.flags {
+		max-width: 225px;	
+	}
+
+
+	@media (min-width: 600px) {
+    	&.flags {
+    		max-width: 452px;	
+    	}
+	}
+	
+}    
+.footer-pay-methods img {
+	max-width: 32px;
+	max-height: 32px;
+}
+
+.chevron-right {
+	display:none;
+}
+
+/*@media (max-width: 767px) {
+	.footer-nav-section {
+		margin: 0px;
+	}
+	.footer-nav-section :first-child {
+		margin-top: 10px;
+	}
+	
+	.footer-nav-section ul li {
+		display:none;
+	}
+
+	.footer-nav-section ul li:first-child { 
+		display: initial;
+	}
+	.footer-nav-section a {
+		border: 1px solid #e7e6e5;
+		display:block;
+		height: 50px;
+		padding: 15px 0px 0px 10px;
+		text-decoration: none;
+	}
+	.footer-pay-methods {
+		padding-top: 20px;
+	}
+}*/
+
+.basket {
+	margin-right: 20px;
+}

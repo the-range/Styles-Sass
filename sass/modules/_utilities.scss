@@ -1,0 +1,38 @@
+.no-border {
+	border: none !important;
+}
+
+@media (max-width: 600px) {
+   .hidden-xs {
+   	display: none;
+   }
+}
+
+.caret-up {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-bottom: 4px solid;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+
+.backdrop-fullscreen {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0;
+  z-index: 1040;
+  -moz-transition: all 0.2s linear 0s;
+  -webkit-transition: all 0.2s linear 0s;
+  -ms-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+  
+  &.in {
+    opacity: 0.5;
+  }
+}

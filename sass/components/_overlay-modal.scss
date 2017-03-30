@@ -1,0 +1,34 @@
+.modal {
+    z-index: 1050;
+}
+
+.modal-footer {
+	clear: both;
+}
+
+.modal-dialog {
+	/* adjustment for fixed floated header */
+    top: 30px;
+}
+
+.modal_basket-add-summary {
+	border: 1px solid #ededed;
+    display: block;
+    overflow: hidden;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+@media (min-width: 960px) {
+	.modal-full-width {
+		width: 800px;	
+	}
+}
+
+@media (min-width: 1200px) {
+	.modal-full-width {
+		width: 960px;	
+	}
+}
+

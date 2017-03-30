@@ -1,0 +1,53 @@
+ul.disk {
+	list-style: disc inside;
+	padding-left: 0px;
+	
+	li {
+		color: $text;
+		    list-style-position: inside;
+    text-indent: -2em;
+    padding-left: 2em;
+		
+		span {
+			color: $text;
+		}
+	}
+}
+
+.form_validation_box {
+	background-color: #a94442;
+    border-color: #a94442;
+    color: $white;
+    padding: 10px;
+    border-radius: 0px;
+    position: relative;
+    margin-top: 10px;
+    clear: both;
+}
+
+.form_validation_box:before {
+	bottom: 100%;
+    left: 7%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.form_validation_box:before {
+	border-color: rgba(136, 183, 213, 0);
+	border-bottom-color: #a94442;
+	border-width: 7px;
+}
+
+#fulfilment_days {
+	display: none;
+}
+
+#co_journey_payment_change_submit_next_day_delivery {
+	#fulfilment_days {
+		display: block;
+	}
+}

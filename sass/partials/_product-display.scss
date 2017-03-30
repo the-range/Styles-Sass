@@ -1,0 +1,77 @@
+/*	--------------------------------------------------
+		Product Review & Rating 
+-------------------------------------------------- */ 
+
+.product-review {
+
+	.reviews-mobile {
+		display: inline-block;
+	}
+
+	.reviews {
+		display: none;
+	}
+
+	@media (min-width: 600px) {
+
+		.reviews-mobile {
+			display: none;
+		}
+
+		.reviews {
+			display: block;
+		}
+	}
+}
+
+/*	--------------------------------------------------
+		Product Primary Information Section			
+-------------------------------------------------- */ 
+
+/* Product Purchase Information */
+.primary-product-purchase {
+
+	// #fixit - require? Perhaps just size class or specific heading tag
+	.offer {
+		font-size: 16px;
+	}
+
+	.price {
+		font-size: 24px;
+	}
+
+	.price-details {
+
+
+		.was-price {
+			float: left;
+			padding-right: 5px;
+			font-size: 16px;
+
+			span {
+			}
+		}
+
+		.price-saving {
+			font-size: 16px;
+			float: left;
+		}
+	}
+}
+
+.expand-content {
+	margin-top: 10px;
+	padding-bottom: 15px;
+	color: $primary;
+	font-weight: normal;
+	text-decoration: none;
+
+	&:hover {
+	  cursor: pointer;
+	  text-decoration: none;
+	}
+}
+
+// .primary-product-information p {
+// 	margin-bottom: 0px;
+// }

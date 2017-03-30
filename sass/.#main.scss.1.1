@@ -1,0 +1,93 @@
+@import "modules/all-modules";
+@import "components/all-components";
+@import "partials/base";
+@import "bootstrap-variables";
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+
+.site-overlay {
+	display: none;
+	background-color: $base;
+	bottom: 0;
+	left: 0;
+	opacity: 0.8;
+	filter: alpha(opacity = 50);
+	z-index: 1;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	/*-webkit-overflow-scrolling: touch;*/
+	outline: 0;
+}
+
+/* Product Lister - Refine - Scroll Height */
+.height-wrap {
+	overflow: hidden;
+	overflow-y: hidden;
+}
+
+/*	--------------------------------------------------
+		Section Divider
+-------------------------------------------------- */ 
+
+.section-divider {
+	@extend .container-fluid !optional;
+	background-color: #f9f8f4;
+	overflow: hidden;
+	padding-top: 10px;
+	border-bottom: 3px solid rgb(254, 150, 99);
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+/*	--------------------------------------------------
+		Expand / Collapse Content
+-------------------------------------------------- */ 
+a {
+	&.expand-content {
+		margin-top: -10px;
+		padding-bottom: 15px;
+		/*float: right;
+		width: auto;*/
+		color: black;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+}
+
+/* Development ONLY */
+
+.slick-slider {
+	margin-bottom: 0px !important;
+}
+
+
+/*	--------------------------------------------------
+		Temporary Develpment
+-------------------------------------------------- */ 
+	    
+.impersonate-alert {
+    border: 3px solid #FF0000;
+    background-color: #FFB2B2;
+    text-align: center;
+}
+
+.impersonate-alert span {
+    font-size: 3em;
+    color: #FF0000;
+}	

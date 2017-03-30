@@ -1,0 +1,96 @@
+// .radio.address {
+//     background-color: white;
+//     width: auto;
+//     overflow: hidden;
+//     border-bottom: 2px dotted $tertiary;
+//     margin-bottom: 30px;
+// }
+
+// .delivery-address {
+
+	
+// 	label {
+// 		margin-bottom: 15px;
+// 		padding-bottom: 15px;
+// 		overflow: hidden;
+// 		padding-left: 22px;
+// 		// #fixit - remove extends
+// 		@extend .col-lg-6;
+// 		@extend .col-md-6;
+// 		@extend .col-sm-6;
+// 		@extend .col-xs-12;
+		
+// 		&.add-new-address {
+// 			border: none;
+// 			padding-bottom: 2px;
+// 		}
+// 	}
+// }
+
+// // #fixit - What is the below and why is it so large?
+// span#paymentmenu-button {
+// 	width: 200px;
+// 	display: block;
+// 	width: 100%;
+// 	height: 34px;
+// 	padding: 6px 12px;
+// 	font-size: 14px;
+// 	line-height: 1.42857143;
+// 	color: #555555;
+// 	background-color: #fff;
+// 	background-image: none;
+// 	border: 1px solid #ccc;
+// 	border-radius: 4px;
+// 	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+// 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+// 	-webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+// 	-o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+// 	transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+// 	display: block;
+// 	width: 100%;
+// 	height: 34px;
+// 	padding: 6px 12px;
+// 	font-size: 14px;
+// 	line-height: 1.42857143;
+// 	color: #555555;
+// 	background-color: #fff;
+// 	background-image: none;
+// 	border: 1px solid #ccc;
+// 	border-radius: 4px;
+// 	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+// 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+// 	-webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+// 	-o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+// 	transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+// 	width: 580px !important;
+// 	float: none;
+// 	max-width: none;
+// }
+
+// address.billing-payment {
+// 	border: solid 1px $tertiary;
+// 	padding: 10px;
+// 	overflow: hidden;
+	
+// 	.edit_icon_container {
+// 		top: 5px;
+// 		right: 25px;
+// 	}
+// }
+
+// // #fixit - flatten
+// .container.payment.confirm {
+// 	.basket-fufilment-methods.order-details {
+// 		border-bottom: none;
+// 	}
+// }
+
+// .order-summary {
+// 	margin-top: 25px;
+// }
+
+// @media (min-width: 600px) {
+// 	.container.payment {
+// 		width: 500px !important;
+// 	}
+// }

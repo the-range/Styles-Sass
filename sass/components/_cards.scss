@@ -1,0 +1,72 @@
+.card {
+	background-color: $tertiary;
+	border: 1px solid $secondary;
+	padding: 8px;
+	margin-bottom: 10px;
+	
+	
+	// &.expired {
+	// 	@extend .alert-danger;
+	// }
+
+	&.default {
+		background-color: #dff0d8;
+		border-color: #3c763d;
+		color: #3c763d;
+	}
+
+	span.name {
+		font-weight: 700;
+	}
+
+	&:hover {
+		opacity: 0.8;
+	}
+}
+
+
+/* Address Module  */
+
+.checkout_address_name {
+    font-weight: 700;
+}
+
+.street-address {
+    font-weight: 700;
+}
+
+.lighter-address {
+    font-weight: 100;
+}
+
+.lighter-phone {
+    font-weight: 100;
+}
+
+.card_logo {
+    width: 36px;
+    float: left;
+    background: url(/img/visa_logo.png);
+    background-size: 35px;
+    background-position-y: -8px;
+    height: 20px;
+    margin: 0px;
+    border: none;
+    margin-right: 10px;
+}
+
+.expiry-date {
+    font-weight: 200;
+    clear: both;
+    font-family: $titlefont;
+    font-size: 14px;
+}
+
+.card-name {
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.card-expiry {
+    clear: both;
+}

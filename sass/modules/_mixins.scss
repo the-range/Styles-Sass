@@ -1,0 +1,114 @@
+/*
+	Define Mixins to extend onto reusable classes
+*/ 
+
+/*	--------------------------------------------------
+	1. Global Mixins
+-------------------------------------------------- */ 
+	
+$megamenu_height: 507px;
+$megamenu_slide_left: 55px; /* default = 55px */
+
+// #fixit - required at all? Perhaps a default one - utilities, font or _bootstrap-vatiables?
+.title {
+	font-size: 16px;
+	font-weight: normal;
+	color: $text;
+	margin-bottom: 10px;
+	font-family: $titlefont;
+}
+
+.is-selected, .is-expanded {
+	display: block !important;
+	visibility: visible !important;
+}
+
+/*
+	Mixin: Product Rating & Review
+*/
+	
+.product-review {
+	float: left;
+	color: $green;
+	margin-top: 2px;
+	min-height: 22px;
+	width: 100%;
+}
+	
+/* Percent Value */
+.percent {
+	float: left;
+	margin-right: 4px;
+
+	&:before {
+		background-image: url(/img/thumbs_green.png);
+	    background-size: 22px 20px;
+	    content: "";
+	    display: block;
+	    background-position: 0px -1px;
+	    height: 21px;
+	    width: 21px;
+	    margin-right: 2px;
+	    float: left;
+	}
+}
+
+/* Reviews */
+.reviews {
+    float: left;
+    padding-left: 4px;
+    color: $text;
+}
+
+/* Offer */
+.offer {
+	color: $red;
+	font-weight: 500;
+	clear: both;
+	font-family: $titlefont;
+	font-style: italic;
+	min-height: 22px;
+
+	a {
+		color: $red;
+		
+		&:hover {
+			color: darken($red, 5%);
+		}
+
+		&:focus {
+			color: darken($red, 4%);
+		}
+	}
+
+}
+
+
+/* Extended Classes: Product Rating & Review */
+.price {
+	color: $text;
+	font-weight: 700;
+	font-family: $titlefont;
+	font-size: 18px;
+	min-height: 23px;
+	clear: both;
+
+	span {
+		font-weight: 200;
+	}
+}
+
+
+.was-price {
+	color: grey;
+
+	span {
+		text-decoration: line-through;
+	}
+}
+
+.price-saving {
+	color: $red;
+	font-weight: bold;	
+	display: block;	
+}

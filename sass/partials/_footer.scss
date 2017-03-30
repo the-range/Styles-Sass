@@ -1,0 +1,11 @@
+// #fixit - retrieve footer inline styles
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  clear: both;
+  background-color: $tertiary;
+  font-family: $titlefont;
+  margin-top: 20px;
+}

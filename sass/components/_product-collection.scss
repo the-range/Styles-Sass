@@ -1,0 +1,51 @@
+/*	--------------------------------------------------
+			Collections
+-------------------------------------------------- */ 
+
+/* #fixit - cgeck validity */
+.product-collection-set {
+	
+	.product {
+		a {
+			overflow: hidden;
+			display: block;
+			
+			img.product-image {
+				width: 100%;
+				margin-bottom: 10px;
+
+				&:hover {
+					opacity: 0.8;
+				}
+			}
+		}
+
+		/* Show number of product at different viewports */
+		&:nth-child(1n+3) {
+			display: none;
+		}
+
+		@media (min-width: 600px) {
+
+			&:nth-child(1n+3) {
+				display: block;
+			}
+
+			&:nth-child(1n+4) {
+				display: none;
+			}
+		}
+
+		@media (min-width: 960px) {
+
+			&:nth-child(1n+3) {
+				display: block;
+			}
+
+			&:nth-child(1n+4) {
+				display: block;
+			}
+		}
+
+	}
+}

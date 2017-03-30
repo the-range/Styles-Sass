@@ -1,0 +1,277 @@
+/*	--------------------------------------------------
+	1 Product Container Mixins
+------------------------------------------------- */ 
+// #fixit - require extends on all containers, they now get the required JS added?
+
+
+// #fixit - find occurences
+.product-container  {
+	clear: both;
+}
+
+@media (min-width: 1200px) {
+	.product-container  {
+		clear: none;
+	}
+}
+
+ul.product-grid-row {
+	padding: 0px;
+}
+	
+/* Product Container Three */
+.product-container-three {
+	overflow: hidden;
+	
+	.product .product-lead .information-wrapper {
+		display: none !important;
+	}
+}
+
+
+/* Product Container Four */
+.product-container-four {
+	overflow: hidden;
+
+	.product .product-lead .information-wrapper {
+		display: none !important;
+	}
+}
+
+@media (max-width: 600px) {
+	.product-container-four .product .details .lister-price-details .price-saving span {
+		display: none;
+	}	
+}
+
+/* Product List Container */
+.product-container-list {
+	overflow: hidden;	
+	clear: both;
+
+	.product {
+		padding-top: 16px;
+		padding-bottom: 16px;
+		margin: 4px 0 4px 0;
+		border-bottom: solid 1px $tertiary;
+	}
+
+	/* Overwrite Display Feature Width */
+	.primary-product-information {
+		width: 100%;
+		right: 0;
+	}
+}
+
+@media (min-width: 1200px) {
+	.product-container-list {
+		overflow: hidden;	
+		clear: none;
+	}
+}
+
+.product-container-list .product-lead {
+	@extend .col-lg-8;
+	@extend .col-md-8;
+	@extend .col-sm-6;
+	@extend .col-xs-12;
+	height: 240px;
+
+
+	.show-more-information {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		display: none;
+		z-index: 999;
+	}
+
+	@media (min-width: 600px) {
+		.show-more-information {
+			display: block;
+		}
+	}
+
+	@media (min-width: 960px) {
+		.show-more-information {
+			display: none;
+		}
+	}
+
+	.information-wrapper {
+		position: absolute;
+		background-color: $white;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		opacity: 0.9;
+		padding: 15px;
+    	padding-top: 0px;
+		z-index: 88;
+		display: none;
+
+		.primary-product-information {
+
+			/* Remove Border Top */
+			.primary-product-details.features {
+				border-top: none;
+			}
+		}
+	}
+
+	a.product-thumbnail {
+		float: left;
+		height: 240px;
+		position: relative;
+		width: 100%;
+		line-height: 240px;
+		text-align: center;
+
+		img.product-image {
+			max-height: 239px;
+			margin: 0 auto;
+			width: auto;
+
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+
+	@media (min-width: 960px) {
+		.information-wrapper {
+			width: 50%;
+			display: block;
+		}
+
+		a.product-thumbnail {
+			float: left;
+			height: 240px;
+			position: relative;
+			width: 50%;
+			line-height: 240px;
+			text-align: center;
+		}
+	}
+}
+
+
+.product-container-list .details {
+	@extend .col-lg-4;
+	@extend .col-md-4;
+	@extend .col-sm-6;
+	@extend .col-xs-12;
+	height: 240px;
+
+	@media (min-width: 600px) {
+		.title {
+			max-width: 300px;
+		}
+	}
+
+	.lister-price-details {
+		min-height: 80px;
+	}
+
+	.product-review {
+		min-height: 26px;
+		margin-top: 4px;
+	}
+
+	ul.selection-grid {
+		min-height: 32px;
+	}
+
+	.purchase-button {
+		clear: both;
+
+		.button {
+			margin: 8px 0 0px 0;
+			position: relative;
+			padding-top: 10px;
+		}
+	}
+
+	@media (min-width: 600px) {
+		.purchase-button {
+			max-width: 300px;
+			
+			.button {
+				padding-top: 30px;
+			}
+		}
+	}
+}
+
+@media (min-width: 960px) {
+	.information-wrapper {
+		width: 50%;
+	}
+}
+
+@media (min-width: 1200px) {
+
+	.product-container-four {
+		width: 960px;
+		float: right;
+	}
+
+	.product-container-three {
+		width: 960px;
+		float: right;
+	}
+
+	.product-container-list {
+		width: 960px;
+		float: right;
+	}
+}
+
+.product-container-three .details {
+    clear: both;
+}
+
+.product-container-three .title {
+    clear: both;
+}
+
+.product-container-four .purchase-button, .product-container-three .purchase-button {
+	clear: both;
+	padding-top: 5px;
+}
+
+/*	--------------------------------------------------
+		Product
+-------------------------------------------------- */ 
+	    
+.product {
+	margin-bottom: 22px;
+	list-style: none; 
+}
+
+a.product-thumbnail {
+	overflow: hidden;
+
+	img.product-image {
+		width: 100%;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+}	 
+
+
+a.product-thumbnail {
+	width: 100%;
+
+	img.product-image {
+
+
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+}   

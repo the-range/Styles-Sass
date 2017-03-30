@@ -1,0 +1,123 @@
+/*	--------------------------------------------------
+		Goes Well With / You might also like
+-------------------------------------------------- */ 
+
+.goes-well-with {
+
+	h4 {
+		min-height: 42px;
+	}
+
+	.product {
+
+		a {
+			overflow: hidden;
+			display: block;
+		}
+
+		img.product-image {
+			overflow: hidden;
+		    display: block;
+		    width: 100%;
+		}
+
+		.details {
+			margin-bottom: 15px;
+
+
+		}
+	}
+}
+
+/* Slider Buttons */
+.slick-prev:before {
+  background-image: url(/img/carousel-left.png);
+  color: red;
+  font-size: 30px;
+  opacity: .75;
+  background-size: 14px 28px;
+  content: "";
+  display: inline-block;
+  height: 28px;
+  width: 14px;
+  margin-right: 5px;
+}
+
+.slick-next:before {
+  background-image: url(/img/carousel-right.png);
+  color: red;
+  font-size: 30px;
+  opacity: .75;
+  background-size: 14px 28px;
+  content: "";
+  display: inline-block;
+  height: 28px;
+  width: 14px;
+  margin-right: 5px;
+}
+
+.slick-slider {
+	margin-bottom: 0px;
+}
+
+/* Disabled State */
+.slick-prev.slick-disabled:before, .slick-next.slick-disabled:before {
+    opacity: .0;
+}
+    
+.slick-next, .slick-prev {
+	display: block;
+}
+
+.slick-next {
+	display: block;
+    right: 4px;
+}
+
+.slick-prev {
+	display: block;
+    left: 4px;
+}
+
+
+@media (min-width: 1200px) {
+	.slick-next, .slick-prev {
+		display: block;
+	}
+
+	.slick-next {
+		display: block;
+	    right: 0px;
+	}
+
+	.slick-prev {
+		display: block;
+	    left: 0px;
+	}
+}
+
+
+@media (min-width: 1300px) {
+	.slick-next, .slick-prev {
+		display: block;
+	}
+
+	.slick-next {
+		display: block;
+	    right: -30px;
+	}
+
+	.slick-prev {
+		display: block;
+	    left: -30px;
+	}
+}
+
+
+.slider-goes-well-with {
+	&:hover {
+		button.slick-next {
+			display: none;
+		}
+	}
+}

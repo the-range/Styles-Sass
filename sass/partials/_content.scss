@@ -1,0 +1,55 @@
+// #fixit - still required
+
+/*	--------------------------------------------------
+	Temporary Homepage / Footer Media Query Styles
+-------------------------------------------------- */ 
+
+/* Defaults */
+.c1, .c2, .c3, .c4 {
+	img {
+		width: 100%;
+	}
+}
+
+/* Mobile View */
+
+.c1 {
+	display: block;
+}
+
+.c2, .c3, .c4 {
+	display: none;
+}
+
+
+
+@media (min-width: 600px) {
+	.c2 {
+		display: block;
+	}
+
+	.c1, .c3, .c4 {
+		display: none;
+	}
+}
+
+@media (min-width: 960px) {
+	.c3 {
+		display: block;
+	}
+
+	.c1, .c2, .c4 {
+		display: none;
+	}
+}
+
+@media (min-width: 1200px) {
+	.c4 {
+		display: block;
+	}
+
+	.c1, .c2, .c3 {
+		display: none;
+	}
+}
+

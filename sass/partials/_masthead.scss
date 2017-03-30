@@ -1,0 +1,344 @@
+/*	--------------------------------------------------
+		Top Header Setup
+-------------------------------------------------- */ 
+		
+/* Overriding bootstrap presets */
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+  background-color: transparent;
+  border-color: $tertiary;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.top-header .navbar-nav {
+  margin: 0;
+}
+
+.logo_header {
+  background: url(/img/header-logo-retina.png);
+  width: 35px;
+  height: 35px;
+  float: left;
+  background-size: 138px 35px;
+  margin-top: 10px;
+}
+
+@media (min-width: 600px) {
+
+  .logo_header {
+    background: url(/img/range_logo_reduced.png);
+    width: 163px;
+    height: 35px;
+    background-size: 163px 35px;
+  }
+}
+@media (min-width: 960px) {
+
+  .logo_header {
+    background: url(/img/range_logo_full.png);
+    width: 234px;
+    height: 42px;
+    background-size: 234px 42px;
+  }
+}
+
+.top-header ul {
+	float: right;
+
+	li {
+		float: left;
+		list-style: none;
+		margin-left: 15px;
+		
+		&:first-child {
+			margin-left: 0px;
+		}
+
+		a {
+			padding: 0;
+		}
+	}
+}
+
+/* Icon Items */
+.header-icon {
+	overflow: hidden;
+	padding-top: 14px;
+	float: left;
+	width: 31px;
+
+	img {
+		margin: 0 auto;
+		display: block;
+		width: 31px;
+		height: 25px;
+	}
+}
+
+/* Hides floated nav content */
+.navigation-bar .header-content {
+    color: $text;
+    display: none;
+}
+
+/* Icon Items - Text */
+.header-content {
+	margin-top: 12px;
+	float: left;
+	margin-left: 4px;
+	display: none;
+	padding-top: 8px;
+	padding-right: 5px;
+
+	&.sub {
+	    margin-top: 5px;
+	    line-height: 12px;
+	}
+
+	span {
+		margin-right: 4px;
+		font-size: 10px;
+		float: right;	
+		clear: both;
+	}
+
+	.item {
+		float: left;
+		clear: both;
+		line-height: 14px;
+		font-size: 12px;
+		color: $text;
+		
+		&.no-background {
+
+			&:after {
+				content: "" !important;	
+			}
+			
+		}
+	}
+}
+
+
+// #header-basket-anchor{
+// 	overflow: visible;
+// }
+
+.header-basket-pill {
+	float: right;
+    background-color: $orange-hover;
+    color: $white;
+    font-size: 10px;
+    border-radius: 10px;
+    padding: 0px 6px 0px 6px;
+    height: 18px;
+    position: absolute;
+    top: 12px;
+    left: 21px;
+    line-height: 18px
+}
+
+
+.pill-empty {
+	background-color: $primary !important;
+	display: none;
+}
+
+/*	--------------------------------------------------
+		Navigation
+-------------------------------------------------- */ 
+
+
+// #fixit - flatten	    
+.navigation-bar  {
+	min-height: 0;
+	border-radius: 0;
+	border: none;
+	margin-bottom: 20px;
+	z-index: 1050;
+	padding-bottom: 8px;
+}
+
+/* Drop Down Container */
+.dropdown-navigation {
+	float: left;
+	
+	a.dropdown-toggle {
+		overflow: hidden;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 5px;
+		cursor: pointer;
+	}
+
+	/* Drop Down Target */
+	.dropdown-menu {
+	  margin: 0px 0 0;
+	}
+}
+/* Drop Down Toggle Icon */
+.mobile-navigation-toggle {
+	display: block;
+	float: left;
+	margin-right: 0px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+@media (min-width: 600px) {
+	/* Drop Down Toggle Icon */
+	.mobile-navigation-toggle {
+		margin-right: 4px;
+	}
+}
+
+/* Drop Down Toggle Icon */
+.sub.desktop-navigation-toggle {
+	display: none;
+	margin-top: 0;
+}
+
+.mm_icon_image {
+	
+	&:after {
+		    content: "";
+		    background-image: url(/img/cheveron_down_legacy.png);
+		    height: 15px;
+		    width: 14px;
+		    margin-left: 6px;
+		    background-size: 13px 8px;
+		    display: block;
+		    float: right;
+		    margin-top: 0px;
+		    padding-top: 0;
+		    background-repeat: no-repeat;
+		    vertical-align: 1%;
+		    background-position-y: 3px;
+	}
+}
+
+
+/* Search */
+.navigation-search {
+	margin-top: 0px;
+	padding-bottom: 8px;
+	padding-top: 8px;
+	width: auto;
+    display: block;
+    overflow: hidden;
+    
+	button.btn.btn-default {
+		background-color: $primary;
+	    border: none;
+	    color: $white;
+	    height: 34px;
+	}
+
+	input#searchBox {
+		border: 1px solid $primary;
+		border-radius: 0px;
+	}
+}
+
+  
+/* Wish list */
+.wishlist {
+	display: none;
+	float: right;
+	width: 50px;
+	margin-right: 0px;
+	width: 130px;
+	margin: 0 0 0 10px;
+	padding: 0px;
+	
+	li {
+		float: left;
+		display: block;
+
+		a {
+			padding: 10px 15px;
+			overflow: hidden;
+			display: block;
+		}
+
+	}
+}
+
+/* Dropdown Menu */
+.navigation-bar  > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+
+.wishlist-text-parent {
+	margin-right: 0;
+}
+
+.wishlist-text {
+	margin-top: 8px;
+}
+
+/*	--------------------------------------------------
+		Media Queries
+-------------------------------------------------- */ 
+
+@media (max-width: 600px) {
+/* Top Header - Drop down */
+	.top-header ul.dropdown-menu {
+		display: none;
+	}
+}
+
+@media (min-width: 600px) {
+
+	.top-header {
+
+		/* Display Store Content Header */
+		ul li.store a .header-content {
+			display: block;	
+		}	
+	} 
+
+	.navigation-bar {
+		
+		.wishlist {
+			display: block;
+		}
+	}
+
+	.sub.desktop-navigation-toggle {
+		display: block;
+		padding-top: 0px;
+	}
+
+	.dropdown-navigation {
+		width: 135px;
+		margin-right: 0;
+	}
+}
+
+@media (min-width: 960px) {
+
+	.header-content {
+		display: block;
+	}
+
+}
+
+/*--------------------------------------------------
+		Breadcrumb
+--------------------------------------------------*/ 
+
+ol.breadcrumb {
+    background-color: $white;
+    padding: 10px 15px;
+    margin-bottom: 0px;
+
+	li a {
+		color: $primary;
+	}
+}

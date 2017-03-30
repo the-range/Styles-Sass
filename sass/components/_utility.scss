@@ -1,0 +1,391 @@
+/* #fixit - check existence of older utilities
+  - Need to add readmore, edit, delete
+*/
+
+/* Block Element */
+.block {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+// Padding
+.padding-none {
+  padding: none !important;
+}
+
+.padding-xs {
+  padding: 2px !important;
+}
+
+.padding-sm {
+  padding: 6px !important;
+}
+
+.padding-md {
+  padding: 10px !important;
+}
+
+.padding-lg {
+  padding: 15px !important;
+}
+
+
+// Padding Top
+.padding-top-none {
+  padding-top: none;
+}
+
+.padding-top-xs {
+  padding-top: 2px;
+}
+
+.padding-top-sm {
+  padding-top: 6px;
+}
+
+.padding-top-md {
+  padding-top: 10px;
+}
+
+.padding-top-lg {
+  padding-top: 15px;
+}
+
+// Padding bottom
+.padding-bottom-none {
+  padding-bottom: none;
+}
+
+.padding-bottom-xs {
+  padding-bottom: 2px;
+}
+
+.padding-bottom-sm {
+  padding-bottom: 6px;
+}
+
+.padding-bottom-md {
+  padding-bottom: 10px;
+}
+
+.padding-bottom-lg {
+  padding-bottom: 15px;
+}
+
+// Padding left
+.padding-left-none {
+  padding-left: 0px;
+}
+
+.padding-left-xs {
+  padding-left: 2px;
+}
+
+.padding-left-sm {
+  padding-left: 6px;
+}
+
+.padding-left-md {
+  padding-left: 10px;
+}
+
+.padding-left-lg {
+  padding-left: 15px;
+}
+
+// Padding right
+
+.padding-right-none {
+  padding-right: 0px;
+}
+
+.padding-right-xs {
+  padding-right: 2px;
+}
+
+.padding-right-sm {
+  padding-right: 6px;
+}
+
+.padding-right-md {
+  padding-right: 10px;
+}
+
+.padding-right-lg {
+  padding-right: 15px;
+}
+
+// Marigin
+.margin-none {
+  margin: 0px !important;
+}
+
+.margin-xs {
+  margin: 2px;
+}
+
+.margin-sm {
+  margin: 6px;
+}
+
+.margin-md {
+  margin: 10px;
+}
+
+.margin-lg {
+  margin: 15px;
+}
+
+// Margin Top
+.margin-top-none {
+  margin-top: 0px !important;
+}
+
+.margin-top-xs {
+  margin-top: 2px;
+}
+
+.margin-top-sm {
+  margin-top: 6px;
+}
+
+.margin-top-md {
+  margin-top: 10px;
+}
+
+.margin-top-lg {
+  margin-top: 15px;
+}
+
+// Margin bottom
+.margin-bottom-none {
+  margin-bottom: 0px !important;
+}
+
+.margin-bottom-xs {
+  margin-bottom: 2px;
+}
+
+.margin-bottom-sm {
+  margin-bottom: 6px;
+}
+
+.margin-bottom-md {
+  margin-bottom: 10px;
+}
+
+.margin-bottom-lg {
+  margin-bottom: 15px !important;
+}
+
+// Margin right
+.margin-right-none {
+  margin-right: 0px !important;
+}
+
+.margin-right-xs {
+  margin-right: 2px;
+}
+
+.margin-right-sm {
+  margin-right: 6px;
+}
+
+.margin-right-md {
+  margin-right: 10px;
+}
+
+.margin-right-lg {
+  margin-right: 15px !important;
+}
+
+// Margin left
+.margin-left-none {
+  margin-left: 0px !important;
+}
+
+.margin-left-xs {
+  margin-left: 2px;
+}
+
+.margin-left-sm {
+  margin-left: 6px;
+}
+
+.margin-left-md {
+  margin-left: 10px;
+}
+
+.margin-left-lg {
+  margin-left: 15px !important;
+}
+
+// Column / Width
+.full-width {
+	width: 100%;
+}
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  & > [class^="col-"],
+  & > [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+// Border
+.no-border {
+  border: none !important;
+}
+
+.no-border-top {
+  border-top: none !important;
+}
+
+.no-border-bottom {
+  border-bottom: none !important;
+}
+
+.no-border-right {
+  border-right: none !important;
+}
+
+.no-border-left {
+  border-left: none !important;
+}
+
+.border-top {
+  border-top: 1px solid $secondary;
+}
+
+.border-bottom {
+  border-bottom: 1px solid $secondary;
+}
+
+.border {
+  border: 1px solid $secondary;
+}
+
+
+.border-top-md {
+  border-top: none;
+}
+
+.no-border-left {
+  border-left: none;
+}
+
+@media (min-width: 960px) {
+   .border-top-md {
+    border-top: 1px solid $secondary;
+  } 
+}
+
+@media (min-width: 960px) {
+  .no-border-left-md {
+    border-left: none;
+  }    
+}
+
+
+/* Something */
+
+.caret-up {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-bottom: 4px solid;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+
+.backdrop-fullscreen {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0;
+  z-index: 1040;
+  -moz-transition: all 0.2s linear 0s;
+  -webkit-transition: all 0.2s linear 0s;
+  -ms-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+  
+  &.in {
+    opacity: 0.5;
+  }
+}
+
+.progress-bar-excellent {
+  background-color: #079443;  
+}
+
+.progress-bar-empty {
+  background-color: rgba(0, 0, 0, 0);  
+  box-shadow: inset 1px -1px 0 rgba(0, 0, 0, 0.15);
+}
+
+#focusedInput {
+  border-color: #ccc;
+  border: 1px solid;
+  border-color: rgba(82, 168, 236, 0.8);
+  outline: 0;
+  outline: thin dotted;
+  -webkit-box-shadow: 0 0 8px rgba(82, 168, 236, 0.6);
+  box-shadow: 0 0 8px rgba(82, 168, 236, 0.6);
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  border-radius: 4px;
+}
+
+
+.invisible {
+  visibility: hidden;
+}
+
+.show {
+  display: block !important;
+  visibility: visible !important;
+}
+
+.clear-both {
+  clear: both !important;
+}
+
+.caret_up {
+    content: "";
+    border-top: 0;
+    border-bottom: 4px dashed;
+    border-bottom: 4px solid;
+}
+
+
+.section-divider {
+  overflow: hidden;
+  padding-top: 10px;
+  border-bottom: 1px solid $secondary;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+
+ul.no_list_style li {
+  list-style: none;
+}
+
+.border-left-sm {
+  border-left: 1px solid $secondary;
+}
+
+@media (min-width: 960px) {
+ .border-left-sm {
+    border-left: none;
+  }   
+}

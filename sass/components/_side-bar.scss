@@ -1,0 +1,188 @@
+/*  --------------------------------------------------
+        Filter Container 
+-------------------------------------------------- */ 
+
+.filter-wrap {
+	min-height: 1px;
+	background-color: $white;
+	overflow: hidden;
+}
+
+@media (min-width: 1200px) {
+    .filter-wrap {
+    	margin-bottom: 5px;
+    	// border: 1px $tertiary solid;
+
+    	&:first-child {
+    		border-top: 1px solid $secondary;
+    	}
+    }
+}
+
+/*  --------------------------------------------------
+        Filter Container Options
+-------------------------------------------------- */ 
+
+/* List Filter */
+.list-filter-options {
+    overflow: hidden;
+    height: auto;
+    display: none;
+    float: right;
+    width: 100%;
+    
+    &.selected-filter {
+        display: block;
+    }
+}
+
+.list-filter-options ul {
+    list-style: none;
+    padding: 0px;
+    margin-bottom: 0px;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+}
+
+.list-filter-options ul li {
+    position: relative;
+    overflow: hidden;
+
+    a {
+        padding: 20px 10px 20px 30px;
+        color: $text;
+        position: relative;
+        overflow: hidden;
+        display: block;
+
+        &:hover {
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+
+    &:first-child {
+        border-top: none;
+    }
+
+    &:hover {
+        text-decoration: none;
+        cursor: pointer;
+        opacity: 0.8;
+    }
+}
+@media (min-width: 600px) {
+    .list-filter-options {
+        width: 65%;
+        margin-bottom: 0px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-left: 1px solid $secondary;
+        
+        ul li a {
+            padding-left: 20px;
+        }
+        
+        &.selected-filter {
+            height: 100%;
+            overflow-y: scroll;
+            padding-left: 0px;
+            padding-bottom: 76px;
+            padding-top: 62px;
+        }
+    }
+
+    /* Scrollable Menu's */
+    .filter-overlay.tablet-filter.enabled .tablet-filter-overlay-static .filter-wrapper { 
+        overflow-x: hidden; 
+        -ms-overflow-style: none; 
+        -webkit-overflow-scrolling: touch; 
+        height: 100%;
+        padding-left: 0px;
+        padding-bottom: 138px;
+        padding-top: 0px;
+    }
+}
+@media (min-width: 1200px) {
+    .filter-overlay .list-filter-options {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        padding: 0;
+        border-left: none;
+        margin-bottom: 10px;
+
+        ul li {
+            padding-left: 5px;
+            width: 100%;
+            
+            a {
+                padding: 8px 10px 8px 10px;
+            }
+        }
+    }
+}
+
+.sidebar_component {
+    border-top: 1px solid $secondary;
+    border-bottom: 1px solid $secondary;
+    
+    &.arrows {
+        ul li a:after {
+            background-image: url(/img/chevron-right.png);
+            background-size: 12px 12px;
+            content: "";
+            display: inline-block;
+            height: 12px;
+            width: 12px;
+            margin-top: 4px;
+            position: absolute;
+            right: 0px;
+            top: 8px; 
+        }
+    }
+
+    ul {
+        padding-left: 0px;
+        overflow: hidden;
+        margin-bottom: 0px;
+
+        li {
+            list-style: none;
+
+            &:hover {
+                text-decoration: none;
+                cursor: pointer;
+                opacity: 0.8;    
+                background-color: $secondary;
+            }
+
+            a {
+                position: relative;
+                overflow: hidden;
+                display: block;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                color: $text;
+
+                &.logout {
+                    color: $red;
+                }
+                
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.avatar_component {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    padding: 4px;
+}

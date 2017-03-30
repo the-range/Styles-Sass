@@ -1,0 +1,391 @@
+// /*	--------------------------------------------------
+// 		Fulfilment Method
+// -------------------------------------------------- */ 
+	    
+// .fulfilment-method {
+// 	width: 100%;
+// 	height: auto;
+// 	overflow: hidden;
+// 	margin-bottom: 20px;
+// 	border: 1px solid $secondary;
+// 	border-bottom: 2px solid $orange;
+// 	margin-top: 12px;
+	
+// 	#delivery {
+// 		&:before {
+// 			background-image: url(/img/grey_van.png);
+// 			background-size: 26px 18px;
+// 			content: "";
+// 			display: inline-block;
+// 			height: 18px;
+// 			width: 26px;
+// 			margin-right: 5px;
+// 			vertical-align: -20%;
+// 		}
+// 	}
+
+// 	#collection {
+// 		&:before {
+// 			background-image: url(/img/grey_shop.png);
+// 			background-size: 26px 18px;
+// 			content: "";
+// 			display: inline-block;
+// 			height: 18px;
+// 			width: 26px;
+// 			margin-right: 5px;
+// 			vertical-align: -20%;
+// 		}
+// 	}
+// }
+
+// /* Selected Item States */
+// #collection.fulfilment-method__type--selected {
+// 	&:before {
+// 		background-image: url(/img/white_shop.png);
+// 		background-size: 26px 18px;
+// 		content: "";
+// 		display: inline-block;
+// 		height: 18px;
+// 		width: 26px;
+// 		margin-right: 5px;
+// 		vertical-align: -20%;
+// 	}
+// }
+
+// #delivery.fulfilment-method__type--selected {
+// 	&:before {
+// 		background-image: url(/img/white_van.png);
+// 		background-size: 26px 18px;
+// 		content: "";
+// 		display: inline-block;
+// 		height: 18px;
+// 		width: 26px;
+// 		margin-right: 5px;
+// 		vertical-align: -20%;
+// 	}
+// }
+
+// .fulfilment-method__type {
+// 	text-align: center;
+// 	color: $text;
+// 	padding: 10px;
+// 	background-color: #ebebeb;
+// 	font-size: 16px;
+// 	letter-spacing: 0.2px;
+	
+// 	&--selected {
+// 		background-color: $orange-hover;
+// 		color: $white;
+		
+// 		&:after {
+// 			content: "";
+// 		    position: absolute;
+// 		    bottom: -6px;
+// 		    left: calc(50% - 15px);
+// 		    border-width: 6px 15px 0;
+// 		    border-style: solid;
+// 		    border-color: $orange-hover transparent;
+// 		    display: block;
+// 		    width: 0;
+// 		}
+// 	}
+// }
+
+// .fulfilment-attributes {
+// 	clear: both;
+// 	overflow: hidden;
+
+// 	&.delivery-prompt {
+		
+// 	}
+
+	
+
+
+// }
+
+// .fulfilment-attributes--selection {
+// 	border-top: 1px solid $secondary;
+// 	padding-top: 15px;
+// 	padding-bottom: 15px;
+// 	position: relative;
+// }
+
+// .fulfilment-attributes--question {
+// 	border-top: 1px solid $secondary;
+// 	padding-top: 15px;
+// 	padding-bottom: 15px;
+// 	position: relative;
+		
+// 		span.info-icon {
+// 			background-image: url(/img/info-icon.png);
+// 			background-size: 15px 15px;
+// 			content: "";
+// 			display: inline-block;
+// 			height: 15px;
+// 			width: 15px;
+// 			vertical-align: -2px;
+// 			right: 15px;
+// 			top: 10px;
+// 			margin-left: 2px;
+// 		}
+// 	}
+
+// ul.fulfilment-attributes--options {
+// 	padding-left: 0px;
+// 	margin-bottom: 0px;
+// 	overflow: hidden;
+// 	clear: both;
+	
+// 	li {
+// 		list-style: none;
+// 		border-top: 1px solid $secondary;
+// 		padding-top: 10px;
+// 		padding-bottom: 10px;
+// 		position: relative;
+// 		clear: both;
+// 		overflow: hidden;
+
+		
+// 		&:last-child {
+// 			border-bottom: none;
+// 		}
+
+// 		&.show-more {
+// 			&:after {
+// 				background-image: url(/img/chevron-down.png);
+// 			    background-size: 12px 12px;
+// 			    content: "";
+// 			    display: inline-block;
+// 			    height: 12px;
+// 			    width: 12px;
+// 			    margin-top: 4px;
+// 			    float: right;
+// 			    position: absolute;
+// 			    right: 15px;
+// 			    top: 10px;
+// 			}
+// 		}
+// 	}
+// }
+
+
+// .date-options {
+// 	clear: both;
+// 	overflow: hidden;
+// }
+
+// .fulfilment-attributes ul.fulfilment-attributes--options li:hover {
+// 	color: $primary;
+// 	background-color: $tertiary;
+// 	cursor: pointer;
+// }
+// /* line 174, ../sass/components/_fulfilment.scss */
+// .fulfilment-attributes ul.fulfilment-attributes--options li:hover span.price, .fulfilment-attributes ul.fulfilment-attributes--options li:hover span.date {
+//   color: $primary;
+// }
+
+#selection-prompt {
+	border: 1px solid $secondary;
+	padding-bottom: 0px;
+}
+
+.parted-summary {
+	overflow: hidden;
+    border-top: 1px solid $secondary;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    margin-bottom: 5px;
+    display: block;
+
+	
+	ul.product-grid-list {
+		li.product-horizontal {
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+	}
+	
+	&:first-of-type {
+		/*border-top: 2px solid $orange-hover;*/
+		/*padding-top: 10px;*/
+	}
+	
+	/* Parent toggled active */
+	&.active-parted-products {
+		border: 1px solid $secondary;
+	}
+}
+
+.fulfilment-header {
+	padding-bottom: 4px;
+	padding-top: 4px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-top: 1px solid $secondary;
+}
+
+
+.fulfilment-title {
+	// font-size: 16px;
+	font-weight: 700;
+	
+	span {
+		font-weight: 400;
+		font-size: 18px;
+	}
+
+	.reset {
+		float: right;
+		color: $text;
+		font-size: 14px;
+		font-weight: 400;
+	}
+}
+
+.fulfilment-details {
+	font-size: 14px;
+	font-weight: 400;
+	color: $primary;
+	margin-top: -2px;
+	font-style: italic;
+}
+
+
+li.fulfilment-footer {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid $secondary;
+    cursor: pointer;
+    list-style: none;
+    
+}
+
+a.toggle-parted-product {
+	color: $text;
+	position: relative;
+	
+	&:after {
+		background-image: url(/img/chevron-down.png);
+	    background-size: 10px 10px;
+	    content: "";
+	    display: inline-block;
+	    height: 10px;
+	    width: 10px;
+	    margin-top: 6px;
+	    float: left;
+	    margin-left: 4px;
+	    position: absolute;
+	}
+}
+
+/*	--------------------------------------------------
+		Arrow Highlighter 
+-------------------------------------------------- */ 
+
+#parted-icon_checkout {
+    width: 34px;
+    height: 30px;
+    background: $secondary;
+    position: relative;
+    margin-top: -6px;
+    position: relative;
+    float: left;
+    margin-right: 18px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    
+	&:before {
+	    content: "";
+	    position: absolute;
+	    border-top: 12px solid $secondary;
+	    border-right: 17px solid transparent;
+	    border-left: 17px solid transparent;
+	    height: 0px;
+	    width: 0px;
+	    margin-top: 30px;
+	}
+
+	.number_container span {
+	    color: $text;
+	    position: relative;
+	    display: block;
+	    text-align: center;
+	    margin-top: 6px;
+	}
+}
+
+#parted-icon {
+	width: 36px;
+  height: 34px;
+  background: $secondary;
+  position: relative;
+  margin-top: -8px;
+  position: relative;
+  float: left;
+  margin-right: 8px;
+  margin-bottom: 20px;
+  margin-left: -15px;
+    
+	&:before {
+	     content: "";
+    position: absolute;
+    border-top: 12px solid $secondary;
+    border-right: 18px solid transparent;
+    border-left: 18px solid transparent;
+    height: 0px;
+    width: 0px;
+    margin-top: 34px;
+	}
+
+	.number_container span {
+		font-size: 18px;
+	    color: $text;
+	    position: relative;
+	    display: block;
+	    text-align: center;
+	    margin-top: 8px;
+	}
+}
+
+@media (min-width:960px) {
+	#parted-icon {
+	width: 44px;
+	height: 40px;
+    
+		&:before {
+	      content: "";
+		  position: absolute;
+		  border-top: 18px solid $secondary;
+		  border-right: 22px solid transparent;
+		  border-left: 22px solid transparent;
+		  margin-top: 40px;
+		}
+
+		.number_container span {
+			font-size: 22px;
+			color: $text;
+			margin-top: 10px;
+		}
+	}
+}
+
+/* Inline Styles Transfered */
+.fulfilment-method {
+	margin-top: 0px;
+}
+
+/* line 332, ../sass/components/_fulfilment.scss */
+#parted-icon .number_container {
+  position: relative;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  height: 100%;
+}	
+
+#progressive_part_remaining {
+	border-bottom: 1px solid #ededed;
+	padding-bottom: 15px;
+}

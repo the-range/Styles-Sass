@@ -1,0 +1,76 @@
+@import "modules/all-modules";
+@import "components/all-components";
+@import "partials/base";
+
+/* #fixit -  does it import _bootstrap_variable - if not, add variables to overide - also nothing should sit in this file, it should just be the main calls */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+	font-family: $bodyfont;
+	-webkit-font-smoothing: antialiased;
+  color: $text;
+  min-height: 900px;
+  overflow-x: hidden !important;
+}
+
+/*  --------------------------------------------------
+        Bootstrap Overwrites
+-------------------------------------------------- */ 
+
+
+/* line 48, ../sass/modules/bootstrap/bootstrap/_scaffolding.scss */
+a {
+  color: $orange;
+  text-decoration: none;
+}
+/* line 52, ../sass/modules/bootstrap/bootstrap/_scaffolding.scss */
+a:hover, a:focus {
+  color: $orange-hover;
+  text-decoration: none;
+}
+/* line 58, ../sass/modules/bootstrap/bootstrap/_scaffolding.scss */
+a:focus {
+  outline: none;
+}
+/**/
+.progress {
+  box-shadow: none;
+}
+
+.alert {
+  border-radius: 0px;
+}
+
+/* End of Overwrites */
+
+.site-overlay {
+	display: none;
+	background-color: $text;
+	bottom: 0;
+	left: 0;
+	opacity: 0.8;
+	filter: alpha(opacity = 50);
+	z-index: 1;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	outline: 0;
+}
+
+/* Product Lister - Refine - Scroll Height */
+.height-wrap {
+	overflow: hidden;
+	overflow-y: hidden;
+}
+
+/* Product Horizontal - setup proper rows */
+.back-button.header {
+  margin-top: 12px;
+}

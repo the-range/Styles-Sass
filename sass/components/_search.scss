@@ -1,0 +1,236 @@
+// #fixit - flatten
+// .search-dropdown {
+// 	position: absolute;
+//     top: 42px;
+//     left: 0;
+//     right: 0;
+//     z-index: 499;
+//     padding: 0;
+//     /*border: solid 1px $tertiary;
+// 	border-radius: 0 0 1px 1px;*/
+// 	border: none;
+// 	background-color: #fdfdfd;
+// 	display: none;
+// 	margin: 0 auto;
+//     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.52);
+
+//     .suggestion-section {
+//     	padding: 0px;
+//     	margin-top: 10px;
+//     	display: block;
+//     	position: relative;
+//     	margin: 0 -1px;
+//     	color: #808394;
+    	
+//     	> li { 
+//     		display: block;
+//     		border-bottom: solid 1px #ededed;
+    		
+//     		&:first-of-type {
+//     			border-top: none;
+//     		}
+
+//     		/* Article */
+//     		&.product {
+//     			img {
+//     				margin-right: 8px;
+//     				width: 30px;
+//     				height: 30px;
+//     				border: solid 1px $tertiary;
+//     			}
+
+//     			@media(min-width: 600px) {
+//     				img {
+//     					margin-right: 15px;
+//     					width: 50px;
+//     					height: 50px;
+//     				}
+//     			}
+
+//     			.category {
+//     				display: inline;
+//     				font-weight: 400;
+
+//     				span {
+//     					font-weight: bold;
+//     					display: inline;
+//     					color: $orange;
+//     				}
+//     			}
+//     		}
+//     	}
+
+//     	span { 
+//     		display: none;
+//     	}
+//     }
+// }
+
+
+// ul.search_article-results {
+// 	li a {
+// 		color: $text;
+// 		font-weight: 400;
+// 		font-style: italic;
+		
+// 		&:hover {
+// 			text-decoration: none;
+// 		}
+// 	}
+// }
+
+// .search_suggestion.js-show { 
+// 	display: block; 
+// 	width: 100%;
+// }
+
+// ul.suggestion{
+// 	list-style: none;
+// 	padding-left: 0;
+// }
+
+// li.suggestion-section  {
+// 	color: $text;
+// 	padding: 10px;
+// 	border-top: none;
+// 	font-weight: bold;
+// 	border-left: 1px solid transparent;
+	
+// 	.department {
+// 	    display: inline-block;
+// 	    color: #F57A39;
+// 	}
+	
+// 	a {
+// 		color: $text;
+		
+// 		&:hover {
+// 			text-decoration: none;
+// 		}		
+// 	}
+// }
+
+// .search_suggestion li:not(.empty):hover {
+// 	background-color: #FAF9F6;
+// 	cursor: pointer;
+// 	border-left: 1px solid #F57A39;
+// }
+
+
+
+/* line 2, ../sass/components/_search.scss */
+.search-dropdown {
+  position: absolute;
+  top: 42px;
+  left: 0;
+  right: 0;
+  z-index: 499;
+  padding: 0;
+  /*border: solid 1px $tertiary;
+  border-radius: 0 0 1px 1px;*/
+  border: none;
+  background-color: #fdfdfd;
+  display: none;
+  margin: 0 auto;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.12);
+}
+/* line 17, ../sass/components/_search.scss */
+.search-dropdown .suggestion {
+  padding: 0px;
+  margin-top: 10px;
+  display: block;
+  position: relative;
+  margin: 0 -1px;
+  color: #808394;
+}
+/* line 25, ../sass/components/_search.scss */
+.search-dropdown .suggestion > li {
+  display: block;
+  border-bottom: solid 1px #ededed;
+  /* Article */
+}
+/* line 29, ../sass/components/_search.scss */
+.search-dropdown .suggestion > li:first-of-type {
+  border-top: none;
+}
+/* line 35, ../sass/components/_search.scss */
+.search-dropdown .suggestion > li ul#article-results li a {
+  color: #323232;
+  font-weight: 400;
+  font-style: italic;
+}
+/* line 40, ../sass/components/_search.scss */
+.search-dropdown .suggestion > li ul#article-results li a:hover {
+  text-decoration: none;
+}
+/* line 47, ../sass/components/_search.scss */
+.search-dropdown .suggestion > li.product img {
+  margin-right: 8px;
+  width: 30px;
+  height: 30px;
+  border: solid 1px #fcfefb;
+}
+@media (min-width: 600px) {
+  /* line 55, ../sass/components/_search.scss */
+  .search-dropdown .suggestion > li.product img {
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+  }
+}
+/* line 62, ../sass/components/_search.scss */
+.search-dropdown .suggestion > li.product .category {
+  display: inline;
+  font-weight: 400;
+}
+/* line 66, ../sass/components/_search.scss */
+.search-dropdown .suggestion > li.product .category span {
+  font-weight: bold;
+  display: inline;
+  color: #F57A39;
+}
+/* line 75, ../sass/components/_search.scss */
+.search-dropdown .suggestion span {
+  display: none;
+}
+
+/* line 83, ../sass/components/_search.scss */
+.search-dropdown .suggestion.js-show {
+  display: block;
+  width: 100%;
+}
+
+/* line 89, ../sass/components/_search.scss */
+.search-dropdown .suggestion div ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* line 95, ../sass/components/_search.scss */
+.search-dropdown .suggestion div li {
+  color: #323232;
+  padding: 10px;
+  border-top: none;
+  font-weight: bold;
+  border-left: 1px solid transparent;
+}
+/* line 102, ../sass/components/_search.scss */
+.search-dropdown .suggestion div li .department {
+  display: inline-block;
+  color: #F57A39;
+}
+/* line 107, ../sass/components/_search.scss */
+.search-dropdown .suggestion div li a {
+  color: #323232;
+}
+/* line 110, ../sass/components/_search.scss */
+.search-dropdown .suggestion div li a:hover {
+  text-decoration: none;
+}
+
+/* line 116, ../sass/components/_search.scss */
+.search-dropdown .suggestion div li:not(.empty):hover {
+  background-color: #FAF9F6;
+  cursor: pointer;
+  border-left: 1px solid #F57A39;
+}

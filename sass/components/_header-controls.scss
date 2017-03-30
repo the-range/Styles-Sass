@@ -1,0 +1,11 @@
+img.back_button {
+	height: 30px;
+	cursor: pointer;
+	float: left;
+	width: 30px;
+	margin-top: 4px;
+
+	&:hover {
+		cursor: pointer;
+	}
+}

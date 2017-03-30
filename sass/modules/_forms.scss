@@ -1,0 +1,219 @@
+
+// #fixit - needs to be reviewed 
+
+/* Standard Form Fields */
+
+.form-group {
+  overflow: hidden;
+}
+
+.form-control {
+  border-radius: 0px;
+}
+
+.form_wrapper {
+  clear: both;
+  overflow: hidden;
+}
+
+.expiry_card_input_month {
+  width: 25%;
+  float: left;
+}
+
+.expiry_card_input_year {
+  width: 25%;
+  margin-left: 8.33333%;
+  float: left;
+}
+
+
+
+select.input-lg, .input-group-lg > select.form-control, .input-group-lg > select.input-group-addon, .input-group-lg > .input-group-btn > select.btn {
+    height: 40px;
+    line-height: 40px;
+    border-radius: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+label {
+  // font-family: $titlefont;
+  // font-size: 16px;
+
+  
+    span {
+       &.required { 
+            color: $orange-hover;
+        }
+    }
+}
+
+.form-horizontal .form-group {
+    clear: both;
+}
+
+/* My Account Sign up */
+.my-account {
+
+    form.form-horizontal.sign-up {
+
+        .input-group {
+            
+            float: right;
+        }
+    }
+}
+
+
+/* Forgot Password */
+.forgot-password {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* Edit Icon */
+
+// .edit-icon {
+//   background-image: url(/img/edit-icon.jpg);
+//     background-size: 12px 11px;
+//     content: "";
+//     display: inline-block;
+//     height: 11px;
+//     width: 12px;
+//     margin-left: 8px;
+//     text-indent: -9999999px;
+// }
+
+
+.edit_pen {
+  &:after {
+      // background-image: url(/img/edit_pencil.png);
+      // background-size: 12px 12px;
+      // content: "";
+      // display: inherit;
+      // background-position: 0px 0px;
+      // height: 14px;
+      // width: 14px;
+      // margin-left: 5px;
+      // overflow: hidden;
+      // position: relative;
+      // display: inline-block;
+      // background-repeat: no-repeat;
+      // vertical-align: -16%;
+
+   background-image: url(/img/edit-icon.jpg);
+    background-size: 13px 11px;
+    content: "";
+    display: inherit;
+    background-position: 0px 0px;
+    height: 14px;
+    width: 14px;
+    margin-left: 5px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    background-repeat: no-repeat;
+    vertical-align: -16%;
+  }
+}
+
+
+/* Email Edit */
+/*.email-edit {
+
+  label, p {
+    padding-left: 0px;
+  }
+
+  .form-control-static {
+    padding-top: 0;
+  }
+
+}*/
+
+select.form-control {
+  &.select-fixed  {
+    width: 90px;
+    display: block;
+    clear: left;
+    overflow: hidden;
+    float: left;
+    margin-right: 10px;
+    
+    &-60 {
+      width: 60px;
+    }
+  }
+}
+
+
+/* Form Expiry Date */
+.form-group {
+   .expiry-date {
+     width: 25%;
+    clear: none;
+   }
+}
+
+/* Security Code CVV Input */
+.security-code {
+  width: 33.33333333%;
+  clear: none;
+}
+
+.cvv_image {
+      height: 30px;
+    margin-left: 0px;
+    padding-top: 10px;
+    float: left;
+    margin-right: 4px;
+} 
+
+.card_type_image {
+    height: 30px;
+    width: 50px;
+    position: absolute;
+    margin-top: 5px;
+    right: 20px;
+    top: 27px;
+}
+
+p.cvv_text {
+  margin-top: 10px;
+  a {
+    color: $blue;
+    cursor: help;
+    font-size: 12px;
+  }
+}
+
+.input-lg, .input-group-lg > .form-control,
+.input-group-lg > .input-group-addon,
+.input-group-lg > .input-group-btn > .btn,
+.input-group-lg > textarea.input-group-addon,
+.input-group-lg > .input-group-btn > textarea.btn,
+select[multiple].input-lg,
+.input-group-lg > select[multiple].form-control,
+.input-group-lg > select[multiple].input-group-addon,
+.input-group-lg > .input-group-btn > select[multiple].btn, .form-group-lg .form-control, .form-group-lg .form-control-static {
+  height: 40px;
+}
+
+/* Postcode Lookup */
+.input-group.postcode-lookup {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Inline Form */
+@media (min-width: 600px) {
+  form.form-inline {
+    .form-group {
+      label.set-width {
+         width: 180px;
+      }
+    }
+  }
+}
