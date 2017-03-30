@@ -1,23 +1,23 @@
 /*
 Error: Invalid CSS after "  border: none": expected "{", was ";"
-        on line 11 of /Users/dwilliams/Documents/range_styles/sass/components/_search.scss
+        on line 10 of /Users/dwilliams/Documents/range_styles/sass/components/_search.scss
         from line 9 of /Users/dwilliams/Documents/range_styles/sass/components/_all-components.scss
         from line 2 of /Users/dwilliams/Documents/range_styles/sass/main.scss
 
-6:   right: 0;
-7:   z-index: 499;
-8:   padding: 0;
-9:  
-10:   border-radius: 0 0 1px 1px;*\/
-11:   border: none;
-12:   background-color: #fdfdfd;
-13:   display: none;
-14:   margin: 0 auto;
-15:   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.12);
-16: }
+5:   right: 0;
+6:   z-index: 499;
+7:   padding: 0;
+8:  
+9:   border-radius: 0 0 1px 1px;*\/
+10:   border: none;
+11:   background-color: #fdfdfd;
+12:   display: none;
+13:   margin: 0 auto;
+14:   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.12);
+15: }
 
 Backtrace:
-/Users/dwilliams/Documents/range_styles/sass/components/_search.scss:11
+/Users/dwilliams/Documents/range_styles/sass/components/_search.scss:10
 /Users/dwilliams/Documents/range_styles/sass/components/_all-components.scss:9
 /Users/dwilliams/Documents/range_styles/sass/main.scss:2
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
@@ -93,4 +93,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"  border: none\": expected \"{\", was \";\"\A         on line 11 of /Users/dwilliams/Documents/range_styles/sass/components/_search.scss\A         from line 9 of /Users/dwilliams/Documents/range_styles/sass/components/_all-components.scss\A         from line 2 of /Users/dwilliams/Documents/range_styles/sass/main.scss\A \A 6:   right: 0;\A 7:   z-index: 499;\A 8:   padding: 0;\A 9:  \A 10:   border-radius: 0 0 1px 1px;*/\A 11:   border: none;\A 12:   background-color: #fdfdfd;\A 13:   display: none;\A 14:   margin: 0 auto;\A 15:   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.12);\A 16: }"; }
+  content: "Error: Invalid CSS after \"  border: none\": expected \"{\", was \";\"\A         on line 10 of /Users/dwilliams/Documents/range_styles/sass/components/_search.scss\A         from line 9 of /Users/dwilliams/Documents/range_styles/sass/components/_all-components.scss\A         from line 2 of /Users/dwilliams/Documents/range_styles/sass/main.scss\A \A 5:   right: 0;\A 6:   z-index: 499;\A 7:   padding: 0;\A 8:  \A 9:   border-radius: 0 0 1px 1px;*/\A 10:   border: none;\A 11:   background-color: #fdfdfd;\A 12:   display: none;\A 13:   margin: 0 auto;\A 14:   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.12);\A 15: }"; }
