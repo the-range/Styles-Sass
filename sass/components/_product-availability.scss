@@ -1,9 +1,10 @@
 
 .product_stock_wrapper {
-	overflow: hidden;
-	border: 1px solid $secondary;
-	margin-bottom: 10px;
-	padding-top: 10px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    clear: both;
+    padding-bottom: 15px;
 }
 /* Header */
 .product_stock_header {
@@ -13,9 +14,9 @@
 }
 
 .product_stock_header_icon {
-	height: 16px;
-    width: 28px;
-    margin-right: 2px;
+    height: 18px;
+    width: auto;
+    margin-right: 4px;
     vertical-align: -20%;
 }
 
@@ -31,46 +32,24 @@
 	color: $blue;
 	cursor: pointer;
 	font-weight: bold;
-
-	&:after {
-        background-image: url(/img/edit_pencil.png);
-	    background-size: 12px 12px;
-	    content: "";
-	    display: inherit;
-	    background-position: 0px 0px;
-	    height: 14px;
-	    width: 14px;
-	    margin-left: 5px;
-	    overflow: hidden;
-	    position: relative;
-	    display: inline-block;
-	    background-repeat: no-repeat;
-	    vertical-align: -16%;
-	}
 }
 
 
 /* Stock & Delivery List */
 
 ul.product_stock_content {
-	color: #55514e;
-    font-size: 14px;
     overflow: hidden;
     padding-left: 0px;
     margin-bottom: 0px;
+    clear: both;
     
     li {
     	list-style: none;
     	padding-bottom: 2px;
-    	border-top: 1px solid $secondary;
     	
-    	&:nth-child(2n+2) {
-    		background-color: #ededed;
-    	}
-
-	    // &:last-child {
-	    // 	border-bottom: none;
-	    // }
+    	// &:nth-child(2n+2) {
+    	// 	background-color: #ededed;
+    	// }
     }
 }
 
@@ -95,15 +74,10 @@ ul.product_stock_content {
 	      }
 }
 
-
 /* Content Area Text Content */
 .product_stock_available_text {
 	color: $green;
-	display: block;
-	font-weight: bold;
-	clear: right;
 	overflow: hidden;
-    padding-left: 6px;
     
     &.no-stock {
     	color: $red;
@@ -115,8 +89,8 @@ p#product_stock_delivery_info, p#product_stock_near_store_info {
 	overflow: hidden;
 	display: block;
 	line-height: 18px;
-    padding-left: 6px;
-    font-size: 13px;
+    // font-size: 13px;
+    padding-top: 3px;
     margin-bottom: 0px;
     
     &.no-stock {
@@ -141,40 +115,35 @@ p#product_stock_delivery_info, p#product_stock_near_store_info {
 	color: $blue;
 	
 	&:after {
-	    background-image: url(/img/chevron-down.png);
+	    background-image: url(/img/up_arrow_blue.png);
 	    background-size: 12px 12px;
 	    content: "";
 	    display: inline-block;
 	    height: 12px;
 	    width: 12px;
-	    margin-top: 3px;
+	    margin-top: 4px;
 	    position: absolute;
 	    margin-left: 2px;
+        transition: all 0.5s ease;
+        -ms-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
 	}
+
+    &.is_expanded {
+        &:after {
+            -ms-transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+    }
+
 }
-
-.product_stock_content_options_collapse {
-	color: $blue;
-
-
-	&:after {
-		background-image: url(/img/chevron-up.png);
-	    background-size: 12px 12px;
-	    content: "";
-	    display: inline-block;
-	    height: 12px;
-	    width: 12px;
-	    margin-top: 3px;
-	    position: absolute;
-	    margin-left: 2px;
-	}
-}
-
 
 /* Inline Taken from Page */
 
 .stk_info_text {
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 	overflow: hidden;
 }
 
@@ -254,12 +223,6 @@ p#product_stock_delivery_info, p#product_stock_near_store_info {
 	text-decoration: underline;
 }
 
-.stk_mfc_wrapper {
-	border-top: 1px solid $secondary;
-	padding-top: 4px;
-	padding-bottom: 4px;
-}
-
 .stock_level {
 	color: $green;
 	font-weight: bold;
@@ -328,10 +291,10 @@ p#product_stock_delivery_info, p#product_stock_near_store_info {
 	vertical-align: top;
 }
 
-p#product_stock_delivery_info, p#product_stock_near_store_info {
-	padding-left: 14px;
-	padding-top: 3px;
-}
+// p#product_stock_delivery_info, p#product_stock_near_store_info {
+// 	padding-left: 14px;
+// 	padding-top: 3px;
+// }
 
 ul.product_stock_content li {
 	border-bottom: none;
