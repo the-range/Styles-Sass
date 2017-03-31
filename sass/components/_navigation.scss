@@ -394,7 +394,6 @@ a.level_2_header {
     border-top: none;
 }
 
-
 .level_2_link {
         border-bottom: 1px solid #ededed;
     
@@ -402,7 +401,6 @@ a.level_2_header {
         border-bottom: 1px solid none;
     }
 }
-
 
 .flyout_menu_container {
     left: 100%;
@@ -426,15 +424,6 @@ a.level_2_header {
     }
 }
 
-.flyout_menu_column {
-    // padding-left: 20px;
-    // padding-right: 20px;
-}
-
-/*.dropdown-menu li:hover .flyout_menu_container {
-    visibility: visible;
-}
-*/
  @media (min-width: 600px) {
     .flyout_menu_container {
         left: 400%;

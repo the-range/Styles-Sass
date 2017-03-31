@@ -8489,16 +8489,16 @@ a.level_2_header:after {
   border-top: none;
 }
 
-/* line 398, ../sass/components/_navigation.scss */
+/* line 397, ../sass/components/_navigation.scss */
 .level_2_link {
   border-bottom: 1px solid #ededed;
 }
-/* line 401, ../sass/components/_navigation.scss */
+/* line 400, ../sass/components/_navigation.scss */
 .level_2_link:nth-child(14) {
   border-bottom: 1px solid none;
 }
 
-/* line 407, ../sass/components/_navigation.scss */
+/* line 405, ../sass/components/_navigation.scss */
 .flyout_menu_container {
   left: 100%;
   position: absolute;
@@ -8517,17 +8517,13 @@ a.level_2_header:after {
 }
 
 @media (min-width: 600px) {
-  /* line 424, ../sass/components/_navigation.scss */
+  /* line 422, ../sass/components/_navigation.scss */
   .flyout_menu_container {
     top: 0px;
   }
 }
-/*.dropdown-menu li:hover .flyout_menu_container {
-    visibility: visible;
-}
-*/
 @media (min-width: 600px) {
-  /* line 439, ../sass/components/_navigation.scss */
+  /* line 428, ../sass/components/_navigation.scss */
   .flyout_menu_container {
     left: 400%;
     width: calc(100% - 55px);
@@ -8540,7 +8536,7 @@ a.level_2_header:after {
   }
 }
 @media (min-width: 960px) {
-  /* line 452, ../sass/components/_navigation.scss */
+  /* line 441, ../sass/components/_navigation.scss */
   .flyout_menu_container {
     display: block;
     width: 600px;
@@ -8549,7 +8545,7 @@ a.level_2_header:after {
 }
 /*--------------- */
 /* MM Elements */
-/* line 463, ../sass/components/_navigation.scss */
+/* line 452, ../sass/components/_navigation.scss */
 .mm_bleed_wrapper {
   background-color: #ffffff;
   width: 600px;
@@ -8563,7 +8559,7 @@ a.level_2_header:after {
   transition: left 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
 }
 
-/* line 477, ../sass/components/_navigation.scss */
+/* line 466, ../sass/components/_navigation.scss */
 .mm_divider {
   height: 1px;
   background-color: #F57A39;
@@ -8572,13 +8568,13 @@ a.level_2_header:after {
   margin-bottom: 0px;
 }
 
-/* line 485, ../sass/components/_navigation.scss */
+/* line 474, ../sass/components/_navigation.scss */
 .mm_content_panel_wrapper {
   height: 200px;
   padding: 20px;
 }
 
-/* line 490, ../sass/components/_navigation.scss */
+/* line 479, ../sass/components/_navigation.scss */
 .mm_right_content_panel {
   border: 1px solid #c9c9c9;
   border-radius: 5px;
@@ -8588,13 +8584,13 @@ a.level_2_header:after {
   background-color: #dbeaf9;
 }
 
-/* line 499, ../sass/components/_navigation.scss */
+/* line 488, ../sass/components/_navigation.scss */
 .mm_panel_image {
   width: 100%;
   height: 100%;
 }
 
-/* line 504, ../sass/components/_navigation.scss */
+/* line 493, ../sass/components/_navigation.scss */
 .mm_icon_class {
   height: 20px;
   width: 20px;
@@ -8605,64 +8601,64 @@ a.level_2_header:after {
   float: left;
 }
 
-/* line 514, ../sass/components/_navigation.scss */
+/* line 503, ../sass/components/_navigation.scss */
 .slide {
   left: 55px !important;
 }
 
-/* line 518, ../sass/components/_navigation.scss */
+/* line 507, ../sass/components/_navigation.scss */
 #mm_left_content {
   border-bottom: none;
 }
-/* line 522, ../sass/components/_navigation.scss */
+/* line 511, ../sass/components/_navigation.scss */
 #mm_left_content h4.special_category {
   font-size: 14px;
   text-align: center;
 }
-/* line 527, ../sass/components/_navigation.scss */
+/* line 516, ../sass/components/_navigation.scss */
 #mm_left_content .special_category_container img {
   max-width: 168px;
   display: block;
   margin: 0 auto;
 }
 
-/* line 536, ../sass/components/_navigation.scss */
+/* line 525, ../sass/components/_navigation.scss */
 li.special #mm_left_content {
   padding: 15px 0 15px 0;
 }
 
 @media (min-width: 960px) {
-  /* line 542, ../sass/components/_navigation.scss */
+  /* line 531, ../sass/components/_navigation.scss */
   .slide {
     left: 100% !important;
   }
 }
 /* line 323, ../sass/components/_navigation.scss */
-/* line 549, ../sass/components/_navigation.scss */
+/* line 538, ../sass/components/_navigation.scss */
 .flyout_menu_column.no_after_arrow a:hover {
   background-color: #ffffff;
 }
 
 /* line 327, ../sass/components/_navigation.scss */
-/* line 553, ../sass/components/_navigation.scss */
+/* line 542, ../sass/components/_navigation.scss */
 .flyout_menu_column.no_after_arrow a:after {
   background-image: none;
 }
 
 /* line 334, ../sass/components/_navigation.scss */
-/* line 558, ../sass/components/_navigation.scss */
+/* line 547, ../sass/components/_navigation.scss */
 li.special #mm_left_content {
   padding: 21px 0 15px 0;
 }
 
 @media (min-width: 960px) {
   /* line 340, ../sass/components/_navigation.scss */
-  /* line 563, ../sass/components/_navigation.scss */
+  /* line 552, ../sass/components/_navigation.scss */
   .slide {
     left: 100% !important;
   }
 }
-/* line 568, ../sass/components/_navigation.scss */
+/* line 557, ../sass/components/_navigation.scss */
 #nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
   width: 20px;
   height: 20px;
@@ -8681,7 +8677,7 @@ li.special #mm_left_content {
   margin-top: 3px;
 }
 
-/* line 586, ../sass/components/_navigation.scss */
+/* line 575, ../sass/components/_navigation.scss */
 #nav-icon1 span, #nav-icon3 span, #nav-icon4 span {
   display: block;
   position: absolute;
@@ -8701,29 +8697,29 @@ li.special #mm_left_content {
   transition: .25s ease-in-out;
 }
 
-/* line 606, ../sass/components/_navigation.scss */
+/* line 595, ../sass/components/_navigation.scss */
 #nav-icon3 span:nth-child(1) {
   top: 0px;
 }
 
-/* line 610, ../sass/components/_navigation.scss */
+/* line 599, ../sass/components/_navigation.scss */
 #nav-icon3 span:nth-child(2), #nav-icon3 span:nth-child(3) {
   top: 10px;
 }
 
-/* line 614, ../sass/components/_navigation.scss */
+/* line 603, ../sass/components/_navigation.scss */
 #nav-icon3 span:nth-child(4) {
   top: 20px;
 }
 
-/* line 618, ../sass/components/_navigation.scss */
+/* line 607, ../sass/components/_navigation.scss */
 #nav-icon3.open span:nth-child(1) {
   top: 18px;
   width: 0%;
   left: 50%;
 }
 
-/* line 624, ../sass/components/_navigation.scss */
+/* line 613, ../sass/components/_navigation.scss */
 #nav-icon3.open span:nth-child(2) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -8731,7 +8727,7 @@ li.special #mm_left_content {
   transform: rotate(45deg);
 }
 
-/* line 631, ../sass/components/_navigation.scss */
+/* line 620, ../sass/components/_navigation.scss */
 #nav-icon3.open span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -8739,7 +8735,7 @@ li.special #mm_left_content {
   transform: rotate(-45deg);
 }
 
-/* line 638, ../sass/components/_navigation.scss */
+/* line 627, ../sass/components/_navigation.scss */
 #nav-icon3.open span:nth-child(4) {
   top: 18px;
   width: 0%;
@@ -11347,15 +11343,16 @@ ul.product-grid-list #fulfilment-checkout {
   }
 }
 
-/* line 301, ../sass/components/_horizontal-product.scss */
+/* Remove product menu on product */
+/* line 303, ../sass/components/_horizontal-product.scss */
 .rmv_pd {
   position: relative;
 }
-/* line 304, ../sass/components/_horizontal-product.scss */
+/* line 306, ../sass/components/_horizontal-product.scss */
 .rmv_pd:hover {
   cursor: pointer;
 }
-/* line 308, ../sass/components/_horizontal-product.scss */
+/* line 310, ../sass/components/_horizontal-product.scss */
 .rmv_pd ul.drop-list {
   background: #ffffff;
   padding: 0;
@@ -11371,20 +11368,20 @@ ul.product-grid-list #fulfilment-checkout {
   right: 0px;
   position: absolute;
 }
-/* line 323, ../sass/components/_horizontal-product.scss */
+/* line 325, ../sass/components/_horizontal-product.scss */
 .rmv_pd ul.drop-list.is_active {
   display: block;
 }
-/* line 327, ../sass/components/_horizontal-product.scss */
+/* line 329, ../sass/components/_horizontal-product.scss */
 .rmv_pd ul.drop-list li {
   padding: 5px;
 }
-/* line 330, ../sass/components/_horizontal-product.scss */
+/* line 332, ../sass/components/_horizontal-product.scss */
 .rmv_pd ul.drop-list li:hover {
   background-color: #ededed;
   cursor: pointer;
 }
-/* line 338, ../sass/components/_horizontal-product.scss */
+/* line 340, ../sass/components/_horizontal-product.scss */
 .rmv_pd:before {
   background-image: url(/img/close_cross.png);
   background-size: 15px 15px;
@@ -12499,32 +12496,30 @@ footer ul.level_2 li a:hover {
 
 /* line 29, ../sass/components/_back-to-top.scss */
 .cd-top.cd-is-visible {
-  /* the button becomes visible */
   visibility: visible;
   opacity: 1;
 }
 
-/* line 34, ../sass/components/_back-to-top.scss */
+/* line 33, ../sass/components/_back-to-top.scss */
 .cd-top.cd-fade-out {
-  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
   opacity: 1;
 }
 
-/* line 38, ../sass/components/_back-to-top.scss */
+/* line 36, ../sass/components/_back-to-top.scss */
 .no-touch .cd-top:hover {
   background-color: #e86256;
   opacity: 1;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 43, ../sass/components/_back-to-top.scss */
+  /* line 41, ../sass/components/_back-to-top.scss */
   .cd-top {
     right: 20px;
     bottom: 20px;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 49, ../sass/components/_back-to-top.scss */
+  /* line 47, ../sass/components/_back-to-top.scss */
   .cd-top {
     height: 35px;
     width: 35px;
@@ -15398,7 +15393,6 @@ html {
 
 /* line 12, ../sass/main.scss */
 body {
-  font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   color: #323232;
   min-height: 900px;
@@ -15408,39 +15402,34 @@ body {
 /*  --------------------------------------------------
         Bootstrap Overwrites
 -------------------------------------------------- */
-/* line 48, ../sass/modules/bootstrap/bootstrap/_scaffolding.scss */
-/* line 26, ../sass/main.scss */
+/* line 24, ../sass/main.scss */
 a {
   color: #F57A39;
   text-decoration: none;
 }
 
-/* line 52, ../sass/modules/bootstrap/bootstrap/_scaffolding.scss */
-/* line 31, ../sass/main.scss */
+/* line 29, ../sass/main.scss */
 a:hover, a:focus {
   color: #F57A39;
   text-decoration: none;
 }
 
-/* line 58, ../sass/modules/bootstrap/bootstrap/_scaffolding.scss */
-/* line 36, ../sass/main.scss */
+/* line 34, ../sass/main.scss */
 a:focus {
   outline: none;
 }
 
-/**/
-/* line 40, ../sass/main.scss */
+/* line 38, ../sass/main.scss */
 .progress {
   box-shadow: none;
 }
 
-/* line 44, ../sass/main.scss */
+/* line 42, ../sass/main.scss */
 .alert {
   border-radius: 0px;
 }
 
-/* End of Overwrites */
-/* line 50, ../sass/main.scss */
+/* line 48, ../sass/main.scss */
 .site-overlay {
   display: none;
   background-color: #323232;
@@ -15458,15 +15447,13 @@ a:focus {
   outline: 0;
 }
 
-/* Product Lister - Refine - Scroll Height */
-/* line 68, ../sass/main.scss */
+/* line 66, ../sass/main.scss */
 .height-wrap {
   overflow: hidden;
   overflow-y: hidden;
 }
 
-/* Product Horizontal - setup proper rows */
-/* line 74, ../sass/main.scss */
+/* line 72, ../sass/main.scss */
 .back-button.header {
   margin-top: 12px;
 }

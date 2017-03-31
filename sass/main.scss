@@ -10,33 +10,31 @@ html {
 }
 
 body {
-	font-family: $bodyfont;
+	// font-family: $bodyfont;
 	-webkit-font-smoothing: antialiased;
-  color: $text;
-  min-height: 900px;
-  overflow-x: hidden !important;
+	color: $text;
+	min-height: 900px;
+	overflow-x: hidden !important;
 }
 
 /*  --------------------------------------------------
         Bootstrap Overwrites
 -------------------------------------------------- */ 
 
-
-/* line 48, ../sass/modules/bootstrap/bootstrap/_scaffolding.scss */
 a {
   color: $orange;
   text-decoration: none;
 }
-/* line 52, ../sass/modules/bootstrap/bootstrap/_scaffolding.scss */
+
 a:hover, a:focus {
   color: $orange-hover;
   text-decoration: none;
 }
-/* line 58, ../sass/modules/bootstrap/bootstrap/_scaffolding.scss */
+
 a:focus {
   outline: none;
 }
-/**/
+
 .progress {
   box-shadow: none;
 }
@@ -45,7 +43,7 @@ a:focus {
   border-radius: 0px;
 }
 
-/* End of Overwrites */
+
 
 .site-overlay {
 	display: none;
@@ -64,13 +62,13 @@ a:focus {
 	outline: 0;
 }
 
-/* Product Lister - Refine - Scroll Height */
+
 .height-wrap {
 	overflow: hidden;
 	overflow-y: hidden;
 }
 
-/* Product Horizontal - setup proper rows */
+
 .back-button.header {
   margin-top: 12px;
 }

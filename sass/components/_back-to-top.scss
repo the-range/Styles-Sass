@@ -27,12 +27,10 @@
   transition: opacity .3s 0s, visibility 0s 0s;
 }
 .cd-top.cd-is-visible {
-  /* the button becomes visible */
   visibility: visible;
   opacity: 1;
 }
 .cd-top.cd-fade-out {
-  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
   opacity: 1;
 }
 .no-touch .cd-top:hover {
