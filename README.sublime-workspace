@@ -1,0 +1,542 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"booking_",
+				"booking_type"
+			],
+			[
+				"instance",
+				"instanceDps"
+			],
+			[
+				"av",
+				"avgRaidDps"
+			],
+			[
+				"raid",
+				"raidDpsArray"
+			],
+			[
+				"ash",
+				"ashbringer"
+			],
+			[
+				"xml",
+				"xmlDoc"
+			],
+			[
+				"gear",
+				"gearslot"
+			],
+			[
+				"assign",
+				"assignLoot"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"player",
+				"player"
+			],
+			[
+				"ha",
+				"hasOwnProperty"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"su",
+				"summonerLoot"
+			],
+			[
+				"p",
+				"p	Tag"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"lo",
+				"loot"
+			],
+			[
+				"pla",
+				"player"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"st",
+				"style	Tag"
+			],
+			[
+				"total",
+				"totalDamage"
+			],
+			[
+				"ren",
+				"renderEnemyHealth"
+			],
+			[
+				"generated_player",
+				"_generated_player_box"
+			],
+			[
+				"combat",
+				"combatLog"
+			],
+			[
+				"com",
+				"combatDamage"
+			],
+			[
+				"de",
+				"defense"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"fight",
+				"fightDuration"
+			],
+			[
+				"enem",
+				"enemyMaxHealth"
+			],
+			[
+				"enemy",
+				"renderEnemyHealth"
+			],
+			[
+				"co",
+				"console"
+			],
+			[
+				"over",
+				"overflow-y"
+			],
+			[
+				"ene",
+				"enemyMaxHealth"
+			],
+			[
+				"it",
+				"italic"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"in",
+				"input	Tag"
+			],
+			[
+				"fo",
+				"form	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 87.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 398.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Dan/Library/Caches/Cleanup At Startup/Transmit/FBE43CBE-AFB9-47BC-96F1-D4FD2E5AD2DD/availability_email.php",
+		"/Users/Dan/Library/Caches/Cleanup At Startup/Transmit/7ACE0411-F0E7-4C0B-AFC0-1F4A43E99145/read_page.html",
+		"/Users/Dan/Library/Caches/Cleanup At Startup/Transmit/379FBDAB-C581-4935-B3FF-A46A53A40F34/ajax-update.php",
+		"/Users/Dan/Library/Caches/Cleanup At Startup/Transmit/A1D4649B-D2EA-4AF8-ACE8-9F48687E6A08/confirm_email.php",
+		"/Users/Dan/Library/Caches/Cleanup At Startup/Transmit/4B97DCAC-280F-4949-B24A-C665F78EC0F5/ajax-post.php",
+		"/Users/Dan/Library/Caches/Cleanup At Startup/Transmit/B1F8E065-9186-4C89-80BA-A4936443D103/global.js",
+		"/Users/Dan/Library/Caches/Cleanup At Startup/Transmit/ABE13451-F4E9-45CB-B5EB-E4CA87039BD1/availability_email.php",
+		"/Users/Dan/Library/Caches/Cleanup At Startup/Transmit/0A33C577-115D-4CC8-928A-A90BBDC4821C/availability_email.php",
+		"/Users/Dan/Documents/range_styles/sass/components/_product-availability.scss",
+		"/Users/Dan/Library/Caches/Cleanup At Startup/Transmit/47E0989D-0D18-4F63-B188-DD1DE5DF0A08/date-functions.js",
+		"/Users/Dan/Library/Caches/Cleanup At Startup/Transmit/AF37A9FA-5A9D-4B95-9181-D16B337113A2/global.js",
+		"/Users/Dan/Library/Caches/Cleanup At Startup/Transmit/A993D716-9665-4487-A442-D186BF21D8F5/read_page.html",
+		"/Users/Dan/Library/Caches/Cleanup At Startup/Transmit/22898671-8C88-4E85-85BE-70088560848E/today.html",
+		"/Volumes/www/public_html/js/global.js",
+		"/Volumes/www/public_html/css/dev.css",
+		"/Volumes/www/public_html/js/basket.js",
+		"/Volumes/www/public_html/js/bootstrap.js",
+		"/Volumes/www/public_html/js/checkout2.js",
+		"/Volumes/www/public_html/template/basket2/fulfilment_overview.tpl.inc",
+		"/Volumes/www/public_html/template/basket2/basket_overview.tpl.inc",
+		"/Volumes/www/public_html/template/basket2/basket_layout.tpl.inc",
+		"/Volumes/www/public_html/template/basket/basket_fulfillment_subtotal.inc",
+		"/Volumes/www/public_html/template/basket/basket_fulfilment.tpl.inc",
+		"/private/var/folders/mv/pbr_m21x4_bdm57gb6ps91x00000gn/T/fz3temp-2/read_page.html",
+		"/private/var/folders/mv/pbr_m21x4_bdm57gb6ps91x00000gn/T/fz3temp-2/ajax-post.php",
+		"/private/var/folders/mv/pbr_m21x4_bdm57gb6ps91x00000gn/T/fz3temp-2/ajax-update.php",
+		"/private/var/folders/mv/pbr_m21x4_bdm57gb6ps91x00000gn/T/fz3temp-2/date-functions.js",
+		"/private/var/folders/mv/pbr_m21x4_bdm57gb6ps91x00000gn/T/fz3temp-2/chase_enquiry_email.php",
+		"/private/var/folders/mv/pbr_m21x4_bdm57gb6ps91x00000gn/T/fz3temp-2/global.js",
+		"/Users/Dan/Desktop/chase_enquiry_email.php",
+		"/Volumes/www/public_html/template/checkout2/journey/payment.tpl.inc",
+		"/Volumes/www/public_html/template/checkout2/journey/order_summary.tpl.inc",
+		"/Volumes/www/public_html/template/checkout2/journey/confirmation.tpl.inc",
+		"/Users/Dan/Documents/vanilla/storage_history.js",
+		"/Users/Dan/Documents/vanilla/item.js",
+		"/Users/Dan/Documents/vanilla/player.js",
+		"/Users/Dan/Documents/vanilla/player_class.js",
+		"/Users/Dan/Documents/vanilla/global.js",
+		"/Users/Dan/Documents/vanilla/index.html",
+		"/Users/Dan/Documents/vanilla/power.js",
+		"/Users/Dan/Documents/vanilla/bootstrap.min.css",
+		"/Users/Dan/Documents/vanilla/bootstrap.min.js",
+		"/Users/Dan/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/Dan/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/Dan/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/Dan/Documents/vanilla/local_jquery.js",
+		"/Users/Dan/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/Dan/Desktop/index.html",
+		"/Users/Dan/Desktop/global.js",
+		"/Volumes/www/public_html/template/checkout2/panel/address_form.tpl.inc",
+		"/Volumes/www/public_html/template/checkout2/layout.tpl.inc",
+		"/Volumes/www/public_html/template/checkout2/panel/error.tpl.inc",
+		"/Users/Dan/Documents/rstore-1/sass/components/_checkout_header.scss",
+		"/Volumes/www/public_html/template/checkout2/panel/card_form.tpl.inc",
+		"/Users/Dan/Documents/rstore-1/stylesheets/main.css",
+		"/Volumes/www/public_html/css/main.css",
+		"/Volumes/www/public_html/template/checkout2/journey/place_order.tpl.inc",
+		"/Volumes/www/public_html/template/checkout2/panel/address_book.tpl.inc",
+		"/Volumes/www/public_html/template/checkout2/panel/login_form.tpl.inc",
+		"/Volumes/www/public_html/template/checkout2/panel/fulfilment_options.tpl.inc",
+		"/Volumes/www-1/public_html/template/checkout2/panel/address_form.tpl.inc",
+		"/Volumes/www-1/public_html/css/main.css",
+		"/Volumes/www-1/public_html/css/dev.css",
+		"/Users/Dan/Documents/rstore-1/sass/main.scss",
+		"/Users/Dan/Desktop/layout.tpl.inc",
+		"/Volumes/www/public_html/include/myaccount.inc",
+		"/Users/Dan/Documents/rstore/stylesheets/main.css",
+		"/Users/Dan/Documents/rstore/sass/partials/_basket.scss",
+		"/Users/Dan/Documents/rstore/sass/partials/_masthead.scss",
+		"/Users/Dan/Documents/rstore/sass/components/_fulfilment.scss",
+		"/Users/Dan/Documents/rstore/sass/partials/_checkout.scss",
+		"/Users/Dan/Documents/rstore/sass/modules/_forms.scss",
+		"/Volumes/www/public_html/skin/rstore_uk/checkout/checkout_edit_address_buttons.tpl.inc",
+		"/Volumes/www/public_html/js/checkout.js",
+		"/Volumes/www/public_html/skin/rstore_uk/checkout/checkout_billing_step.tpl.inc",
+		"/Volumes/www/public_html/skin/rstore_uk/checkout/checkout_review_step.tpl.inc",
+		"/Volumes/www/public_html/skin/rstore_uk/checkout/checkout_delivery_step.tpl.inc",
+		"/Volumes/www/public_html/skin/rstore_uk/page_header.tpl.inc",
+		"/Volumes/www/public_html/template/basket/basket_overview.tpl.inc",
+		"/Volumes/www/public_html/template/basket/fulfilment_overview.tpl.inc",
+		"/Volumes/www/public_html/template/product/variant_many.tpl.inc",
+		"/Users/Dan/Documents/rstore/sass/components/_horizontal-product.scss",
+		"/Users/Dan/Documents/rstore/sass/modules/_buttons.scss",
+		"/Users/Dan/Library/Caches/Cleanup At Startup/Transmit/E0AE1496-F0FC-486C-9DD6-A31E39B6FEA3/custom_css.css",
+		"/Users/Dan/Documents/range_sass/store_styles/sass/partials/_basket-fufilment.scss",
+		"/Users/Dan/Documents/range_sass/store_styles/sass/partials/_base.scss"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Volumes/www/public_html/",
+			"/Volumes/www/public_html/skin/",
+			"/Volumes/www/public_html/template/basket/"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"surname",
+			"booking_type",
+			"pitch_type",
+			"surname",
+			"pitch_type",
+			"timeLapseBookingCreated",
+			"chaseEnquiry",
+			"pitch_type",
+			"readindividual",
+			"surname",
+			"pitch_type",
+			"dog",
+			"hook_up",
+			"dog",
+			"email",
+			"bold",
+			"format",
+			"inner",
+			"queryDataByDate",
+			"dayValue",
+			"console",
+			"queryDataByDate",
+			"info@coastalstay.co.uk",
+			"checkbox",
+			"form-inline",
+			"console",
+			"con",
+			"affix",
+			"calcAffix",
+			"affix",
+			"basket-secondary-container",
+			"affix",
+			"subtotal",
+			"basket-scroll-container",
+			"range",
+			"basket-scroll-container",
+			"affix",
+			"setAffixWidth",
+			"affix",
+			"checkout_loading_overlay",
+			".checkout_loading_overlay",
+			"chaseEnquiry",
+			"confirm_email",
+			"chaseEnquiry",
+			"timeLapseBookingCreated",
+			"chaseEnquiry",
+			"timeLapseBookingCreated",
+			"chaseEnquiry",
+			"timeLapseBookingCreated",
+			"amount",
+			"/img/pay_pal.png",
+			"paypal",
+			"calcAverageRaidDps",
+			"average_raid_dps",
+			" \n",
+			"console.log",
+			" \n",
+			"bossStatus",
+			"domLocalStorage",
+			"setLocalStorage",
+			"instance",
+			"blackwing",
+			"float",
+			"raidDpsArray",
+			"calcAverageRaidDps",
+			"instanceDps",
+			"raidDpsArray",
+			"calcAverageRaidDps",
+			"avgRaidDps",
+			"instance",
+			"dpsCalc",
+			"renderSummary",
+			"calcRaidDamage",
+			"dpsCalc",
+			"orderDps",
+			"raidTotalDamage",
+			"calcPlayerDps",
+			"calcPlayerTotalDamage",
+			"renderdps",
+			"calcPlayerDps",
+			"renderRaidDps",
+			"fight_summary",
+			"summary",
+			"instance_overview",
+			"summonerLoot = {",
+			"summoner",
+			"back",
+			"cape",
+			"sword",
+			"boots",
+			"hands",
+			"helmet",
+			"sword",
+			"helmet",
+			"sword",
+			"assign",
+			"warrior",
+			"lootQuality",
+			"droploot",
+			"assignloot",
+			"renderbag",
+			"renederbag",
+			"generate",
+			"refreshLinks",
+			"bag",
+			"render",
+			"window.ready",
+			"onload",
+			">\n",
+			"characte",
+			"character",
+			"assignloot",
+			"assign",
+			"assgin",
+			"assign",
+			"bag",
+			"render]",
+			"xml",
+			"renderbag",
+			"assign",
+			"generate",
+			"assign",
+			"generate",
+			"assignLoot",
+			"assign",
+			"sword",
+			"key",
+			"players"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "README.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 258.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
