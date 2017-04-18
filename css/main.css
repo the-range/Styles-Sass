@@ -47,7 +47,7 @@
   color: #F57A39;
 }
 
-/*  Background Colours┬á*/
+/*  Background Colours */
 /* line 52, ../sass/modules/_colours.scss */
 .orange_background {
   background-color: #F57A39;
@@ -7452,7 +7452,7 @@ button.no-bottom {
 /*	--------------------------------------------------
 	1. Global Mixins
 -------------------------------------------------- */
-/* default = 55px┬á*/
+/* default = 55px */
 /* line 13, ../sass/modules/_mixins.scss */
 .title, .view-order-header, address .name {
   font-size: 16px;
@@ -10259,7 +10259,7 @@ layout_full_width_banner {
 /* #fixit - check existence of older utilities
   - Need to add readmore, edit, delete
 */
-/* Block Element┬á*/
+/* Block Element */
 /* line 6, ../sass/components/_utility.scss */
 .block {
   display: block;
