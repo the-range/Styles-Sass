@@ -2,15 +2,12 @@
 @import "components/all-components";
 @import "partials/base";
 
-/* #fixit -  does it import _bootstrap_variable - if not, add variables to overide - also nothing should sit in this file, it should just be the main calls */
-
 html {
     position: relative;
     min-height: 100%;
 }
 
 body {
-	// font-family: $bodyfont;
 	-webkit-font-smoothing: antialiased;
 	color: $text;
 	min-height: 900px;
@@ -43,8 +40,6 @@ a:focus {
   border-radius: 0px;
 }
 
-
-
 .site-overlay {
 	display: none;
 	background-color: $text;
@@ -62,12 +57,10 @@ a:focus {
 	outline: 0;
 }
 
-
 .height-wrap {
 	overflow: hidden;
 	overflow-y: hidden;
 }
-
 
 .back-button.header {
   margin-top: 12px;
