@@ -177,6 +177,28 @@ button {
 		}
 	}
 
+	&.success {
+		@include button-variant($white, $green, $green);
+		
+	    &-lg {
+			@include button-size(15px, 20px, 15px, 20px, 1px)
+		}
+
+		&-sm {
+			@include button-size(5px, 5px, 14px, 20px, 0px);
+			font-weight: normal;
+		}
+
+		&-md {
+			@include button-size(9px, 5px, 14px, 20px, 0px);
+			font-weight: normal;
+		}
+
+		&-full-width {
+			width: 100%;
+		}
+	}
+
 	&.out-of-stock {
 		@include button-variant($white, $blue, $blue);
 		
@@ -216,6 +238,7 @@ button {
 		}
 	}
 
+	/* #fixit - used in checkout, not actually text */
 	&.text {
 		@include button-variant($orange, $white, $white);
 	    border: none;
@@ -244,10 +267,6 @@ button {
 		&-full-width {
 			width: 100%;
 		}
-	}
-
-	&.no-bottom {
-		margin-bottom: 0px;
 	}
 }	    
 

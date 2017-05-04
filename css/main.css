@@ -54,87 +54,107 @@
 }
 
 /* line 56, ../sass/modules/_colours.scss */
+.green_background {
+  background-color: #3c7f53;
+}
+
+/* line 60, ../sass/modules/_colours.scss */
+.blue_background {
+  background-color: #337ab7;
+}
+
+/* line 64, ../sass/modules/_colours.scss */
+.red_background {
+  background-color: #C50909;
+}
+
+/* line 68, ../sass/modules/_colours.scss */
+.text_background {
+  background-color: #323232;
+}
+
+/* line 72, ../sass/modules/_colours.scss */
 .primary_background {
   background-color: #7F7E7E;
 }
 
-/* line 60, ../sass/modules/_colours.scss */
+/* line 76, ../sass/modules/_colours.scss */
 .secondary_background {
   background-color: #e2e4e1;
 }
 
-/* line 64, ../sass/modules/_colours.scss */
+/* line 80, ../sass/modules/_colours.scss */
 .tertiary_background {
   background-color: #fcfefb;
 }
 
 /* Department Colours */
-/* line 69, ../sass/modules/_colours.scss */
+/* line 85, ../sass/modules/_colours.scss */
 .clothing_hex {
   background-color: #45748e !important;
 }
 
-/* line 73, ../sass/modules/_colours.scss */
+/* line 89, ../sass/modules/_colours.scss */
 .storage_hex {
   background-color: #74c7e7 !important;
 }
 
-/* line 77, ../sass/modules/_colours.scss */
+/* line 93, ../sass/modules/_colours.scss */
 .pets_hex {
   background-color: #9e5729 !important;
 }
 
-/* line 81, ../sass/modules/_colours.scss */
+/* line 97, ../sass/modules/_colours.scss */
 .lighting_hex {
   background-color: #fcb040 !important;
 }
 
-/* line 85, ../sass/modules/_colours.scss */
+/* line 101, ../sass/modules/_colours.scss */
 .leisure_hex {
   background-color: #45748e !important;
 }
 
-/* line 89, ../sass/modules/_colours.scss */
+/* line 105, ../sass/modules/_colours.scss */
 .homewares_hex {
   background-color: #74c7e7 !important;
 }
 
-/* line 93, ../sass/modules/_colours.scss */
+/* line 109, ../sass/modules/_colours.scss */
 .hobbies_hex {
   background-color: #9e5729 !important;
 }
 
-/* line 97, ../sass/modules/_colours.scss */
+/* line 113, ../sass/modules/_colours.scss */
 .garden_hex {
   background-color: #4aab42 !important;
 }
 
-/* line 101, ../sass/modules/_colours.scss */
+/* line 117, ../sass/modules/_colours.scss */
 .furniture_hex {
   background-color: #015289 !important;
 }
 
-/* line 105, ../sass/modules/_colours.scss */
+/* line 121, ../sass/modules/_colours.scss */
 .furnishings_hex {
   background-color: #009f93 !important;
 }
 
-/* line 109, ../sass/modules/_colours.scss */
+/* line 125, ../sass/modules/_colours.scss */
 .diy_hex {
   background-color: #a0a1a5 !important;
 }
 
-/* line 113, ../sass/modules/_colours.scss */
+/* line 129, ../sass/modules/_colours.scss */
 .decorating_hex {
   background-color: #3a8892 !important;
 }
 
-/* line 117, ../sass/modules/_colours.scss */
+/* line 133, ../sass/modules/_colours.scss */
 .crafts_hex {
   background-color: #d41246 !important;
 }
 
-/* line 121, ../sass/modules/_colours.scss */
+/* line 137, ../sass/modules/_colours.scss */
 .cooking_hex {
   background-color: #ad4627 !important;
 }
@@ -4971,199 +4991,6 @@ tbody.collapse.in {
 }
 
 /*@import "bootstrap/pagination";*/
-/* line 6, ../sass/modules/bootstrap/bootstrap/_pager.scss */
-.pager {
-  padding-left: 0;
-  margin: 20px 0;
-  list-style: none;
-  text-align: center;
-}
-/* line 14, ../sass/modules/bootstrap/bootstrap/mixins/_clearfix.scss */
-.pager:before, .pager:after {
-  content: " ";
-  display: table;
-}
-/* line 19, ../sass/modules/bootstrap/bootstrap/mixins/_clearfix.scss */
-.pager:after {
-  clear: both;
-}
-/* line 12, ../sass/modules/bootstrap/bootstrap/_pager.scss */
-.pager li {
-  display: inline;
-}
-/* line 14, ../sass/modules/bootstrap/bootstrap/_pager.scss */
-.pager li > a,
-.pager li > span {
-  display: inline-block;
-  padding: 5px 14px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 15px;
-}
-/* line 23, ../sass/modules/bootstrap/bootstrap/_pager.scss */
-.pager li > a:hover,
-.pager li > a:focus {
-  text-decoration: none;
-  background-color: #eeeeee;
-}
-/* line 31, ../sass/modules/bootstrap/bootstrap/_pager.scss */
-.pager .next > a,
-.pager .next > span {
-  float: right;
-}
-/* line 38, ../sass/modules/bootstrap/bootstrap/_pager.scss */
-.pager .previous > a,
-.pager .previous > span {
-  float: left;
-}
-/* line 45, ../sass/modules/bootstrap/bootstrap/_pager.scss */
-.pager .disabled > a,
-.pager .disabled > a:hover,
-.pager .disabled > a:focus,
-.pager .disabled > span {
-  color: #777777;
-  background-color: #fff;
-  cursor: not-allowed;
-}
-
-/* line 5, ../sass/modules/bootstrap/bootstrap/_labels.scss */
-.label {
-  display: inline;
-  padding: .2em .6em .3em;
-  font-size: 75%;
-  font-weight: bold;
-  line-height: 1;
-  color: #fff;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: .25em;
-}
-/* line 20, ../sass/modules/bootstrap/bootstrap/_labels.scss */
-.label:empty {
-  display: none;
-}
-/* line 25, ../sass/modules/bootstrap/bootstrap/_labels.scss */
-.btn .label {
-  position: relative;
-  top: -1px;
-}
-
-/* line 33, ../sass/modules/bootstrap/bootstrap/_labels.scss */
-a.label:hover, a.label:focus {
-  color: #fff;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* line 44, ../sass/modules/bootstrap/bootstrap/_labels.scss */
-.label-default {
-  background-color: #777777;
-}
-/* line 7, ../sass/modules/bootstrap/bootstrap/mixins/_labels.scss */
-.label-default[href]:hover, .label-default[href]:focus {
-  background-color: #5e5e5e;
-}
-
-/* line 48, ../sass/modules/bootstrap/bootstrap/_labels.scss */
-.label-primary {
-  background-color: #337ab7;
-}
-/* line 7, ../sass/modules/bootstrap/bootstrap/mixins/_labels.scss */
-.label-primary[href]:hover, .label-primary[href]:focus {
-  background-color: #286090;
-}
-
-/* line 52, ../sass/modules/bootstrap/bootstrap/_labels.scss */
-.label-success {
-  background-color: #5cb85c;
-}
-/* line 7, ../sass/modules/bootstrap/bootstrap/mixins/_labels.scss */
-.label-success[href]:hover, .label-success[href]:focus {
-  background-color: #449d44;
-}
-
-/* line 56, ../sass/modules/bootstrap/bootstrap/_labels.scss */
-.label-info {
-  background-color: #5bc0de;
-}
-/* line 7, ../sass/modules/bootstrap/bootstrap/mixins/_labels.scss */
-.label-info[href]:hover, .label-info[href]:focus {
-  background-color: #31b0d5;
-}
-
-/* line 60, ../sass/modules/bootstrap/bootstrap/_labels.scss */
-.label-warning {
-  background-color: #f0ad4e;
-}
-/* line 7, ../sass/modules/bootstrap/bootstrap/mixins/_labels.scss */
-.label-warning[href]:hover, .label-warning[href]:focus {
-  background-color: #ec971f;
-}
-
-/* line 64, ../sass/modules/bootstrap/bootstrap/_labels.scss */
-.label-danger {
-  background-color: #d9534f;
-}
-/* line 7, ../sass/modules/bootstrap/bootstrap/mixins/_labels.scss */
-.label-danger[href]:hover, .label-danger[href]:focus {
-  background-color: #c9302c;
-}
-
-/* line 7, ../sass/modules/bootstrap/bootstrap/_badges.scss */
-.badge {
-  display: inline-block;
-  min-width: 10px;
-  padding: 3px 7px;
-  font-size: 12px;
-  font-weight: bold;
-  color: #fff;
-  line-height: 1;
-  vertical-align: baseline;
-  white-space: nowrap;
-  text-align: center;
-  background-color: #777777;
-  border-radius: 10px;
-}
-/* line 22, ../sass/modules/bootstrap/bootstrap/_badges.scss */
-.badge:empty {
-  display: none;
-}
-/* line 27, ../sass/modules/bootstrap/bootstrap/_badges.scss */
-.btn .badge {
-  position: relative;
-  top: -1px;
-}
-/* line 32, ../sass/modules/bootstrap/bootstrap/_badges.scss */
-.btn-xs .badge, .btn-group-xs > .btn .badge {
-  top: 0;
-  padding: 1px 5px;
-}
-/* line 40, ../sass/modules/bootstrap/bootstrap/_badges.scss */
-.list-group-item.active > .badge, .nav-pills > .active > a > .badge {
-  color: #F57A39;
-  background-color: #fff;
-}
-/* line 46, ../sass/modules/bootstrap/bootstrap/_badges.scss */
-.list-group-item > .badge {
-  float: right;
-}
-/* line 50, ../sass/modules/bootstrap/bootstrap/_badges.scss */
-.list-group-item > .badge + .badge {
-  margin-right: 5px;
-}
-/* line 54, ../sass/modules/bootstrap/bootstrap/_badges.scss */
-.nav-pills > li > a > .badge {
-  margin-left: 3px;
-}
-
-/* line 61, ../sass/modules/bootstrap/bootstrap/_badges.scss */
-a.badge:hover, a.badge:focus {
-  color: #fff;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 /*@import "bootstrap/jumbotron";*/
 /*@import "bootstrap/thumbnails";*/
 /* line 9, ../sass/modules/bootstrap/bootstrap/_alerts.scss */
@@ -6869,7 +6696,16 @@ button.close {
   font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 }
 
-/* line 15, ../sass/modules/_fonts.scss */
+/* line 14, ../sass/modules/_fonts.scss */
+.title, .view-order-header, address .name {
+  font-size: 16px;
+  font-weight: normal;
+  color: #323232;
+  margin-bottom: 10px;
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+}
+
+/* line 23, ../sass/modules/_fonts.scss */
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
@@ -6878,69 +6714,69 @@ h1, h2, h3, h4, h5, h6,
   line-height: 1.2;
 }
 
-/* line 26, ../sass/modules/_fonts.scss */
+/* line 34, ../sass/modules/_fonts.scss */
 a h1:hover, a h2:hover, a h3:hover, a h4:hover, a h5:hover, a h6:hover, a .h1:hover, a .h2:hover, a .h3:hover, a .h4:hover, a .h5:hover, a .h6:hover {
   color: #323232;
   text-decoration: none;
 }
 
-/* line 36, ../sass/modules/_fonts.scss */
+/* line 44, ../sass/modules/_fonts.scss */
 .h1.dotted, .h2.dotted, .h3.dotted, .h4.dotted, .h5.dotted, .h6.dotted {
   border-bottom: 2px dotted #fcfefb;
   padding-bottom: 4px;
 }
-/* line 41, ../sass/modules/_fonts.scss */
+/* line 49, ../sass/modules/_fonts.scss */
 .h1.solid, .h2.solid, .h3.solid, .h4.solid, .h5.solid, .h6.solid {
   border: 1px solid #e2e4e1;
   padding-bottom: 4px;
 }
 
-/* line 47, ../sass/modules/_fonts.scss */
+/* line 55, ../sass/modules/_fonts.scss */
 .h1 {
   font-size: 26px;
 }
 
-/* line 51, ../sass/modules/_fonts.scss */
+/* line 59, ../sass/modules/_fonts.scss */
 .h2 {
   font-size: 22px;
 }
 
-/* line 55, ../sass/modules/_fonts.scss */
+/* line 63, ../sass/modules/_fonts.scss */
 .h3 {
   font-size: 18px;
 }
 
-/* line 59, ../sass/modules/_fonts.scss */
+/* line 67, ../sass/modules/_fonts.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 63, ../sass/modules/_fonts.scss */
+/* line 71, ../sass/modules/_fonts.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 67, ../sass/modules/_fonts.scss */
+/* line 75, ../sass/modules/_fonts.scss */
 .text-left {
   text-align: left;
 }
 
-/* line 71, ../sass/modules/_fonts.scss */
+/* line 79, ../sass/modules/_fonts.scss */
 .capitalised {
   text-transform: uppercase;
 }
 
-/* line 75, ../sass/modules/_fonts.scss */
+/* line 83, ../sass/modules/_fonts.scss */
 .bold {
   font-weight: 700 !important;
 }
 
-/* line 79, ../sass/modules/_fonts.scss */
+/* line 87, ../sass/modules/_fonts.scss */
 .non-bold {
   font-weight: 400 !important;
 }
 
-/* line 83, ../sass/modules/_fonts.scss */
+/* line 91, ../sass/modules/_fonts.scss */
 .italic {
   font-style: italic;
 }
@@ -6955,6 +6791,10 @@ a h1:hover, a h2:hover, a h3:hover, a h4:hover, a h5:hover, a h6:hover, a .h1:ho
   border-radius: 0px;
 }
 
+/* line 63, ../sass/modules/_buttons.scss */
+button {
+  /* #fixit - used in checkout, not actually text */
+}
 /* line 65, ../sass/modules/_buttons.scss */
 button.btn {
   border-radius: 0px;
@@ -7217,6 +7057,66 @@ button.cancel-full-width {
   width: 100%;
 }
 /* line 180, ../sass/modules/_buttons.scss */
+button.success {
+  color: #ffffff;
+  background-color: #3c7f53;
+  border-color: #fcfefb;
+  padding: 10px;
+  border: 1px solid;
+  margin-bottom: 8px;
+  outline: white;
+}
+/* line 14, ../sass/modules/_buttons.scss */
+button.success:hover, button.success:focus, button.success:active, button.success.active, .open > button.success.dropdown-toggle {
+  color: #ffffff;
+  background-color: #234b31;
+  border-color: #234b31;
+  border: 1px solid;
+  outline-color: white;
+  transition: 0.5s ease;
+}
+/* line 26, ../sass/modules/_buttons.scss */
+button.success:active, button.success.active, .open > button.success.dropdown-toggle {
+  background-image: none;
+}
+/* line 34, ../sass/modules/_buttons.scss */
+button.success.disabled, button.success.disabled:hover, button.success.disabled:focus, button.success.disabled:active, button.success.disabled.active, button.success[disabled], button.success[disabled]:hover, button.success[disabled]:focus, button.success[disabled]:active, button.success[disabled].active, fieldset[disabled] button.success, fieldset[disabled] button.success:hover, fieldset[disabled] button.success:focus, fieldset[disabled] button.success:active, fieldset[disabled] button.success.active {
+  background-color: #3c7f53;
+  border-color: #fcfefb;
+}
+/* line 44, ../sass/modules/_buttons.scss */
+button.success .badge {
+  color: #3c7f53;
+  background-color: #ffffff;
+}
+/* line 183, ../sass/modules/_buttons.scss */
+button.success-lg {
+  padding: 15px 20px;
+  font-size: 15px;
+  line-height: 20px;
+  border-radius: 1px;
+}
+/* line 187, ../sass/modules/_buttons.scss */
+button.success-sm {
+  padding: 5px 5px;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 0px;
+  font-weight: normal;
+}
+/* line 192, ../sass/modules/_buttons.scss */
+button.success-md {
+  padding: 9px 5px;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 0px;
+  font-weight: normal;
+}
+/* line 197, ../sass/modules/_buttons.scss */
+button.success-full-width {
+  width: 100%;
+}
+/* line 202, ../sass/modules/_buttons.scss */
 button.out-of-stock {
   color: #ffffff;
   background-color: #337ab7;
@@ -7249,14 +7149,14 @@ button.out-of-stock .badge {
   color: #337ab7;
   background-color: #ffffff;
 }
-/* line 183, ../sass/modules/_buttons.scss */
+/* line 205, ../sass/modules/_buttons.scss */
 button.out-of-stock-lg {
   padding: 15px 20px;
   font-size: 15px;
   line-height: 20px;
   border-radius: 1px;
 }
-/* line 187, ../sass/modules/_buttons.scss */
+/* line 209, ../sass/modules/_buttons.scss */
 button.out-of-stock-md {
   padding: 9px 5px;
   font-size: 14px;
@@ -7264,11 +7164,11 @@ button.out-of-stock-md {
   border-radius: 0px;
   font-weight: normal;
 }
-/* line 192, ../sass/modules/_buttons.scss */
+/* line 214, ../sass/modules/_buttons.scss */
 button.out-of-stock-full-width {
   width: 100%;
 }
-/* line 197, ../sass/modules/_buttons.scss */
+/* line 219, ../sass/modules/_buttons.scss */
 button.disabled {
   color: #ffffff;
   background-color: #989796;
@@ -7301,14 +7201,14 @@ button.disabled .badge {
   color: #989796;
   background-color: #ffffff;
 }
-/* line 201, ../sass/modules/_buttons.scss */
+/* line 223, ../sass/modules/_buttons.scss */
 button.disabled-lg {
   padding: 15px 20px;
   font-size: 15px;
   line-height: 20px;
   border-radius: 1px;
 }
-/* line 205, ../sass/modules/_buttons.scss */
+/* line 227, ../sass/modules/_buttons.scss */
 button.disabled-md {
   padding: 9px 5px;
   font-size: 14px;
@@ -7316,15 +7216,15 @@ button.disabled-md {
   border-radius: 0px;
   font-weight: normal;
 }
-/* line 210, ../sass/modules/_buttons.scss */
+/* line 232, ../sass/modules/_buttons.scss */
 button.disabled-full-width {
   width: 100%;
 }
-/* line 214, ../sass/modules/_buttons.scss */
+/* line 236, ../sass/modules/_buttons.scss */
 button.disabled:hover {
   cursor: not-allowed;
 }
-/* line 219, ../sass/modules/_buttons.scss */
+/* line 242, ../sass/modules/_buttons.scss */
 button.text {
   color: #F57A39;
   background-color: #ffffff;
@@ -7359,7 +7259,7 @@ button.text .badge {
   color: #ffffff;
   background-color: #F57A39;
 }
-/* line 223, ../sass/modules/_buttons.scss */
+/* line 246, ../sass/modules/_buttons.scss */
 button.text:hover, button.text:focus, button.text:active, button.text.active, .open > button.text.dropdown-toggle {
   color: #d7510b;
   background-color: #ffffff;
@@ -7367,14 +7267,14 @@ button.text:hover, button.text:focus, button.text:active, button.text.active, .o
   outline-color: white;
   transition: 0.5s ease;
 }
-/* line 235, ../sass/modules/_buttons.scss */
+/* line 258, ../sass/modules/_buttons.scss */
 button.text-lg {
   padding: 15px 20px;
   font-size: 15px;
   line-height: 20px;
   border-radius: 1px;
 }
-/* line 239, ../sass/modules/_buttons.scss */
+/* line 262, ../sass/modules/_buttons.scss */
 button.text-md {
   padding: 9px 5px;
   font-size: 14px;
@@ -7382,22 +7282,18 @@ button.text-md {
   border-radius: 0px;
   font-weight: normal;
 }
-/* line 244, ../sass/modules/_buttons.scss */
+/* line 267, ../sass/modules/_buttons.scss */
 button.text-full-width {
   width: 100%;
 }
-/* line 249, ../sass/modules/_buttons.scss */
-button.no-bottom {
-  margin-bottom: 0px;
-}
 
 /* Unique Buttons */
-/* line 255, ../sass/modules/_buttons.scss */
+/* line 274, ../sass/modules/_buttons.scss */
 .quantity-selector {
   float: left;
   margin-bottom: 8px;
 }
-/* line 260, ../sass/modules/_buttons.scss */
+/* line 279, ../sass/modules/_buttons.scss */
 .quantity-selector input[type="button"] {
   height: 35px;
   width: 35px;
@@ -7408,16 +7304,16 @@ button.no-bottom {
   color: #323232;
   float: left;
 }
-/* line 270, ../sass/modules/_buttons.scss */
+/* line 289, ../sass/modules/_buttons.scss */
 .quantity-selector input[type="button"]:hover {
   border: 1px solid #7F7E7E;
   color: #6d6d6d;
 }
-/* line 275, ../sass/modules/_buttons.scss */
+/* line 294, ../sass/modules/_buttons.scss */
 .quantity-selector input[type="button"]:focus {
   outline: white;
 }
-/* line 280, ../sass/modules/_buttons.scss */
+/* line 299, ../sass/modules/_buttons.scss */
 .quantity-selector input[type="text"] {
   height: 35px;
   width: 35px;
@@ -7432,14 +7328,14 @@ button.no-bottom {
 }
 
 /* Override Save for Later on Product Display */
-/* line 295, ../sass/modules/_buttons.scss */
+/* line 314, ../sass/modules/_buttons.scss */
 .quantity-selector.pd input[type="button"], .quantity-selector.pd input[type="text"] {
   height: 40px;
   width: 40px;
 }
 
 /* Product Lister - Filters - Show More */
-/* line 301, ../sass/modules/_buttons.scss */
+/* line 320, ../sass/modules/_buttons.scss */
 .list-filter-show-more-less {
   padding: 8px 10px 8px 10px;
   overflow: hidden;
@@ -7453,25 +7349,10 @@ button.no-bottom {
 	1. Global Mixins
 -------------------------------------------------- */
 /* default = 55px┬á*/
-/* line 13, ../sass/modules/_mixins.scss */
-.title, .view-order-header, address .name {
-  font-size: 16px;
-  font-weight: normal;
-  color: #323232;
-  margin-bottom: 10px;
-  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-}
-
-/* line 21, ../sass/modules/_mixins.scss */
-.is-selected, .is-expanded {
-  display: block !important;
-  visibility: visible !important;
-}
-
 /*
 	Mixin: Product Rating & Review
 */
-/* line 30, ../sass/modules/_mixins.scss */
+/* line 17, ../sass/modules/_mixins.scss */
 .product-review {
   float: left;
   color: #3c7f53;
@@ -7481,12 +7362,12 @@ button.no-bottom {
 }
 
 /* Percent Value */
-/* line 39, ../sass/modules/_mixins.scss */
+/* line 26, ../sass/modules/_mixins.scss */
 .percent {
   float: left;
   margin-right: 4px;
 }
-/* line 43, ../sass/modules/_mixins.scss */
+/* line 30, ../sass/modules/_mixins.scss */
 .percent:before {
   background-image: url(/img/thumbs_green.png);
   background-size: 22px 20px;
@@ -7500,7 +7381,7 @@ button.no-bottom {
 }
 
 /* Reviews */
-/* line 57, ../sass/modules/_mixins.scss */
+/* line 44, ../sass/modules/_mixins.scss */
 .reviews {
   float: left;
   padding-left: 4px;
@@ -7508,7 +7389,7 @@ button.no-bottom {
 }
 
 /* Offer */
-/* line 64, ../sass/modules/_mixins.scss */
+/* line 51, ../sass/modules/_mixins.scss */
 .offer {
   color: #C50909;
   font-weight: 500;
@@ -7517,21 +7398,20 @@ button.no-bottom {
   font-style: italic;
   min-height: 22px;
 }
-/* line 72, ../sass/modules/_mixins.scss */
+/* line 59, ../sass/modules/_mixins.scss */
 .offer a {
   color: #C50909;
 }
-/* line 75, ../sass/modules/_mixins.scss */
+/* line 62, ../sass/modules/_mixins.scss */
 .offer a:hover {
   color: #ad0808;
 }
-/* line 79, ../sass/modules/_mixins.scss */
+/* line 66, ../sass/modules/_mixins.scss */
 .offer a:focus {
   color: #b10808;
 }
 
-/* Extended Classes: Product Rating & Review */
-/* line 88, ../sass/modules/_mixins.scss */
+/* line 73, ../sass/modules/_mixins.scss */
 .price {
   color: #323232;
   font-weight: 700;
@@ -7540,21 +7420,21 @@ button.no-bottom {
   min-height: 23px;
   clear: both;
 }
-/* line 96, ../sass/modules/_mixins.scss */
+/* line 81, ../sass/modules/_mixins.scss */
 .price span {
   font-weight: 200;
 }
 
-/* line 102, ../sass/modules/_mixins.scss */
+/* line 86, ../sass/modules/_mixins.scss */
 .was-price {
   color: grey;
 }
-/* line 105, ../sass/modules/_mixins.scss */
+/* line 89, ../sass/modules/_mixins.scss */
 .was-price span {
   text-decoration: line-through;
 }
 
-/* line 110, ../sass/modules/_mixins.scss */
+/* line 94, ../sass/modules/_mixins.scss */
 .price-saving {
   color: #C50909;
   font-weight: bold;
@@ -7746,6 +7626,12 @@ select[multiple].input-lg,
     width: 180px;
   }
 }
+/* Validation */
+/* line 222, ../sass/modules/_forms.scss */
+.valid_form_field {
+  border: 1px solid #3c7f53;
+}
+
 /* line 1, ../sass/modules/_lists.scss */
 ul.disk {
   list-style: disc inside;
@@ -7763,7 +7649,8 @@ ul.disk li span {
   color: #323232;
 }
 
-/* line 17, ../sass/modules/_lists.scss */
+/* #fixit not sure if used anymore */
+/* line 18, ../sass/modules/_lists.scss */
 .form_validation_box {
   background-color: #a94442;
   border-color: #a94442;
@@ -7775,7 +7662,7 @@ ul.disk li span {
   clear: both;
 }
 
-/* line 28, ../sass/modules/_lists.scss */
+/* line 29, ../sass/modules/_lists.scss */
 .form_validation_box:before {
   bottom: 100%;
   left: 7%;
@@ -7787,19 +7674,19 @@ ul.disk li span {
   pointer-events: none;
 }
 
-/* line 39, ../sass/modules/_lists.scss */
+/* line 40, ../sass/modules/_lists.scss */
 .form_validation_box:before {
   border-color: rgba(136, 183, 213, 0);
   border-bottom-color: #a94442;
   border-width: 7px;
 }
 
-/* line 45, ../sass/modules/_lists.scss */
+/* line 46, ../sass/modules/_lists.scss */
 #fulfilment_days {
   display: none;
 }
 
-/* line 50, ../sass/modules/_lists.scss */
+/* line 51, ../sass/modules/_lists.scss */
 #co_journey_payment_change_submit_next_day_delivery #fulfilment_days {
   display: block;
 }
@@ -10701,6 +10588,54 @@ ul.no_list_style li {
     border-left: none;
   }
 }
+/* line 393, ../sass/components/_utility.scss */
+.no-border {
+  border: none !important;
+}
+
+@media (max-width: 600px) {
+  /* line 398, ../sass/components/_utility.scss */
+  .hidden-xs {
+    display: none;
+  }
+}
+/* line 403, ../sass/components/_utility.scss */
+.caret-up {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-bottom: 4px solid;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+
+/* line 414, ../sass/components/_utility.scss */
+.backdrop-fullscreen {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0;
+  z-index: 1040;
+  -moz-transition: all 0.2s linear 0s;
+  -webkit-transition: all 0.2s linear 0s;
+  -ms-transition: all 0.2s linear 0s;
+  transition: all 0.2s linear 0s;
+}
+/* line 427, ../sass/components/_utility.scss */
+.backdrop-fullscreen.in {
+  opacity: 0.5;
+}
+
+/* line 432, ../sass/components/_utility.scss */
+.is-selected, .is-expanded {
+  display: block !important;
+  visibility: visible !important;
+}
+
 /* line 1, ../sass/components/_search.scss */
 .search-dropdown {
   position: absolute;
@@ -12239,10 +12174,10 @@ p.proposition-title {
 
 /* line 1, ../sass/components/_header-controls.scss */
 img.back_button {
-  height: 30px;
+  height: 24px;
   cursor: pointer;
   float: left;
-  width: 30px;
+  width: 24px;
   margin-top: 4px;
 }
 /* line 8, ../sass/components/_header-controls.scss */
@@ -12735,6 +12670,53 @@ footer ul.level_2 li a:hover {
 /* line 239, ../sass/components/_checkout_header.scss */
 .co_journey_current_email {
   font-weight: 700;
+}
+
+/* line 1, ../sass/components/_radio-button.scss */
+.rad-btn {
+  padding-left: 50px;
+}
+
+/* line 5, ../sass/components/_radio-button.scss */
+.rad-btn__cir {
+  position: absolute;
+  left: 10px;
+  top: calc(50% - 30px);
+  width: 26px;
+  height: 26px;
+  right: 15px;
+  border: 1px solid #e2e4e1;
+  border-radius: 24px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+/* line 17, ../sass/components/_radio-button.scss */
+.rad-btn__cir:hover {
+  cursor: pointer;
+}
+/* line 20, ../sass/components/_radio-button.scss */
+.rad-btn__cir:hover .rad-btn__state {
+  display: block;
+}
+/* line 26, ../sass/components/_radio-button.scss */
+.rad-btn__cir--selected .rad-btn__state {
+  display: block;
+}
+
+/* line 32, ../sass/components/_radio-button.scss */
+.rad-btn__state {
+  height: 12px;
+  width: 12px;
+  background-color: #e2e4e1;
+  border-radius: 50%;
+  margin: 6px;
+  display: none;
+  color: #e2e4e1;
+}
+/* line 41, ../sass/components/_radio-button.scss */
+.rad-btn__state-green {
+  background-color: #3c7f53;
+  color: #3c7f53;
 }
 
 /*  Partials - Directory where the meat of CSS is constructued. */
@@ -14218,202 +14200,6 @@ ul.current-filters {
   border-radius: 0px;
 }
 
-/*
-// #fixit - flatten!!
-.basket-add {
-
-	.basket-header-container {
-		width: 100%;	
-		clear: both;
-		overflow: hidden;
-	}
-
-	// #fixit - remove extends
-	.basket-secondary-container {
-		@extend .col-lg-6;
-		@extend .col-md-6;
-		@extend .col-sm-6;
-		
-		.basket-fufilment-summary-wrap {
-			padding: 10px 8px 10px 8px;
-			border: 1px solid $secondary;
-			overflow: hidden;
-		}
-
-		@media (min-width: 960px) {
-
-			.basket-fufilment-summary-wrap {
-			  padding: 20px;
-			}
-		}
-
-		.basket-secondary {
-
-			// #fixit - remove extends
-			.basket-fufilment-summary {
-				@extend .col-lg-12;
-				@extend .col-md-12;
-				@extend .col-sm-12;
-				float: left;
-				border-top: none;
-				padding: 0px;
-				margin-bottom: 0;
-				margin-top: 0;
-
-				.basket-fufilment-subtotal {
-					padding-top: 0;
-					border: none;
-					
-					.title {
-						font-weight: 700;
-					}
-
-					.value {
-						
-					}
-				}
-			}
-
-			.basket-fufilment-button-checkout {
-				@extend .col-lg-12;
-				@extend .col-md-12;
-				@extend .col-sm-12;
-				padding: 0px;
-				padding-top: 8px;
-				float: left;
-				clear: none;
-				
-				.button {
-					@extend .col-lg-7;
-					@extend .col-md-6;
-					@extend .col-sm-7;
-					@extend .col-xs-7;
-					margin-top: 0;
-					padding: 0 0 0 6px;
-					
-					a {
-						font-size: 12px;
-					}
-					
-					@media (min-width: 600px) {
-						a {
-							padding: 8px 4px 8px 4px;
-						}
-					}
-				}
-
-				.edit-basket {
-					@extend .col-lg-5;
-					@extend .col-md-6;
-					@extend .col-sm-5;
-					@extend .col-xs-5;
-					min-width: initial;
-					max-width: none;
-					margin-right: 0;
-					padding: 0 8px 0 0;
-					
-					a {
-						font-size: 12px;
-					}
-				}
-			}
-		}
-	}
-
-	.basket-main-container {
-		@extend .col-lg-6;
-		@extend .col-md-6;
-		@extend .col-sm-6;
-	}
-
-	.product-container-single {
-
-		.product {
-
-			.product-lead {
-				@extend .col-lg-4;
-				@extend .col-md-4;
-			}
-
-			.details {
-				@extend .col-lg-8;
-				@extend .col-md-8;
-				
-				.product-details {
-					padding: 8px;
-				}
-
-				.product-price-summary {
-					padding: 8px;
-					border-top: none;
-				}
-			}
-
-		}
-	}
-
-	.product {
-		border-top: none;
-		margin: 0;
-		padding: 0;
-		
-		.product-lead {
-			padding: 0 !important;
-			background-colour: red;
-		}
-		
-		.details .product-price-summary .price-summary {
-
-			.price-value {
-				float: left;
-
-				.price { 
-					font-size: 16px;
-					float: left;
-				}
-			}
-		}
-	}
-}
-
-
-@media (min-width: 960px) {
-	.basket-add {
-
-		.product-container-single .product {
-
-			.product-divider {
-				display: none;
-			}
-
-			.title {
-			  display: none;
-			  }
-			  
-			.details {
-
-				.title {
-					display: block;
-					width: 100%;
-					float: left;
-				}
-
-				.product-details {
-					width: 100%;
-				}
-
-				.product-price-summary {
-					width: 100%;
-				}
-			}
-
-			.add-to-basket {
-				display: none;
-			}
-			
-		}
-	}
-}*/
 /* line 4, ../sass/partials/_my-account.scss */
 .sign-up-header {
   text-align: center;
@@ -15347,14 +15133,42 @@ span.open-interval {
   margin-bottom: 10px;
 }
 
-/* #fixit -  does it import _bootstrap_variable - if not, add variables to overide - also nothing should sit in this file, it should just be the main calls */
-/* line 7, ../sass/main.scss */
+/* line 1, ../sass/partials/_style-guide.scss */
+.colour_swatch {
+  height: 35px;
+  width: 35px;
+  border-radius: 35px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  float: left;
+}
+
+/* line 10, ../sass/partials/_style-guide.scss */
+.percent:before {
+  background-image: url(http://therange.co.uk/img/thumbs_green.png);
+}
+
+/* line 14, ../sass/partials/_style-guide.scss */
+.style_guide_component {
+  margin-bottom: 38px;
+}
+
+@media (min-width: 960px) {
+  /* line 19, ../sass/partials/_style-guide.scss */
+  .logo_header {
+    background: url(http://therange.co.uk/img/range_logo_full.png);
+    width: 234px;
+    height: 42px;
+    background-size: 234px 42px;
+  }
+}
+/* line 5, ../sass/main.scss */
 html {
   position: relative;
   min-height: 100%;
 }
 
-/* line 12, ../sass/main.scss */
+/* line 10, ../sass/main.scss */
 body {
   -webkit-font-smoothing: antialiased;
   color: #323232;
@@ -15365,34 +15179,34 @@ body {
 /*  --------------------------------------------------
         Bootstrap Overwrites
 -------------------------------------------------- */
-/* line 24, ../sass/main.scss */
+/* line 21, ../sass/main.scss */
 a {
   color: #F57A39;
   text-decoration: none;
 }
 
-/* line 29, ../sass/main.scss */
+/* line 26, ../sass/main.scss */
 a:hover, a:focus {
   color: #F57A39;
   text-decoration: none;
 }
 
-/* line 34, ../sass/main.scss */
+/* line 31, ../sass/main.scss */
 a:focus {
   outline: none;
 }
 
-/* line 38, ../sass/main.scss */
+/* line 35, ../sass/main.scss */
 .progress {
   box-shadow: none;
 }
 
-/* line 42, ../sass/main.scss */
+/* line 39, ../sass/main.scss */
 .alert {
   border-radius: 0px;
 }
 
-/* line 48, ../sass/main.scss */
+/* line 43, ../sass/main.scss */
 .site-overlay {
   display: none;
   background-color: #323232;
@@ -15410,13 +15224,13 @@ a:focus {
   outline: 0;
 }
 
-/* line 66, ../sass/main.scss */
+/* line 60, ../sass/main.scss */
 .height-wrap {
   overflow: hidden;
   overflow-y: hidden;
 }
 
-/* line 72, ../sass/main.scss */
+/* line 65, ../sass/main.scss */
 .back-button.header {
   margin-top: 12px;
 }

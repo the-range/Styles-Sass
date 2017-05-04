@@ -217,3 +217,8 @@ select[multiple].input-lg,
     }
   }
 }
+
+/* Validation */
+.valid_form_field {
+    border: 1px solid $green;
+}

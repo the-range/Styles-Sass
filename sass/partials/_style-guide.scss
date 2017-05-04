@@ -1,0 +1,25 @@
+.colour_swatch {
+	height: 35px;
+	width: 35px;
+	border-radius: 35px;
+	margin-right: 15px;
+	margin-bottom: 10px;
+	float: left;
+}
+
+.percent:before {
+    background-image: url(http://therange.co.uk/img/thumbs_green.png);
+}
+
+.style_guide_component {
+	margin-bottom: 38px;
+}
+
+@media (min-width: 960px) {
+	.logo_header {
+	    background: url(http://therange.co.uk/img/range_logo_full.png);
+	    width: 234px;
+	    height: 42px;
+	    background-size: 234px 42px;
+	}
+}

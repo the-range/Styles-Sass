@@ -10,23 +10,10 @@ $megamenu_height: 507px;
 $megamenu_slide_left: 55px; /* default = 55px */
 
 // #fixit - required at all? Perhaps a default one - utilities, font or _bootstrap-vatiables?
-.title {
-	font-size: 16px;
-	font-weight: normal;
-	color: $text;
-	margin-bottom: 10px;
-	font-family: $titlefont;
-}
-
-.is-selected, .is-expanded {
-	display: block !important;
-	visibility: visible !important;
-}
 
 /*
 	Mixin: Product Rating & Review
 */
-	
 .product-review {
 	float: left;
 	color: $green;
@@ -83,8 +70,6 @@ $megamenu_slide_left: 55px; /* default = 55px */
 
 }
 
-
-/* Extended Classes: Product Rating & Review */
 .price {
 	color: $text;
 	font-weight: 700;
@@ -97,7 +82,6 @@ $megamenu_slide_left: 55px; /* default = 55px */
 		font-weight: 200;
 	}
 }
-
 
 .was-price {
 	color: grey;
