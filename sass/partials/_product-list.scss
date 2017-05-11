@@ -9,12 +9,11 @@
 	list-style: none;
 }
 
-
-nav.floated-pagination {
+nav.fl_pag {
   display: block;
 }
 
-.floated-pagination {
+.fl_pag {
 	right: 3%;
 	list-style: none;
 	padding: 0;
@@ -25,7 +24,58 @@ nav.floated-pagination {
 	font-size: 12px;
 }
 
-ul.pagination-container {
+.pag_cur {
+	display: block;
+	background-color: white;
+	text-align: center;
+	padding: 4px 4px 4px 4px;
+}
+
+.page_pre {
+	display: block !important;
+	background-color: $tertiary;
+	height: 30px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	text-indent: -1000em;
+	background-image: url(/img/pagination-up.png);
+	background-size: 20px;
+	content: "";
+	display: inline-block;
+	border-bottom: 1px solid $secondary;
+	margin-left: 0px;
+	background-repeat: no-repeat;
+	background-position: 10px;
+}
+
+.page_nex {
+	display: block !important;
+	background-color: $tertiary;
+	height: 30px;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	text-indent: -1000em;
+	background-image: url(/img/pagination-down.png);
+	background-size: 20px;
+	content: "";
+	display: inline-block;
+	border-bottom: 1px solid $secondary;
+	border-top: 1px solid $secondary;
+	margin-left: 0px;
+	background-repeat: no-repeat;
+	background-position: 10px;
+}
+
+.page_nex, .page_pre {
+	&:hover {
+		background-color: $secondary;
+		cursor: pointer;
+	}
+}
+
+ul.pag_cont {
 	width: 42px;
 	height: 103px;
 	background-color: $tertiary;
@@ -36,58 +86,6 @@ ul.pagination-container {
 	// box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.6);
 	
 	li {
-		display: none;
-
-		&.current {
-			display: block;
-			background-color: white;
-			text-align: center;
-			padding: 4px 4px 4px 4px;
-		}
-
-		&.previous {
-			display: block !important;
-			background-color: $tertiary;
-			height: 30px;
-			width: 100%;
-			overflow: hidden;
-			position: relative;
-			text-indent: -1000em;
-			background-image: url(/img/pagination-up.png);
-			background-size: 20px;
-			content: "";
-			display: inline-block;
-			border-bottom: 1px solid $secondary;
-			margin-left: 0px;
-			background-repeat: no-repeat;
-			background-position: 10px;
-		}
-
-		&.next {
-			display: block !important;
-			background-color: $tertiary;
-			height: 30px;
-			width: 100%;
-			overflow: hidden;
-			position: relative;
-			text-indent: -1000em;
-			background-image: url(/img/pagination-down.png);
-			background-size: 20px;
-			content: "";
-			display: inline-block;
-			border-bottom: 1px solid $secondary;
-			border-top: 1px solid $secondary;
-			margin-left: 0px;
-			background-repeat: no-repeat;
-			background-position: 10px;
-		}
-
-		&.next, &.previous {
-			&:hover {
-				background-color: $secondary;
-				cursor: pointer;
-			}
-		}
 
 		a {
 			color: $text;
