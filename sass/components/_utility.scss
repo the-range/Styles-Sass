@@ -291,6 +291,11 @@
   }    
 }
 
+.dot_div {
+  border-top: 1px dotted $secondary;
+  display: block;
+  clear: both;
+}
 
 /* Something */
 
