@@ -24,11 +24,10 @@
     padding-bottom: 15px;
 }
 
-/* Header */
 .product_stock_header {
-	border: 1px solid $secondary;
-	padding: 10px;
-	background-color: $tertiary;
+  border: 1px solid #e2e4e1;
+  padding: 10px;
+  background-color: #fcfefb;
 }
 
 .product_stock_header_icon {
@@ -39,11 +38,11 @@
 }
 
 .product_stock_header_edit_icon {
-	height: 12px;
-	width: 12px;
-	vertical-align: baseline;
-	cursor: pointer;
-	margin-left: 4px;
+  height: 12px;
+  width: 12px;
+  vertical-align: baseline;
+  cursor: pointer;
+  margin-left: 4px;
 }
 
 .product_stock_header_editable {
@@ -63,42 +62,22 @@ ul.product_stock_content {
     	list-style: none;
     	padding-bottom: 2px;
     	
-    	// &:nth-child(2n+2) {
-    	// 	background-color: #ededed;
-    	// }
     }
 }
 
-// .product_stock_content_icon {
-// 	height: 16px;
-//     width: 30px;
-//     margin-top: 12px;
-//     float: left;
-//     margin-bottom: 12px;
-// }
+
 
 .product_stock_content_icon {
-	height: 25px;
-	  width: 38px;
-	  margin-top: 12px;
-	  float: left;
-	      margin-bottom: 8px;
-
-	      &.product_page {
-	      	height: 100%;
-    		width: 32px;
-	      }
+  height: 25px;
+  width: 38px;
+  margin-top: 12px;
+  float: left;
+  margin-bottom: 8px;
 }
-
-/* Content Area Text Content */
-// .product_stock_available_text {
-// 	color: $green;
-// 	overflow: hidden;
-    
-//     &.no-stock {
-//     	color: $red;
-//     }
-// }
+.product_stock_content_icon.product_page {
+  height: 100%;
+  width: 32px;
+}
 
 p#p_s_del_info, p#p_s_store_info {
 	line-height: 18px;
@@ -111,15 +90,15 @@ p#p_s_del_info, p#p_s_store_info {
 }
 
 .product_stock_order_in_text {
-	color: $red;
+  color: #C50909;
 }
 
 .product_stock_order_in_text_day {
-	color: $green;
+  color: #3c7f53;
 }
 
 .product_stock_content_text {
-	padding: 8px !important;
+  padding: 8px !important;
 }
 
 .p_s_options {
@@ -159,84 +138,71 @@ p#p_s_del_info, p#p_s_store_info {
 }
 
 .stk_location {
-	margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .stk_location_input {
-	width: 100%;
-	height: 36px;
-	color: grey;
-	padding: 7px;
-	font-size: 14px;
-
-	&:before {
-		background-image: url(http://172.15.10.187:800/img/location/icons/crosshair.png);
-	    background-size: 22px 20px;
-	    content: "";
-	    display: block;
-	    background-position: 0px -1px;
-	    height: 21px;
-	    width: 21px;
-	    margin-right: 2px;
-	    float: left;
-	}
+  width: 100%;
+  height: 36px;
+  color: grey;
+  padding: 7px;
+  font-size: 14px;
+}
+.stk_location_input:before {
+  background-image: url(http://172.15.10.187:800/img/location/icons/crosshair.png);
+  background-size: 22px 20px;
+  content: "";
+  display: block;
+  background-position: 0px -1px;
+  height: 21px;
+  width: 21px;
+  margin-right: 2px;
+  float: left;
 }
 
-// .stk_location_confirm {
-// 	width: 100%;
-// 	background-color: grey;
-// 	color: #FFF;
-// 	height: 36px;
-// 	padding: 5px;
-// }
-
 .stk_location_country {
-	margin-bottom: 10px;
-
-	a {
-		color: $primary;
-	    overflow: hidden;
-	    float: left;
-	    display: inline-block;
-
-		span {
-		font-weight: normal;
-
-			&:hover {
-				color: $primary;
-				text-decoration: none;
-			}
-
-		}
-
-		&:hover {
-			color: $primary;
-			text-decoration: none;
-		}
-	}
+  margin-bottom: 10px;
+}
+.stk_location_country a {
+  color: #7F7E7E;
+  overflow: hidden;
+  float: left;
+  display: inline-block;
+}
+.stk_location_country a span {
+  font-weight: normal;
+}
+.stk_location_country a span:hover {
+  color: #7F7E7E;
+  text-decoration: none;
+}
+.stk_location_country a:hover {
+  color: #7F7E7E;
+  text-decoration: none;
 }
 
 .stk_location_country_icon {
-	    width: 20px;
-    margin-right: 6px;
-    display: inline-block;
-    float: left;
-    margin-top: 3px;
+  width: 20px;
+  margin-right: 6px;
+  display: inline-block;
+  float: left;
+  margin-top: 3px;
 }
 
 .stk_location_change_country {
-	padding-top: 3px;
-	text-align: left;
+  padding-top: 3px;
+  text-align: left;
 }
 
 .stk_location_change_country a {
-	color: blue;
-	text-decoration: underline;
+  color: blue;
+  text-decoration: underline;
 }
 
+
 .stock_level {
-	color: $green;
-	font-weight: bold;
+  color: #3c7f53;
+  font-weight: bold;
 }
 
 .location_selector .input-group-btn .btn {
@@ -244,62 +210,60 @@ p#p_s_del_info, p#p_s_store_info {
 }
 
 .search_suggestion {
-	width: 100%;
-	border: 1px solid $secondary;
-	padding: 6px;
-    padding-left: 8px;
-    border-top: none;
+  width: 100%;
+  border: 1px solid #e2e4e1;
+  padding: 6px;
+  padding-left: 8px;
+  border-top: none;
 }
 
 .search_suggestion:hover {
-	opacity: 1;
-	color: black;
-	cursor: pointer;
+  opacity: 1;
+  color: black;
+  cursor: pointer;
 }
 
 .country_suggestion {
-	border-bottom: 1px solid $secondary;
-    font-size: 14px;
-    padding: 5px;
-
-    &:last-child {
-		border-bottom: none;    	
-    }
+  border-bottom: 1px solid #e2e4e1;
+  font-size: 14px;
+  padding: 5px;
+}
+.country_suggestion:last-child {
+  border-bottom: none;
 }
 
 .country_suggestion:hover {
-	opacity: 0.6;
-	color: black;
-	cursor: pointer;
+  opacity: 0.6;
+  color: black;
+  cursor: pointer;
 }
 
 .selected_country {
-	background-color: $secondary;
+  background-color: #e2e4e1;
 }
 
 .country_list {
-	border: 1px solid $secondary;
-	background-color: $tertiary;
+  border: 1px solid #e2e4e1;
+  background-color: #fcfefb;
 }
 
-.country_list::-webkit-scrollbar
-{
-  width: 12px;  /* for vertical scrollbars */
-  height: 12px; /* for horizontal scrollbars */
+.country_list::-webkit-scrollbar {
+  width: 12px;
+
+  height: 12px;
+
 }
 
-.country_list::-webkit-scrollbar-track
-{
+.country_list::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0.1);
 }
 
-.country_list::-webkit-scrollbar-thumb
-{
+.country_list::-webkit-scrollbar-thumb {
   background: rgba(0, 0, 0, 0.5);
 }
 
 .country_select {
-	vertical-align: top;
+  vertical-align: top;
 }
 
 // p#p_s_del_info, p#p_s_store_info {
@@ -317,15 +281,15 @@ ul.p_s_cont li {
 }
 
 .stk_use_my_location:hover {
-	cursor: pointer;
-	opacity: 0.7;
+  cursor: pointer;
+  opacity: 0.7;
 }
 
 .stk_use_my_location {
-	position: absolute;
-	width: 20px;
-	top: 6px;
-	right: 22px;
+  position: absolute;
+  width: 20px;
+  top: 6px;
+  right: 22px;
 }
 
 .tk_av {
