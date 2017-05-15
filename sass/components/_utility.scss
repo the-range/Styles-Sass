@@ -279,17 +279,6 @@
   border-left: none;
 }
 
-@media (min-width: 960px) {
-   .border-top-md {
-    border-top: 1px solid $secondary;
-  } 
-}
-
-@media (min-width: 960px) {
-  .no-border-left-md {
-    border-left: none;
-  }    
-}
 
 .dot_div {
   border-top: 1px dotted $secondary;
@@ -298,35 +287,6 @@
 }
 
 /* Something */
-
-.caret-up {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  margin-left: 2px;
-  vertical-align: middle;
-  border-bottom: 4px solid;
-  border-right: 4px solid transparent;
-  border-left: 4px solid transparent;
-}
-
-.backdrop-fullscreen {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  background-color: #000;
-  opacity: 0;
-  z-index: 1040;
-  -moz-transition: all 0.2s linear 0s;
-  -webkit-transition: all 0.2s linear 0s;
-  -ms-transition: all 0.2s linear 0s;
-  transition: all 0.2s linear 0s;
-  
-  &.in {
-    opacity: 0.5;
-  }
-}
 
 .progress-bar-excellent {
   background-color: #079443;  
@@ -437,4 +397,21 @@ ul.no_list_style li {
 .is-selected, .is-expanded {
   display: block !important;
   visibility: visible !important;
+}
+
+.hover:hover {
+    cursor: pointer;
+    opacity: 1;
+
+    &.blue {
+      color: $blue;
+    }
+
+    &.red {
+      color: $red;
+    }
+
+    &.orange {
+      color: $orange;
+    }
 }

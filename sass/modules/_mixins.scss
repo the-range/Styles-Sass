@@ -84,8 +84,8 @@ $megamenu_slide_left: 55px; /* default = 55px */
 }
 
 .was-price {
-	color: grey;
-
+	color: $primary;
+	
 	span {
 		text-decoration: line-through;
 	}

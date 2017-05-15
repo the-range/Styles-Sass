@@ -1,27 +1,10 @@
 .product-like-this {
-	float: right;
-	margin-bottom: 10px;
+	min-height: 28px;
 	margin-top: 2px;
-
-	.target-div {
-		img {
-			height: 15px;
-			width: 18px;
-			display: inline-block;
-			margin-left: 4px;
-			float: left;
-		}
-	} 
-
-	.target-div-hint {
-		width: 70px;
-	}
 }
 
-/* Basket Page */
-.saved-for-later  {
-	.product-like-this {
-		float: left;
-		margin-bottom: 10px;
-	}
+.pd_heart {
+	height: 12.5px;
+	width: 15.5px;
+	float: right;
 }
