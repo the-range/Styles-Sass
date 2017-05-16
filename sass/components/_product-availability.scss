@@ -210,17 +210,22 @@ p#p_s_del_info, p#p_s_store_info {
 }
 
 .search_suggestion {
-  width: 100%;
-  border: 1px solid #e2e4e1;
-  padding: 6px;
-  padding-left: 8px;
-  border-top: none;
+   width: 100%;
+   border: 1px solid $secondary;
+   padding: 6px;
+   padding-left: 15px;
+   border-top: none;
+   position: absolute;
+   top: 40px;
+   z-index: 99999;
+   background: $tertiary;
 }
 
 .search_suggestion:hover {
   opacity: 1;
   color: black;
   cursor: pointer;
+  background-color: $secondary;
 }
 
 .country_suggestion {

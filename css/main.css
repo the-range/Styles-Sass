@@ -11705,84 +11705,89 @@ p#p_s_del_info.no-stock, p#p_s_store_info.no-stock {
   width: 100%;
   border: 1px solid #e2e4e1;
   padding: 6px;
-  padding-left: 8px;
+  padding-left: 15px;
   border-top: none;
+  position: absolute;
+  top: 40px;
+  z-index: 99999;
+  background: #fcfefb;
 }
 
-/* line 220, ../sass/components/_product-availability.scss */
+/* line 224, ../sass/components/_product-availability.scss */
 .search_suggestion:hover {
   opacity: 1;
   color: black;
   cursor: pointer;
+  background-color: #e2e4e1;
 }
 
-/* line 226, ../sass/components/_product-availability.scss */
+/* line 231, ../sass/components/_product-availability.scss */
 .country_suggestion {
   border-bottom: 1px solid #e2e4e1;
   font-size: 14px;
   padding: 5px;
 }
 
-/* line 231, ../sass/components/_product-availability.scss */
+/* line 236, ../sass/components/_product-availability.scss */
 .country_suggestion:last-child {
   border-bottom: none;
 }
 
-/* line 235, ../sass/components/_product-availability.scss */
+/* line 240, ../sass/components/_product-availability.scss */
 .country_suggestion:hover {
   opacity: 0.6;
   color: black;
   cursor: pointer;
 }
 
-/* line 241, ../sass/components/_product-availability.scss */
+/* line 246, ../sass/components/_product-availability.scss */
 .selected_country {
   background-color: #e2e4e1;
 }
 
-/* line 245, ../sass/components/_product-availability.scss */
+/* line 250, ../sass/components/_product-availability.scss */
 .country_list {
   border: 1px solid #e2e4e1;
   background-color: #fcfefb;
 }
 
-/* line 250, ../sass/components/_product-availability.scss */
+/* line 255, ../sass/components/_product-availability.scss */
 .country_list::-webkit-scrollbar {
   width: 12px;
   height: 12px;
 }
 
-/* line 257, ../sass/components/_product-availability.scss */
+/* line 262, ../sass/components/_product-availability.scss */
 .country_list::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0.1);
 }
 
-/* line 261, ../sass/components/_product-availability.scss */
+/* line 266, ../sass/components/_product-availability.scss */
 .country_list::-webkit-scrollbar-thumb {
   background: rgba(0, 0, 0, 0.5);
 }
 
-/* line 265, ../sass/components/_product-availability.scss */
+/* line 270, ../sass/components/_product-availability.scss */
 .country_select {
   vertical-align: top;
 }
 
-/* line 274, ../sass/components/_product-availability.scss */
+/* line 279, ../sass/components/_product-availability.scss */
 ul.p_s_cont li {
   padding-top: 20px;
 }
-/* line 278, ../sass/components/_product-availability.scss */
+/* line 283, ../sass/components/_product-availability.scss */
 ul.p_s_cont li:first-child {
   padding-top: 0px;
 }
 
-/* line 283, ../sass/components/_product-availability.scss */
+/* line 288, ../sass/components/_product-availability.scss */
 .stk_use_my_location:hover {
   cursor: pointer;
   opacity: 0.7;
 }
 
-/* line 288, ../sass/components/_product-availability.scss */
+/* line 293, ../sass/components/_product-availability.scss */
 .stk_use_my_location {
   position: absolute;
   width: 20px;
@@ -11790,7 +11795,7 @@ ul.p_s_cont li:first-child {
   right: 22px;
 }
 
-/* line 295, ../sass/components/_product-availability.scss */
+/* line 300, ../sass/components/_product-availability.scss */
 .tk_av {
   position: absolute;
   top: 2px;
@@ -14063,27 +14068,28 @@ ul.current-filters {
 		Product Primary Information Section			
 -------------------------------------------------- */
 /* Product Purchase Information */
-/* line 35, ../sass/partials/_product-display.scss */
-.primary-product-purchase .offer {
+@media (min-width: 600px) {
+  /* line 34, ../sass/partials/_product-display.scss */
+  .p_attr {
+    float: right;
+  }
+}
+@media (min-width: 960px) {
+  /* line 40, ../sass/partials/_product-display.scss */
+  .p_attr {
+    float: left;
+  }
+}
+/* line 48, ../sass/partials/_product-display.scss */
+.p_attr .offer, .p_attr .price-saving, .p_attr .was-price {
   font-size: 16px;
 }
-/* line 39, ../sass/partials/_product-display.scss */
-.primary-product-purchase .price {
+/* line 52, ../sass/partials/_product-display.scss */
+.p_attr .price {
   font-size: 24px;
 }
-/* line 46, ../sass/partials/_product-display.scss */
-.primary-product-purchase .price-details .was-price {
-  float: left;
-  padding-right: 5px;
-  font-size: 16px;
-}
-/* line 55, ../sass/partials/_product-display.scss */
-.primary-product-purchase .price-details .price-saving {
-  font-size: 16px;
-  float: left;
-}
 
-/* line 62, ../sass/partials/_product-display.scss */
+/* line 57, ../sass/partials/_product-display.scss */
 .expand-content {
   margin-top: 10px;
   padding-bottom: 15px;
@@ -14091,7 +14097,7 @@ ul.current-filters {
   font-weight: normal;
   text-decoration: none;
 }
-/* line 69, ../sass/partials/_product-display.scss */
+/* line 64, ../sass/partials/_product-display.scss */
 .expand-content:hover {
   cursor: pointer;
   text-decoration: none;
