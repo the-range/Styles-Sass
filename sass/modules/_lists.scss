@@ -4,13 +4,22 @@ ul.disk {
 	
 	li {
 		color: $text;
-		    list-style-position: inside;
-    text-indent: -2em;
-    padding-left: 2em;
+		list-style-position: inside;
+		text-indent: -2em;
+		padding-left: 2em;
 		
 		span {
 			color: $text;
 		}
+	}
+}
+
+ul.list-chv {
+	/* Needs class of 'list-unstued on ul' */
+	li {
+		list-style-position: inside;
+		text-indent: -21px;
+		padding-left: 20px;
 	}
 }
 

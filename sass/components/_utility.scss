@@ -412,6 +412,67 @@ ul.no_list_style li {
     }
 
     &.orange {
-      color: $orange;
+      color: $orange-hover !important;
     }
+}
+
+.cv_after {
+  &:after {
+      background-image: url(/img/up_arrow_blue.png);
+      background-size: 10px 10px;
+        content: "";
+        display: inline-block;
+        height: 10px;
+        width: 10px;
+        margin-top: 6px;
+        position: absolute;
+        margin-left: 3px;
+        transition: all 0.3s ease;
+        -ms-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+  }
+
+    &.is_expanded {
+        &:after {
+            -ms-transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+    }
+
+}
+
+.chv::before {
+  border-style: solid;
+  border-width: 0.15em 0.15em 0 0;
+  content: '';
+  display: inline-block;
+  height: 0.7em;
+  left: 0.3em;
+  position: relative;
+  top: 0.3em;
+  transform: rotate(-45deg);
+  vertical-align: top;
+  width: 0.7em;
+}
+
+.chv.right:before {
+  left: 0;
+  transform: rotate(45deg);
+}
+
+.chv.bottom:before {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+.chv.left:before {
+  left: 0.25em;
+  transform: rotate(-135deg);
+}
+
+.chv.top:before {
+  top: 0.5em;
+  transform: rotate(-135deg);
 }

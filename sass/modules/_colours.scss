@@ -13,19 +13,19 @@ $secondary: #e2e4e1;
 $tertiary: #fcfefb;
 
 .text_colour {
-  color: $text;
+  color: $text !important;;
 }
 
 .primary_colour {
-  color: $primary;
+  color: $primary !important;;
 }
 
 .secondary_colour {
-  color: $secondary;
+  color: $secondary !important;;
 }
 
 .tertiary_colour {
-  color: $tertiary;
+  color: $tertiary !important;;
 }
 
 .white_colour {
@@ -33,19 +33,19 @@ $tertiary: #fcfefb;
 }
 
 .red {
-  color: $red;
+  color: $red !important;;
 }
 
 .blue {
-  color: $blue;
+  color: $blue !important;;
 }
 
 .green {
-  color: $green;
+  color: $green !important;;
 }
 
 .orange {
-	color: $orange;
+	color: $orange !important;;
 }
 
 /*  Background Colours */
