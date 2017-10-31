@@ -1,0 +1,584 @@
+/* Background */
+.royalSlider
+{
+	width: 100%;
+}
+
+.rsCds .rsOverflow 
+{
+	width: 100%;
+}
+
+.rsCds,
+.rsCds .rsOverflow,
+.rsCds .rsSlide,
+.rsCds .rsVideoFrameHolder,
+.rsCds .rsThumbs {
+	background: #FFF;
+	color: #FFF;
+}
+
+
+
+/***************
+*
+*  1. Arrows
+*
+****************/
+
+.rsCds .rsArrow {
+	height: 100%;
+	width: 44px;
+	position: absolute;
+	display: block;
+	cursor: pointer;
+	z-index: 1000; /* zoom plugin set previe z-index to 999 - this element should be shown on top */
+}
+.rsCds.rsVer .rsArrow {
+	width: 100%;
+	height: 44px;
+	
+}
+.rsCds.rsVer .rsArrowLeft { top: 0; left: 0; }
+.rsCds.rsVer .rsArrowRight { bottom: 0;  left: 0; }
+
+.rsCds.rsHor .rsArrowLeft { left: 0; top: 0; }
+.rsCds.rsHor .rsArrowRight { right: 0; top:0; }
+.rsCds .rsArrowIcn {
+	width: 42px;
+	height: 42px;
+	top: 50%;
+	position: absolute;	
+	cursor: pointer;
+	z-index: 101;
+}
+.rsCds .rsArrowRight .rsArrowIcn {
+	right: -18px;
+	margin-top:-24px;	
+	margin-left: -24px;
+	background: url('/img/rs-cds.png');
+	background-color: #000;
+	background-color: rgba(255,255,255,1);
+	border-radius: 30px;
+}
+
+.rsCds .rsArrowLeft .rsArrowIcn {
+	left: 6px;
+	margin-top:-24px;	
+	margin-left: -24px;
+	background: url('/img/rs-cds.png');
+	background-color: #000;
+	background-color: rgba(255,255,255,1);
+	border-radius: 30px;
+}
+
+.rsCds .rsArrowIcn:hover {
+	background-color: rgba(255,255,255,1);
+}
+
+.rsCds.rsHor .rsArrowLeft .rsArrowIcn { background-position: -53px -28px; }
+.rsCds.rsHor .rsArrowRight .rsArrowIcn { background-position: -65px -60px; }
+
+.rsCds.rsVer .rsArrowLeft .rsArrowIcn { background-position: -96px -32px; }
+.rsCds.rsVer .rsArrowRight .rsArrowIcn { background-position: -96px -64px; }
+
+.rsCds .rsArrowDisabled .rsArrowIcn { opacity: .2; filter: alpha(opacity=20);  *display: none; }
+
+
+/***************
+*
+*  2. Bullets
+*
+****************/
+
+.rsCds .rsBullets {
+	position: absolute;
+	z-index: 35;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: auto;
+	margin: 0 auto; 
+
+	background: #000;
+	background: rgba(0,0,0,0.75);
+
+	text-align: center;
+	line-height: 8px;
+	overflow: hidden;
+}
+.rsCds .rsBullet {
+	width: 8px;
+	height: 8px;
+	display: inline-block;
+	*display:inline; 
+	*zoom:1;
+	padding: 6px 5px 6px;
+}
+.rsCds .rsBullet span {
+	display: block;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #777;
+	background: rgba(255,255,255,0.5);
+}
+.rsCds .rsBullet.rsNavSelected span {
+	background-color: #FFF;
+}
+
+
+
+
+
+/***************
+*
+*  3. Thumbnails
+*
+****************/
+
+.rsCds .rsThumbsHor {
+	width: 100%;
+	height: 46px;
+}
+.rsCds .rsThumbsVer {
+	width: 96px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.rsCds.rsWithThumbsHor .rsThumbsContainer {
+	position: relative;
+	height: 100%;
+}
+.rsCds.rsWithThumbsVer .rsThumbsContainer {
+	position: relative;
+	width: 100%;
+}
+.rsCds .rsThumb {
+	float: left;
+	overflow: hidden;
+	width: 46px !important;
+	height: 46px !important;
+}
+.rsCds .rsThumb img {
+	width: 100%;
+	height: 100%;
+}
+.rsCds .rsThumb.rsNavSelected {
+	background: #f9f8f4;
+}
+.rsCds .rsThumb.rsNavSelected img {
+	opacity: 0.3;
+	filter: alpha(opacity=30);
+}
+.rsCds .rsTmb {
+	display: block;
+}
+
+/* Thumbnails with text */
+.rsCds .rsTmb h5 {
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	line-height: 20px;
+	color: #FFF;
+}
+.rsCds .rsTmb span {
+	color: #DDD;
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.rsThumbsContainer, .rsThumbs {
+	height: 46px !important;	
+}
+
+/* Thumbnails arrow icons */
+.rsCds .rsThumbsArrow {
+	height: 100%;
+	width: 20px;
+	position: absolute;
+	display: block;
+	cursor: pointer;	
+	z-index: 21;	
+	background: #000;
+	background: rgba(255,255,255,0.4);
+}
+.rsCds .rsThumbsArrow:hover {
+	background: rgba(255,255,255,0.75);
+}
+.rsCds.rsWithThumbsVer .rsThumbsArrow {
+	width: 100%;
+	height: 20px;
+}
+.rsCds.rsWithThumbsVer .rsThumbsArrowLeft { top: 0; left: 0; }
+.rsCds.rsWithThumbsVer .rsThumbsArrowRight { bottom: 0;  left: 0; }
+
+.rsCds.rsWithThumbsHor .rsThumbsArrowLeft { left: 0; top: 0; }
+.rsCds.rsWithThumbsHor .rsThumbsArrowRight { right: 0; top:0; }
+
+.rsCds .rsThumbsArrowIcn {		
+	width: 16px;
+	height: 16px;
+	top: 50%;
+	left: 50%;
+	margin-top:-8px;	
+	margin-left: -8px;
+	position: absolute;	
+	cursor: pointer;	
+	background: url('/img/rs-cds.png');
+}
+
+.rsCds.rsWithThumbsHor .rsThumbsArrowLeft .rsThumbsArrowIcn { background-position: -128px -32px; }
+.rsCds.rsWithThumbsHor .rsThumbsArrowRight .rsThumbsArrowIcn { background-position: -128px -48px; }
+
+.rsCds.rsWithThumbsVer .rsThumbsArrowLeft .rsThumbsArrowIcn { background-position: -144px -32px; }
+.rsCds.rsWithThumbsVer .rsThumbsArrowRight .rsThumbsArrowIcn { background-position: -144px -48px; }
+
+.rsCds .rsThumbsArrowDisabled { display: none !important; }
+
+/* Thumbnails resizing on smaller screens */
+@media screen and (min-width: 0px) and (max-width: 800px) {
+	.rsCds .rsThumb {
+		width: 59px;
+		height: 44px;
+	}
+	.rsCds .rsThumbsHor {
+		height: 44px;
+	}
+	.rsCds .rsThumbsVer {
+		width: 59px;
+	}
+}
+
+
+
+
+/***************
+*
+*  4. Tabs
+*
+****************/
+
+.rsCds .rsTabs {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	text-align:center;
+	overflow: hidden; padding-top: 12px; position: relative;
+}
+.rsCds .rsTab {
+	display: inline-block;
+	cursor: pointer;
+	text-align: center;
+	height: auto;
+	width: auto;
+	color: #333;
+	padding: 5px 13px 6px;
+	min-width: 72px;
+	border: 1px solid #D9D9DD;
+	border-right: 1px solid #f5f5f5;
+	text-decoration: none;
+
+	background-color: #FFF;
+	background-image: -webkit-linear-gradient(top, #fefefe, #f4f4f4); 
+	background-image:    -moz-linear-gradient(top, #fefefe, #f4f4f4);
+	background-image:         linear-gradient(to bottom, #fefefe, #f4f4f4);
+
+	-webkit-box-shadow: inset 1px 0 0 #fff;
+	box-shadow: inset 1px 0 0 #fff;
+
+	*display:inline; 
+	*zoom:1;
+}
+.rsCds .rsTab:first-child {
+	-webkit-border-top-left-radius: 4px;
+	border-top-left-radius: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+.rsCds .rsTab:last-child { 
+	-webkit-border-top-right-radius: 4px;
+	border-top-right-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+
+	border-right:  1px solid #cfcfcf;
+}
+.rsCds .rsTab:active { 
+	border: 1px solid #D9D9DD;   
+	background-color: #f4f4f4;
+	box-shadow:  0 1px 4px rgba(0, 0, 0, 0.2) inset;
+}
+.rsCds .rsTab.rsNavSelected { 
+	color: #FFF;
+	border: 1px solid #999;
+	text-shadow: 1px 1px #838383;
+	box-shadow: 0 1px 9px rgba(102, 102, 102, 0.65) inset;
+	background: #ACACAC;
+	background-image: -webkit-linear-gradient(top, #ACACAC, #BBB);
+	background-image: -moz-llinear-gradient(top, #ACACAC, #BBB);
+	background-image: linear-gradient(to bottom, #ACACAC, #BBB);
+}
+
+
+
+
+
+/***************
+*
+*  5. Fullscreen button
+*
+****************/
+
+.rsCds .rsFullscreenBtn {
+	right: 0;
+	top: 0;
+	width: 44px;
+	height: 44px;
+	z-index: 1001;
+	display: block;
+	position: absolute;
+	cursor: pointer;
+	
+}
+.rsCds .rsFullscreenIcn {
+	display: block;
+	margin: 6px;
+	width: 32px;
+	height: 32px;
+
+	background: url('/img/rs-cds.png') 0 0;
+	background-color: #faf9f6;
+	border-radius: 2px;
+
+}
+.rsCds .rsFullscreenIcn:hover {
+	/* rgb(230,230,230) = #faf9f6 */
+	background-color: rgba(230,230,230,0.9);
+}
+.rsCds.rsFullscreen .rsFullscreenIcn {
+	background-position: -32px 0;
+}
+
+
+
+
+
+/***************
+*
+*  6. Play/close video button
+*
+****************/
+
+.rsCds .rsPlayBtn {
+	-webkit-tap-highlight-color:rgba(0,0,0,0.3);
+	width:64px;
+	height:64px;
+	margin-left:-32px;
+	margin-top:-32px;
+	cursor: pointer;
+}
+.rsCds .rsPlayBtnIcon {
+	width:64px;
+	display:block;
+	height:64px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	transition: .3s;
+
+	background:url(/img/rs-cds.png) no-repeat 0 -32px;
+	background-color: #000;
+	background-color: rgba(0,0,0,0.75);
+	*background-color: #000;
+}
+.rsCds .rsPlayBtn:hover .rsPlayBtnIcon {
+	background-color: rgba(0,0,0,0.9);
+}
+.rsCds .rsBtnCenterer {
+	position:absolute;
+	left:50%;
+	top:50%;
+}
+.rsCds .rsCloseVideoBtn {
+	right: 0;
+	top: 0;
+	width: 44px;
+	height: 44px;
+	z-index: 500;
+	position: absolute;
+	cursor: pointer;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateZ(0);
+	
+}
+.rsCds .rsCloseVideoBtn.rsiOSBtn {
+	top: -38px;
+	right: -6px;
+}
+
+.rsCds .rsCloseVideoIcn {
+	margin: 6px;
+	width: 32px;
+	height: 32px;
+	background: url('/img/rs-cds.png') -64px 0;
+	background-color: #000;
+	background-color: rgba(0,0,0,0.75);
+	*background-color: #000;
+}
+.rsCds .rsCloseVideoIcn:hover {
+	background-color: rgba(0,0,0,0.9);
+}
+
+
+
+/***************
+*
+*  7. Preloader
+*
+****************/
+
+.rsCds .rsPreloader {
+	width:20px;
+	height:20px;
+	background-image:url(/img/preloader.gif);
+
+
+	/*overwrite */
+	width:30px;
+	height:30px;
+	background-image:url(/img/loading.gif);
+	/* end overwrite */
+
+
+	left:50%;
+	top:50%;
+	margin-left:-10px;
+	margin-top:-10px;	
+}
+
+
+
+
+/***************
+*
+*  8. Global caption
+*
+****************/
+.rsCds .rsGCaption {
+	position: absolute;
+	float: none;
+	bottom: 6px;
+	left: 6px;
+	text-align: left;
+
+	background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.75);
+
+	color: #FFF;
+	padding: 2px 8px;
+	width: auto;
+	font-size: 12px;
+	border-radius: 2px;
+}
+
+/* Product Page Overrides */
+.rsCds .rsThumbsArrowIcn {		
+	width: 8px;
+	height: 8px;
+	top: 50%;
+	left: 50%;
+	margin-top: -4px;
+	margin-left: -8px;
+	position: absolute;
+	cursor: pointer;
+	background: url(/img/right_chevron_16x16.png);
+	background-image: 8px;
+	background-size: 8px;
+}
+
+.rsCds .rsArrowRight .rsArrowIcn {
+    right: 0px;
+    margin-top: 0px;
+    margin-left: 0;
+    background-image: url(/img/right_arrow.png);
+    color: red;
+    font-size: 30px;
+    opacity: .75;
+    background-size: 14px 28px;
+    content: "";
+    display: inline-block;
+    height: 28px;
+    width: 14px;
+    border-radius: 0px;
+    padding: 25px 15px 15px 15px;
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-position: 9px !important;
+    margin-right: 0px;
+}
+
+.rsCds .rsArrowLeft .rsArrowIcn {
+    right: 0px;
+    margin-top: 0px;
+    margin-left: 0;
+    background-image: url(/img/left_arrow.png);
+    color: red;
+    font-size: 30px;
+    opacity: .75;
+    background-size: 14px 28px;
+    content: "";
+    display: inline-block;
+    height: 28px;
+    width: 14px;
+    border-radius: 0px;
+    padding: 25px 15px 15px 15px;
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-position: 9px !important;
+    margin-left: -6px;
+}
+
+
+.rsCds .rsThumbsArrow {
+    background: rgba(255,255,255,0.8);
+    display: none !important;
+}
+
+.rsCds .rsThumbsArrowIcn {
+    background: url(/img/right_chevron_16x16.png);
+}
+
+
+
+.royalSlider .rsCloseVideoIcn {
+   opacity: 0;
+}
+
+.rsCds .rsPlayBtnIcon {
+    width: 64px;
+    display: block;
+    height: 64px;
+    
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    transition: .3s;
+    background: url(/img/play_video.png) no-repeat 0;
+    background-size: 64px;
+    background-color: white;
+    border-radius: 64px;
+}
+
+
+.rsCds .rsPlayBtn:hover .rsPlayBtnIcon {
+	background-size: 64px;
+	background-color: white;
+	border-radius: 64px;
+}
