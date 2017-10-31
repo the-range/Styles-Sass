@@ -13,12 +13,6 @@ Sass has two syntaxes. The most commonly used syntax is known as “SCSS” (for
 
 Ensure **compass** is already installed ([install compass](http://compass-style.org/install)).
 
-Then just use **npm**:
-
-```javascript
-npm install compass
-```
-
 Compass will compile `.scss` files in the `/sass` directory and place the generated complied `.css file` into the root directory as `main.css`. 
 
 ## Usage
@@ -87,7 +81,7 @@ scss
 │   ├── _postcode-lookup.scss
 │   ├── _like.scss
 ├── modules
-│   ├── _nase.scss
+│   ├── _base.scss
 │   ├── _basket-add.scss
 │   ├── _content.scss
 │   ├── _delivery.scss
