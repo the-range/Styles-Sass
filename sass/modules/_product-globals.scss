@@ -1,0 +1,73 @@
+/*
+	Extend mixins onto reusable classes
+*/ 
+
+/*	--------------------------------------------------
+	Used by all Columns
+-------------------------------------------------- */ 
+
+
+/* Add to Basket */
+.add-to-basket {
+	@extend %add-to-basket-mixin;
+
+	from.add-to-basket {
+
+	}
+}
+
+
+/* Quantity Form */
+form.add-to-basket {
+	@extend form.add-to-basket-mixin;
+
+	.quantity-selector {
+		@extend %quantity-selector-mixin;	
+
+		input[type="button"] {
+			@extend %input[type="button"];	
+
+			&.increase {
+				@extend %modify-mixin;	
+
+			}
+
+			&.decrease {
+				@extend %modify-mixin;	
+
+			}
+		}
+
+		input[type="text"] {
+			@extend %input[type="text"];	
+		}
+	}
+
+	&.basket {
+		width: auto !important;
+		padding: 0px !important;
+	}
+
+	/* Quantity Form */
+	.save-for-later {
+
+		a {
+
+			&:hover {
+
+			}
+		}
+	}
+}
+
+
+.product-grid {
+	clear: both;
+	overflow: hidden;
+
+	ul {
+		overflow: hidden;
+		padding: 0;
+		margin: 0;
+	}
+}

@@ -1,0 +1,73 @@
+.contact_enquiries_header {
+	background-color: #141D56;
+	color: white;
+	padding: 10px;
+	padding-top: 6px;
+	padding-left: 25px;
+	margin-bottom: 25px;
+    position: relative;
+	height: 120px;
+    overflow: hidden;
+		
+		// #fixit replace with new header title	    
+	    .header-text-container {
+	    	z-index: 1;
+	    	background-color: #141D56;
+	    	height: 100%;
+	    	width: 100%;
+	    	position: absolute;
+	    	top: 0;
+	    	left: 0;
+	    	
+	    	.header-text-wrapper {
+	    		z-index: 2;
+	    		position: absolute;
+	    		height: 100%;
+	    		width: 100%;
+	    		margin-left: 30px;
+				top: 12px;
+	    		
+	    		h2 {
+	    			margin-bottom: 0px;
+	    		}
+
+	    		h4 {
+	    			margin-top: 5px;
+	    		}		
+	    	}
+	    }
+
+	    @media (min-width: 600px) {
+	    	.header-text-container {
+		    	width: 390px;
+		    }
+	    }
+}
+
+
+
+img.contact_enquiries {
+	margin-right: 15px;
+	margin-bottom: 45px;
+	float: left;
+	display: inline;
+	height: 35px;
+}
+
+h3.contact_enquiries {
+	border-bottom: 1px dotted #ededed;
+}
+
+p.contact_enquiries {
+	margin-bottom: 25px;
+}
+
+button.contact_enquiries {
+	margin-bottom: 25px;
+}
+
+@media (min-width: 960px) {
+	button.contact_enquiries {
+		margin-bottom: 45px;
+	}	
+}

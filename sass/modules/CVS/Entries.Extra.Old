@@ -2,9 +2,9 @@
 /_all-modules.scss////
 /_fonts.scss////
 /_colours.scss////
-/_product-globals.scss////
 /_selectmenu.scss////
-/_utilities.scss////
 /_buttons.scss////
 /_forms.scss////
 /_mixins.scss////
+/_product-globals.scss////
+/_utilities.scss////

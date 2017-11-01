@@ -1,0 +1,868 @@
+// #fixit - REVIEW
+
+li.basket .item {
+    display: none;
+}
+
+.checkout_review_box_content {
+    height: 60px;
+}
+
+.address_row {
+    margin-bottom: 10px;
+}
+
+.checkout_edit_tab_icon {
+    height: 40px;
+    width: 40px;
+}
+
+.select_icon_container {
+    float: right;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #4E4E4E;
+}
+
+.address {
+    margin-bottom: 10px;
+}
+            
+.add-another-delivery a {
+    margin-top: 10px;
+    color: #75706a;
+    cursor: pointer;
+    padding: 6px 0;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    border: solid 1px #C9C9C9;
+    padding: 8px;
+    font-weight: 700;
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    background-color: #faf9f6;
+    
+    &:hover {
+        text-decoration: none;
+        opacity: 0.8;
+    }
+}
+
+#pay-pal a {
+    font-weight: normal;
+    
+    img {
+        height: 16px;
+        margin-top: 1px;
+        margin-right: 4px;
+    }
+
+    span {
+        font-weight: 700;
+    }
+}
+
+
+#finance a {
+    font-weight: normal;
+    
+    img {
+        height: 18px;
+        margin-right: 4px;
+    }
+
+    span {
+        font-weight: 700;
+    }
+}
+
+/* End of the unknown */
+
+
+
+/* Billing Step Styles */
+span#selectcard-button {
+    height: 40px;
+    padding-top: 7px;
+}
+
+.checkout_cvv_help {
+    height: 30px;
+    margin-left: 0px;
+    padding-top: 10px;
+}
+
+.billing_checkbox {
+    height: 20px;
+    width: 20px;
+}
+
+.billing_checkbox_text {
+
+}
+
+.used_as_delivery {
+    color: rgb(245,122,57);
+    border-bottom: 1px solid grey;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+/* Review Step Styles */
+.checkout_review_box {
+    font-weight: normal;
+    height: 90px;
+    font-size: 14px;
+    padding: 10px;
+    font-family: $titlefont;
+    margin-bottom: 15px;
+    border: 1px solid green;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.checkout_review_section_title {
+    font-size: 16px;
+    color: grey;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.checkout_review_box_header {
+    font-weight: bold;
+    font-size: 16px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    color: rgb(130,145,159);
+}
+
+.checkout_order_text {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.checkout_order_total {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.checkout_review_box_content {
+    padding-left: 5px;
+}
+
+/* General Step Styles */
+
+.form_wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/*	--------------------------------------------------
+		Checkout Globals
+-------------------------------------------------- */ 
+
+
+/* Remove Header within Checkout */
+body.checkout_body_wrapper nav#navigation_bar {
+    display: none;
+}
+
+body.checkout_body_wrapper ul.nav.navbar-nav li.store {
+    display: none;
+}
+
+body.checkout_body_wrapper ul.nav.navbar-nav li.information {
+    display: none;
+}
+
+
+body.checkout_body_wrapper ul.nav.navbar-nav li.dropdown {
+    display: none;
+}
+
+.row.progress_wrapper {
+    height: 100%;
+}
+
+
+.step_container {
+    opacity: 0.3;
+}
+
+/*  --------------------------------------------------
+    Checkout Header
+-------------------------------------------------- */ 
+            
+/* Progress Header */
+.progress_header {
+    text-align: center;
+    height: 52px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: #000;
+    text-align: left;
+    color: #525252;
+    border: none;
+    background-color: #f4f4f4;
+    border: 1px solid #c9c9c9;
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    
+    &:hover {
+        opacity: 0.8;
+        transition: opacity .25s ease-in-out;
+    }
+}
+
+.current_step_marker {
+    width: 0;
+    height: 0;
+    display: block;
+    position: relative;
+    margin-left: calc(50% - 12px);
+    top: 8px;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid white;
+}
+
+
+.step_number {
+    border: 2px solid #4E4E4E;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    text-align: center;
+    margin-left: -20px;
+    margin: auto;
+    height: 25px;
+    width: 25px;
+    line-height: 22px;
+    display: none;
+    clear: both;
+    font-size: 17px;
+    font-weight: 700;
+    color: #4E4E4E;
+}
+.step_title {
+    font-size: 16px;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 4px;
+    color: #4E4E4E;
+}
+
+
+.snippet_info {
+    display: none;   
+    font-size: 14px;
+    font-weight: 100;
+    text-align: center;
+    width: 100%;
+    color: #4E4E4E;
+    overflow: hidden;
+    margin-top: -4px;
+}
+
+/*@media (min-width: 960px) {
+    .snippet_info {
+        display: block;   
+    }    
+}*/
+
+.snippet_info {
+    display: none;   
+} 
+
+
+@media (min-width: 600px) and (min-height: 650px)  {
+    .snippet_info {
+        display: block;   
+    } 
+
+    .step_number {
+        display: block;
+    }     
+    
+    .current_step_marker {
+        top: 5px;
+    }    
+    
+    .progress_header {
+        height: 92px;
+    }
+}
+
+/* Specific Header */
+#delivery_progress_header, #billing_progress_header {
+    border-right: 0;
+}
+
+
+/* Active */
+.progress_header.is_active {
+    background-color: #666;
+    border-color: #666;
+    
+    .step_number {
+        border: 2px solid $white;
+        color: $white;
+    }
+
+    .step_title {
+        color: $white;
+    }
+
+    .snippet_info {
+        color: $white;
+    }
+}
+
+/* Complete */
+.step_number.is_complete {
+    border: 2px solid #1B6732;
+    color: #1B6732;
+    background-color: #E5FAEB;
+}
+
+
+
+/*  --------------------------------------------------
+    Column Overlays /  Globals
+-------------------------------------------------- */ 
+
+/* Overlays */
+.step_overlay_1 {
+    background-color: rgba(244,244,244,0.8);
+    z-index: 105;
+    position: absolute;
+    margin-left: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.delivery_step_edit {
+    width: 120px;
+    height: 45px;
+    background-color: rgb(245,122,57);
+    z-index: 299;
+    opacity: 1;
+    position: absolute;
+    border-radius: 10px;
+    top: 500px;
+    left: 27%;
+    text-align: center;
+    padding: 12px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.delivery_step_edit:hover { 
+    opacity: 0.6;
+}
+
+.step_overlay_2 {
+    background-color: rgba(244,244,244,0.8);
+    z-index: 105;
+    position: absolute;
+    margin-left: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.billing_step_edit {
+    width: 120px;
+    height: 45px;
+    background-color: rgb(245,122,57);
+    z-index: 299;
+    opacity: 1;
+    position: absolute;
+    border-radius: 10px;
+    top: 500px;
+    left: 48%;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.billing_step_edit:hover { 
+    opacity: 0.6;
+}
+
+.step_overlay_3 {
+    background-color: rgba(244,244,244,0.8);
+    z-index: 105;
+    position: absolute;
+    margin-left: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+/* Edit Button */
+.edit-back-step {
+    padding: 9px 0;
+    width: 110px;
+    height: 38px;
+    border-radius: 40px;
+    line-height: 3px;
+    position: absolute;
+    top: calc(50% - 38px);
+    right: calc(50% - 55px);
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #666;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    transition: background 1.2s ease;
+}
+
+.edit-back-step:hover {
+    background-color: #464646;
+    transition: background .4s ease;
+}
+
+
+/* Globals */
+
+/* Sets viewport height to 100% */
+
+
+@media (min-width: 960px) {
+    .progress_container {
+        width: 970px;
+        margin: 0 auto;
+        float: none;
+    }    
+}
+
+@media (min-width: 1200px) {
+    .progress_container {
+        width: 1210px;
+        margin: 0 auto;
+        float: none;
+    }    
+}
+
+/* Sets Column Heigh to 100% */
+.checkout-content {
+   padding: 15px;
+   /*height: calc(100% - 60px);*/
+       margin-bottom: 65px;       
+}
+
+.progress_step_container {
+    height: 100%;
+    padding: 0px;
+}
+
+@media (min-width: 960px) {
+    .progress_step_container {
+        height: 100%;
+        padding: 0px;
+        border-right: solid 1px $tertiary;
+        overflow-y: hidden;
+        
+        &:first-of-type {
+            border-left: 1px solid $secondary;
+        }
+    }    
+}
+
+
+/* Column Titles */
+.address-header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+/* Column Buttons */
+
+ .checkout_continue_button {
+    clear: none;
+    font-weight: bold;
+    border-radius: 0;
+}
+
+
+.checkout_button_fixed {
+    height: 60px;
+    position: fixed;
+    bottom: 0px;   
+    z-index: 99999;
+}
+
+#address-button {
+    height: 60px;
+}   
+
+/* Edit an item */
+.edit_icon_container {
+    float: right;
+    position: absolute;
+    text-align: right;
+}
+
+.edit_icon_container:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.edit_icon_container_card {
+    text-align: center;
+    padding-top: 25px;
+    padding-left: 20px;
+    margin-top: 1px;
+    height: 90px;
+}
+
+.edit_icon_container_card:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+
+/*  --------------------------------------------------
+        Form Fields
+-------------------------------------------------- */ 
+
+.address-wrapper {
+    color: grey;
+    text-align: center;
+}
+
+.address-text {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.address-user-email {
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.address-input {
+    color: black;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.address-manual-text {
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.address-manual-input {
+    text-align: left;
+    margin-bottom: 10px;
+    color: blue;
+}
+
+
+
+/* Temp Cancel Bottom */
+
+.address-button-cancel {
+    background-color: #f9f8f6;
+    padding: 8px 10px 8px 10px;
+    text-align: center;
+    color: #333;
+    overflow: hidden;
+    display: block;
+    transition: all 0.2s ease-in;
+    border-radius: 3px;
+    font-weight: 600;
+    box-shadow: #e8e3d5 3px 3px 3px 1px;
+    border: 2px solid #d0c8b9;
+    font-size: 15px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    width: 48%;
+    margin-right: 2%;
+}
+
+input.address-button-delete {
+    background-color: #f9f8f6;
+    padding: 8px 10px 8px 10px;
+    text-align: center;
+    color: #333;
+    overflow: hidden;
+    display: block;
+    transition: all 0.2s ease-in;
+    border-radius: 3px;
+    font-weight: 600;
+    box-shadow: #e8e3d5 3px 3px 3px 1px;
+    border: 2px solid #d0c8b9;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: #DC332E;
+    border-color: #9B1F1C;
+    color: white;
+    width: 48%;
+    margin-left: 2%;
+}
+
+/*	--------------------------------------------------
+		Delivery Column				
+-------------------------------------------------- */ 
+
+#delivery_step_container {
+
+}
+
+.checkout_address_selecter {
+    font-weight: normal;
+    padding: 16px;
+    font-size: 16px;
+    margin-bottom: 0px;
+    border: 1px solid $secondary;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-family: $titlefont;
+    font-size: 14px;
+    margin-top: 10px;
+    padding-left: 30px;
+    border: 1px solid $secondary;  
+    padding: 0px;   
+    
+     div span {
+        font-weight: bold;
+    }
+}
+
+.checkout_address_selecter:hover {
+    opacity: 0.6;
+}
+
+.checkout_address_selecter_icon {
+    border: 2px solid #5C5C5C;
+    border-radius: 19px;
+    -moz-border-radius: 19px;
+    -webkit-border-radius: 19px;
+    cursor: pointer;
+    float: right;
+    height: 34px;
+    position: relative;
+    width: 34px;
+    top: -24px;
+    background-color: $white;
+    
+    &:after {
+        content: '';
+        position: absolute;
+    }
+}
+
+.checkout_default_delivery {
+    border-top: 1px solid black;
+    background-color: #e5faeb;
+    border: 1px solid #1b6732;
+    color: #1b6732;
+    color: $text;
+    
+    .checkout_address_selecter_icon {
+        border: 2px solid #018905;
+        border-radius: 19px;
+        -moz-border-radius: 19px;
+        -webkit-border-radius: 19px;
+        cursor: pointer;
+        float: right;
+        height: 34px;
+        position: relative;
+        width: 34px;
+        top: -24px;
+        background-color: #018905;
+        
+        &:after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 8px;
+            background: transparent;
+            top: 8px;
+            float: right;
+            border: 3px solid white;
+            border-top: none;
+            border-right: none;
+            -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            right: 5px;
+        }
+    }
+}
+
+.checkout_divider {
+    background-color: grey;
+    height: 1px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+/*	--------------------------------------------------
+		Billing Column
+-------------------------------------------------- */ 
+
+.billing_step_container {
+
+}
+
+
+#billing_step_container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    left: 0;
+    background: red;
+}
+
+/* Add new Payment Method */
+.add-new-payment  {
+    width: 100%; 
+    text-align: center; 
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: $text;
+    
+    a {
+        color: $text;
+    }
+}
+
+/* Billing Address Checkbox */
+#billing_checkbox_wrapper {
+    display: block;
+    border-top: 1px solid $secondary;
+    padding: 12px;
+    border: 1px solid $secondary;
+    padding-bottom: 0px;
+    clear: both;
+    display: block;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+
+/*	--------------------------------------------------
+		Review Column
+-------------------------------------------------- */ 
+
+#review_step_container {
+	
+}
+
+
+
+.checkout_collection_summary {
+    position: relative;
+}
+
+.delivery_summary {
+    position: relative;
+}
+
+.review_delivery_expand_items {
+    height: 34px;
+    width: 34px;
+    font-size: 24px;
+    text-align: center;
+    color: rgb(179,179,179);
+    border: 1px solid rgb(179,179,179);
+    position: absolute;
+    top: 15px;
+    line-height: 32px;
+    right: 30px;
+    font-weight: normal;
+}
+
+.review_delivery_expand_items:hover {
+    cursor: pointer;
+    color: rgb(245,122,57);
+    border: 1px solid rgb(245,122,57);
+}
+
+.review_collection_expand_items {
+    height: 34px;
+    width: 34px;
+    font-size: 24px;
+    text-align: center;
+    color: rgb(179,179,179);
+    border: 1px solid rgb(179,179,179);                    
+    position: absolute;
+    top: 15px;
+    line-height: 32px;
+    right: 5px;
+    font-weight: bold;
+}
+
+.review_collection_expand_items:hover {
+    cursor: pointer;
+    color: rgb(245,122,57);
+    border: 1px solid rgb(245,122,57);
+}
+
+
+
+
+/*  --------------------------------------------------
+        Extras
+-------------------------------------------------- */ 
+        
+.bottom-fade {
+    width: 600px;
+    height: 20px;
+    z-index: 99;
+    position: fixed;
+    bottom: 59px;
+    background: url("/img/fade_bottom.png") repeat-x;
+}        
+
+/*	--------------------------------------------------
+		Media Queries
+-------------------------------------------------- */ 

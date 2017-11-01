@@ -1,5 +1,4 @@
 /_content.scss////
-/_development.scss////
 /_basket.scss////
 /_basket-add.scss////
 /_basket-fufilment.scss////
@@ -9,9 +8,10 @@
 /_product-display.scss////
 /_store-finder.scss////
 /_my-account.scss////
-/_footer.scss////
 /_base.scss////
 /_checkout.scss////
 /_masthead.scss////
 /_product-list.scss////
 /_contact-page.scss////
+/_development.scss////
+/_footer.scss////

@@ -17,32 +17,49 @@
   margin: 0;
 }
 
+.logo_header_desktop {
+	display: none;
+}
+
 .logo_header {
-  background: url(/img/header-logo-retina.png);
-  width: 35px;
-  height: 35px;
-  float: left;
-  background-size: 138px 35px;
-  margin-top: 10px;
+	background: url(/img/r_log.png);
+	width: 125px;
+	height: 26px;
+	float: left;
+	background-size: 125px 26px;
+	margin-top: 10px;
+	margin: -4px 0 -2px -63px;
+	font-size: 50px;
+	top: 18px;
+	left: 50%;
+	position: absolute;
 }
 
 @media (min-width: 600px) {
 
-  .logo_header {
-    background: url(/img/range_logo_reduced.png);
-    width: 163px;
-    height: 35px;
-    background-size: 163px 35px;
+  .logo_header_desktop {
+    display: none
   }
 }
 @media (min-width: 960px) {
 
-  .logo_header {
+  .logo_header_desktop {
     background: url(/img/range_logo_full.png);
     width: 234px;
-    height: 42px;
+    height: 43px;
     background-size: 234px 42px;
+    float: left;
   }
+
+  .logo_header_desktop {
+  	display: block;
+  	margin-top: 8px;
+  }
+
+  .logo_header { 
+  	display: none;
+  }
+
 }
 
 .top-header ul {
@@ -51,7 +68,7 @@
 	li {
 		float: left;
 		list-style: none;
-		margin-left: 15px;
+		margin-left: 12px;
 		
 		&:first-child {
 			margin-left: 0px;
@@ -224,11 +241,12 @@
 /* Search */
 .navigation-search {
 	margin-top: 0px;
-	padding-bottom: 8px;
+	/*padding-bottom: 8px;*/
 	padding-top: 8px;
 	width: auto;
     display: block;
     overflow: hidden;
+    display: none;
     
 	button.btn.btn-default {
 		background-color: $primary;
@@ -241,6 +259,26 @@
 		border: 1px solid $primary;
 		border-radius: 0px;
 	}
+}
+
+@media (min-width: 960px) {
+	.navigation-search {
+		width: 370px;
+	    float: left;
+	    margin-top: 2px;
+	    margin-left: 20px;
+	    display: block;
+	    float: left;
+	}
+}
+
+@media (min-width: 1200px) {
+	.navigation-search {
+		width: 450px;
+	    float: left;
+	    margin-top: 2px;
+	    margin-left: 40px;
+    }
 }
 
   
@@ -304,9 +342,9 @@
 	} 
 
 	.navigation-bar {
-		
+		/* Tempt - awaiting wishlist fix */
 		.wishlist {
-			display: block;
+			display: none;
 		}
 	}
 
@@ -321,7 +359,7 @@
 	}
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1200px) {
 
 	.header-content {
 		display: block;
